@@ -1865,19 +1865,39 @@
                         },
                         {
                           "id": "mw-20261117-0193",
-                          "type": "counter",
-                          "name": "Kalphite essence",
-                          "description": "Obtain by breaking down two intact undyed drygore weapons (2 essence each).",
-                          "current": 0,
-                          "target": 4
+                          "type": "group",
+                          "name": "Kalphite essence (4)",
+                          "description": "2 undyed Drygore main-hand weapons give 4 Kalphite essence when broken down at a Dragonkin anvil. Both main-hands owned, but one is currently the user's equipped DW main-hand; hold it until replaced (planned Abyssal scourge). Neither has been broken down yet. Current ingredient progress tracks the raw weapons already obtained, not converted essence. https://runescape.wiki/w/Kalphite_essence",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mw-sword-raw-20261117-1",
+                              "type": "counter",
+                              "name": "Drygore main-hand weapons",
+                              "description": "2/2 owned; one currently being used in dual-wield setup and earmarked for later conversion. Each yields 2 Kalphite essence; do not break down until alternate main-hand available.",
+                              "current": 2,
+                              "target": 2
+                            }
+                          ]
                         },
                         {
                           "id": "mw-20261117-0194",
-                          "type": "counter",
-                          "name": "Demonic essence",
-                          "description": "Obtain by breaking down two Blade of Avaryss/Nymora weapons (2 essence each).",
-                          "current": 0,
-                          "target": 4
+                          "type": "group",
+                          "name": "Demonic essence (4)",
+                          "description": "2 Twin Furies weapons (Blade of Avaryss/Nymora) break down to 4 Demonic essence. Both source weapons reported owned; not yet converted into essence. https://runescape.wiki/w/Demonic_essence",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mw-sword-raw-20261117-2",
+                              "type": "counter",
+                              "name": "Twin Furies blades",
+                              "description": "2/2 blades owned. Each Blade of Avaryss or Nymora yields two Demonic essence; conversion destroys blades and has not yet occurred.",
+                              "current": 2,
+                              "target": 2
+                            }
+                          ]
                         }
                       ]
                     }
