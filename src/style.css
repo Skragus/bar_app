@@ -285,3 +285,9 @@ footer > span { display: flex; align-items: center; gap: 8px; }
 .read-only .tile-row .checkbox-button:disabled:hover { background: var(--inset); border-color: var(--border); }
 .read-only .tile-row .checkbox-button.checked:disabled:hover { background: var(--success-bg); border-color: var(--success-border); }
 .read-only .counter-value:disabled:hover { background: var(--inset); }
+
+.advanced-options { margin-top: 14px; border-top: 1px solid var(--border-soft); padding-top: 12px; }
+.advanced-options summary { color: var(--secondary); cursor: pointer; font-size: 14px; padding: 6px 0; }
+.advanced-options summary:focus-visible { outline: 2px solid var(--accent-hover); outline-offset: 3px; }
+.advanced-options input { max-width: 180px; }
+.advanced-options p { font-size: 13px; color: var(--secondary); line-height: 1.5; margin: 8px 0; }

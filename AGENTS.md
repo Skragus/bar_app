@@ -22,7 +22,27 @@ The file is UTF-8 JSON with this envelope (also used for exported backups):
 - **Checkbox:** `type: "checkbox"`, boolean `complete`, optional positive integer `number`. May have a name, a number, or both. It is terminal: never add `children`, counters, or nested progress to it. Numbered checkboxes in the same group must have distinct numbers. Use the next unused number when adding a batch. A group's `presentation` controls its direct checkbox display; switching presentation never changes completion or IDs.
 - **Counter:** `type: "counter"`, nonempty `name`, finite numeric `current >= 0`, finite numeric `target > 0`. Values may be decimal. It is terminal and has no `children`. `current` may exceed `target`; keep the true value (e.g. 529/504).
 
-Progress is calculated by `progress()` in `src/model.js`: an equal-weight average of eligible immediate children, recursively; checked boxes are 1, unchecked boxes 0, counter ratios are clamped to [0, 1], and groups without progress-bearing descendants are excluded. Do not store percentages or change this calculation to edit data.
+Progress is calculated by `progress()` in `src/model.js`: a weighted average of eligible immediate children, recursively. Missing weights default to 1, preserving the previous equal-weight behavior. Checked boxes are 1, unchecked boxes 0, counter ratios are clamped to [0, 1], and groups without eligible progress are excluded. Do not store percentages or change application code to edit progress.
+
+### Optional progress weights
+
+Groups, counters, and checkboxes may each have an optional numeric `weight`. It must be finite and nonnegative (not a string, boolean, null, NaN, or infinity). Missing means 1; decimal weights such as 0.1 are valid. `weight: 0` excludes the item from its parent's calculation while keeping it visible, editable in local mode, and able to calculate its own progress normally. If all children are empty or zero-weight, a group's progress is `null`.
+
+For each group, `progress = sum(child.weight * child.progress) / sum(child.weight)` over positive-weight children with non-null progress; weights apply independently at every parent level. A group's own weight controls its contribution to its parent, never its internal calculation. A root's weight has no effect until it is moved under a parent. Do not flatten the hierarchy.
+
+For example, these siblings produce `(8 * 1 + 2 * 0.5 + 0.1 * 0) / 10.1 = 89.1%`:
+
+```json
+[
+  {"id": "rare-id", "type": "checkbox", "name": "Rare drop", "complete": true, "weight": 8},
+  {"id": "materials-id", "type": "counter", "name": "Common materials", "current": 50, "target": 100, "weight": 2},
+  {"id": "assembly-id", "type": "checkbox", "name": "Final assembly", "complete": false, "weight": 0.1}
+]
+```
+
+Use weights for user-approved relative effort or importance among siblings. Do not derive them from hierarchy depth or descendant counts, automatically assign weights to existing entries, or pretend they are objective time estimates. Explain estimates and preserve existing progress/IDs. Omit the field when equal weighting is appropriate.
+
+Recipe stages may represent transformations of the same materials rather than independent work. An informational milestone such as `{"id":"milestone-id","type":"checkbox","name":"Intermediate crafted","complete":false,"weight":0}` can avoid counting that work again. Use this only when the user intends that treatment; do not infer dependencies or introduce domain-specific logic. Preserve all existing weights during renames, moves, reordering, and unrelated updates. Local editing exposes **Progress weight** under **Additional options**; old local data and exports need no migration.
 
 ## Read and update safely
 
@@ -85,7 +105,7 @@ npm test
 npm run build
 ```
 
-`npm run validate:data -- /path/to/candidate.json` validates another candidate without touching canonical data. Invalid JSON, unsupported versions, duplicate IDs, invalid nesting, unit children, and invalid counters fail with nonzero exit status. The build and Pages CI validate data before deployment. For application/loading changes also run `npm run test:e2e` (system Chromium at `/usr/bin/chromium`, overridable via `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`).
+`npm run validate:data -- /path/to/candidate.json` validates another candidate without touching canonical data. Invalid JSON, unsupported versions, duplicate IDs, invalid nesting, unit children, invalid weights, and invalid counters fail with nonzero exit status. The build and Pages CI validate data before deployment. For application/loading changes also run `npm run test:e2e` (system Chromium at `/usr/bin/chromium`, overridable via `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`).
 
 After reviewing the diff, stage only `public/tracker.json` for a data-only update, commit with a description of the requested progress change, and push the intended branch. Do not stage unrelated code or user edits.
 

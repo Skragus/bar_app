@@ -1,5 +1,8 @@
 import {readFileSync} from 'node:fs';
 import {test, expect} from '@playwright/test';
+test.beforeEach(async ({page}) => {
+  await page.route('**/tracker.json?*', route => route.fulfill({contentType:'application/json', body:readFileSync('tests/fixtures/starter.json','utf8')}));
+});
 async function openLocal(page) {
   await expect(page.getByRole('button', {name:'Reload Data', exact:true})).toBeEnabled();
   await page.getByRole('button', {name:'Open local-only mode', exact:true}).click();

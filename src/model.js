@@ -6,8 +6,18 @@ export const counter = (name, current = 0, target = 100) => ({ id: uid(), type: 
 export function progress(item) {
   if (item.type === 'checkbox') return item.complete ? 1 : 0;
   if (item.type === 'counter') return Math.min(1, Math.max(0, item.current / item.target));
-  const values = item.children.map(progress).filter(value => value !== null);
-  return values.length ? values.reduce((a, b) => a + b, 0) / values.length : null;
+  const eligible = item.children.map(child => ({value: progress(child), weight: child.weight ?? 1}))
+    .filter(child => child.value !== null && child.weight > 0);
+  if (!eligible.length) return null;
+  // Normalizing by the largest weight prevents overflow for finite large weights.
+  const scale = eligible.reduce((max, child) => Math.max(max, child.weight), 0);
+  let weightedProgress = 0, totalWeight = 0;
+  for (const child of eligible) {
+    const weight = child.weight / scale;
+    weightedProgress += weight * child.value;
+    totalWeight += weight;
+  }
+  return Math.min(1, Math.max(0, weightedProgress / totalWeight));
 }
 export function updateItem(items, id, update) {
   return items.map(item => item.id === id ? update(item) : item.type === 'group' ? { ...item, children: updateItem(item.children, id, update) } : item);
@@ -37,6 +47,7 @@ export function validateData(value) {
       if (++count > 50000) throw new Error('This file contains too many items.');
       if (!item || typeof item.id !== 'string' || !item.id.trim() || ids.has(item.id) || typeof item.name !== 'string' || !['group', 'checkbox', 'counter'].includes(item.type)) throw new Error('Invalid or duplicate item in this file.');
       ids.add(item.id);
+      if (item.weight !== undefined && (!Number.isFinite(item.weight) || item.weight < 0)) throw new Error('Progress weight must be a finite nonnegative number.');
       if (item.type !== 'checkbox' && !item.name.trim()) throw new Error('Groups and counters need a name.');
       for (const key of ['description', 'image', 'icon']) if (item[key] !== undefined && typeof item[key] !== 'string') throw new Error('Invalid item details.');
       if (depth === 0 && item.type !== 'group') throw new Error('Top-level items must be groups.');

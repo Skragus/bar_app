@@ -97,20 +97,24 @@ function App() {
     {deleting && <div className="confirm-panel" role="alertdialog" aria-label="Confirm deletion"><strong>Delete “{deleting.name}” and everything inside?</strong><p>This removes all its groups, checkboxes, and counters.</p><div><button onClick={() => setDeleting(null)}>Keep group</button><button className="danger-button" onClick={() => {change(old => removeItem(old, deleting.id)); setDeleting(null); setEditor(null); setMoving(null);}}>Delete group</button></div></div>}
     <section className={"outline " + (readOnly ? "read-only" : "")} aria-label="Progress outline">{readOnly && canonical?.length === 0 && <div className="empty-state"><h2>No tracked groups yet.</h2><p>Ask your agent to add groups to the GitHub tracker.</p></div>}{editor && !editor.parent && !editor.id && <Editor key={'root-' + editor.type} config={editor}/>} {items.map((item, i) => <Node key={item.id} item={item} index={i} siblings={items}/>)}{!readOnly && items.length === 0 && !editor && <div className="empty-state"><Layers size={28}/><h2>Start with something small.</h2><p>A book, a series, a goal. Give it a home.</p><button className="primary" onClick={() => openCreate(null, 'group')}><Plus size={15}/>Add your first group</button></div>}{query && !items.some(matches) && <div className="empty-state"><Search size={25}/><h2>No matches for “{query}”</h2><p>Try another name or note.</p></div>}</section>
     {!readOnly && <button className="bottom-add" onClick={() => openCreate(null, 'group')}><Plus size={15}/>Add a group<span>Make room for something new</span></button>}
-    <footer><span><span className="tiny-mark">▥</span>Small steps. Visible progress.</span><span title="Progress averages eligible immediate children equally. Empty groups do not contribute.">Your pace. Your outline.</span></footer></main>
+    <footer><span><span className="tiny-mark">▥</span>Small steps. Visible progress.</span><span title="Progress averages eligible immediate children using their relative weights (default 1). Zero-weight items and empty groups do not contribute.">Your pace. Your outline.</span></footer></main>
     <input ref={importInput} className="hidden" type="file" accept="application/json,.json" onChange={importData}/>{notice && <div className="toast" role="status"><CheckCheck size={17}/>{notice}<button className="icon-button" aria-label="Dismiss notification" onClick={() => setNotice('')}><X size={14}/></button></div>}
   </AppContext.Provider>;
 }
   function Editor({config}) {
     const {items, patch, change, setEditor} = useContext(AppContext);
     const existing = config.id ? findItem(items, config.id) : null;
-    const [name, setName] = useState(existing?.name || ''), [description, setDescription] = useState(existing?.description || ''), [current, setCurrent] = useState(existing?.current ?? 0), [target, setTarget] = useState(existing?.target ?? 100), [amount, setAmount] = useState(13), [image, setImage] = useState(existing?.image || ''), [icon, setIcon] = useState(existing?.icon || ''), [error, setError] = useState('');
+    const [name, setName] = useState(existing?.name || ''), [description, setDescription] = useState(existing?.description || ''), [current, setCurrent] = useState(existing?.current ?? 0), [target, setTarget] = useState(existing?.target ?? 100), [amount, setAmount] = useState(13), [image, setImage] = useState(existing?.image || ''), [icon, setIcon] = useState(existing?.icon || ''), [error, setError] = useState(''), [weight, setWeight] = useState(existing?.weight ?? 1);
     const save = event => {
       event.preventDefault();
       if (config.type !== 'batch' && !name.trim() && !(existing?.number)) { setError('Give this item a name.'); return; }
       if (config.type === 'counter' && (!Number.isFinite(Number(current)) || Number(current) < 0 || !Number.isFinite(Number(target)) || Number(target) <= 0)) { setError('Use a current value of 0 or more and a target greater than 0.'); return; }
+      const effectiveWeight = weight === '' ? 1 : Number(weight);
+      if (!Number.isFinite(effectiveWeight) || effectiveWeight < 0) { setError('Progress weight must be a finite number of 0 or more.'); return; }
       if (image && !/^https?:\/\//i.test(image)) { setError('Use an http or https image URL.'); return; }
       const details = {name: name.trim(), description: description.trim(), image, icon};
+      // Keep missing weights optional when saving ordinary unweighted records.
+      if (existing?.weight !== undefined || effectiveWeight !== 1) details.weight = effectiveWeight;
       if (config.type === 'counter') Object.assign(details, {current: Number(current), target: Number(target)});
       if (existing) patch(existing.id, details);
       else {
@@ -131,6 +135,10 @@ function App() {
       {config.type === 'counter' && <div className="field-pair"><label>Current<input type="number" step="any" min="0" required value={current} onChange={event => setCurrent(event.target.value)}/></label><label>Target<input type="number" step="any" min="0.000001" required value={target} onChange={event => setTarget(event.target.value)}/></label></div>}
       <label>Note <span>optional</span><input value={description} onChange={event => setDescription(event.target.value)} placeholder="A little context…" maxLength={2000}/></label>
       <div className="field-pair"><label>Image URL <span>optional</span><input type="url" value={image} onChange={event => setImage(event.target.value)} placeholder="https://…"/></label>{config.type === 'group' && <label>Icon <span>optional</span><input value={icon} onChange={event => setIcon(event.target.value)} placeholder="e.g. 📚" maxLength={12}/></label>}</div>
+      <details className="advanced-options"><summary>Additional options</summary>
+        <label>Progress weight<input type="number" min="0" step="any" value={weight} onChange={event => setWeight(event.target.value)} placeholder="1" aria-describedby="weight-help"/></label>
+        <p id="weight-help">Relative to sibling items in the parent group. Default: 1. Use 0 to exclude this item from its parent’s progress; its own progress is unchanged.</p>
+      </details>
       </>}
       {error && <p className="error" role="alert">{error}</p>}<div className="editor-footer"><button type="button" className="text-button" onClick={() => setEditor(null)}>Cancel</button><button className="primary" type="submit">{existing ? 'Save changes' : config.type === 'batch' ? 'Create checkboxes' : 'Create ' + config.type}<Check size={14}/></button></div>
     </form>;

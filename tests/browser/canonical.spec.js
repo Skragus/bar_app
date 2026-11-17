@@ -1,7 +1,10 @@
 import {readFileSync} from 'node:fs';
 import {createServer} from 'node:http';
 import {test, expect} from '@playwright/test';
-const fixture = () => JSON.parse(readFileSync('public/tracker.json','utf8'));
+const fixture = () => JSON.parse(readFileSync('tests/fixtures/starter.json','utf8'));
+test.beforeEach(async ({page}) => {
+  await page.route('**/tracker.json?*', route => route.fulfill({contentType:'application/json', body:JSON.stringify(fixture())}));
+});
 const find = (items, name) => {for(const item of items){if(item.name===name)return item;const child=item.children&&find(item.children,name);if(child)return child;}};
 
 test('canonical mode wins over preserved local progress; local edits never become central', async ({page}) => {
@@ -52,7 +55,7 @@ test('invalid or unavailable GitHub data fails safely and reload keeps last vali
 
 test('built Pages artifact reads runtime JSON at project subpath and reflects data-only updates', async ({page}) => {
   expect(readFileSync('dist/tracker.json','utf8')).toEqual(readFileSync('public/tracker.json','utf8'));
-  let data = JSON.parse(readFileSync('dist/tracker.json','utf8')); const paths=[];
+  let data = fixture(); const paths=[];
   const server=createServer((req,res)=>{
     const path=new URL(req.url,'http://localhost').pathname; paths.push(path);
     if(path==='/bar_app/'||path==='/bar_app/index.html') {res.setHeader('Content-Type','text/html'); res.end(readFileSync('dist/bar-app.html'));}
@@ -61,6 +64,7 @@ test('built Pages artifact reads runtime JSON at project subpath and reflects da
   });
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   try {
+    await page.unroute('**/tracker.json?*');
     await page.goto(`http://127.0.0.1:${server.address().port}/bar_app/`);
     const existingId=find(data.items,'Apex sinew').id;
     await expect(page.getByRole('button',{name:'Edit values for Apex sinew'})).toContainText('115');
