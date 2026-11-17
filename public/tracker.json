@@ -302,7 +302,8 @@
               "type": "checkbox",
               "name": "Full masterwork ranged set custom-fitted (optional)",
               "description": "Optional follow-up after finishing full set; does not affect creation requirements.",
-              "complete": false
+              "complete": false,
+              "weight": 0
             }
           ]
         },
@@ -675,7 +676,8 @@
               "type": "checkbox",
               "name": "Custom-fit trimmed masterwork set (optional)",
               "description": "Optional follow-up; requires full trimmed set.",
-              "complete": false
+              "complete": false,
+              "weight": 0
             }
           ]
         },
@@ -922,7 +924,8 @@
               "name": "Fletch Quest",
               "description": "Requires upgraded eternal magic shortbow and primal crossbows to Mk. 5; prerequisite. https://runescape.wiki/w/Masterwork_bow",
               "current": 1,
-              "target": 1
+              "target": 1,
+              "weight": 0
             },
             {
               "id": "mwbow-tree-20261117-011",
@@ -1054,7 +1057,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "weight": 5
             },
             {
               "id": "mwbow-tree-20261117-016",
@@ -1098,7 +1102,8 @@
                   "current": 0,
                   "target": 1
                 }
-              ]
+              ],
+              "weight": 1
             }
           ]
         },
@@ -1116,7 +1121,8 @@
               "name": "Crafting to Your Own Rune",
               "description": "Unlock by making and upgrading the required eternal magic weaponry to +5. Needed before creating the staff. https://runescape.wiki/w/Crafting_to_Your_Own_Rune",
               "current": 1,
-              "target": 1
+              "target": 1,
+              "weight": 0
             },
             {
               "id": "mw-20261117-0185",
@@ -1352,7 +1358,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "weight": 3
             },
             {
               "id": "mw-20261117-0186",
@@ -1766,7 +1773,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "weight": 7
             }
           ]
         },
@@ -1784,7 +1792,8 @@
               "name": "It Still Should Have Been Called Aetherium",
               "description": "Achievement to unlock masterwork 2h sword: craft a primal full helm, platebody, platelegs, gauntlets and boots to +5 (384 primal bars from scratch). Completion NOT confirmed; 0/1 placeholder.",
               "current": 1,
-              "target": 1
+              "target": 1,
+              "weight": 0
             },
             {
               "id": "mw-20261117-0201",
@@ -1874,7 +1883,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "weight": 6
             },
             {
               "id": "mw-20261117-0202",
@@ -2122,7 +2132,8 @@
                     }
                   ]
                 }
-              ]
+              ],
+              "weight": 4
             }
           ]
         },
