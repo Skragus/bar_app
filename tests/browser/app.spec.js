@@ -1,5 +1,10 @@
 import {readFileSync} from 'node:fs';
 import {test, expect} from '@playwright/test';
+async function openLocal(page) {
+  await expect(page.getByRole('button', {name:'Reload Data', exact:true})).toBeEnabled();
+  await page.getByRole('button', {name:'Open local-only mode', exact:true}).click();
+}
+
 const node = (page, name) => page.locator('.group-node').filter({has: page.getByRole('button', {name: 'Collapse ' + name, exact:true})}).last();
 const actions = (page, name) => page.getByRole('button', {name: 'Actions for ' + name, exact:true}).click();
 async function add(page, parent, type, name) {
@@ -9,7 +14,7 @@ async function add(page, parent, type, name) {
 }
 test('foundation acceptance: nesting, units, batch, layout, edits, moves, persistence', async ({page}) => {
   const errors = []; page.on('pageerror', error => errors.push(error.message));
-  await page.goto('/');
+  await page.goto('/'); await openLocal(page);
   await expect(page.getByRole('heading', {name:'Your progress.'})).toBeVisible();
   await add(page, null, 'group', 'Level 1');
   for(let i = 2; i <= 5; i++) await add(page, 'Level ' + (i - 1), 'group', 'Level ' + i);
@@ -37,19 +42,19 @@ test('foundation acceptance: nesting, units, batch, layout, edits, moves, persis
   await page.getByRole('button', {name:'Move here'}).click();
   await expect(page.getByRole('checkbox', {name:'Finished task', exact:true})).toHaveAttribute('aria-checked', 'true');
   const saved = await page.evaluate(() => localStorage.getItem('bar-app.v1'));
-  await page.reload();
+  await page.reload(); await openLocal(page);
   expect(await page.evaluate(() => localStorage.getItem('bar-app.v1'))).toEqual(saved);
   await expect(page.getByRole('checkbox', {name:'Finished task', exact:true})).toHaveAttribute('aria-checked', 'true');
   await expect(page.getByRole('button', {name:'Edit values for Pages'})).toContainText('262');
   await actions(page, 'Level 1'); await page.getByRole('menuitem', {name:'Delete group'}).click();
   await expect(page.getByRole('alertdialog', {name:'Confirm deletion'})).toBeVisible();
   await page.getByRole('button', {name:'Keep group'}).click();
-  await page.getByRole('button', {name:'Collapse Level 1', exact:true}).click(); await page.reload();
+  await page.getByRole('button', {name:'Collapse Level 1', exact:true}).click(); await page.reload(); await openLocal(page);
   await expect(page.getByRole('button', {name:'Expand Level 1', exact:true})).toBeVisible();
   expect(errors).toEqual([]);
 });
 test('search, export/import, invalid import, and mobile layout', async ({page}) => {
-  await page.goto('/'); await page.getByLabel('Search outline').fill('Apex sinew');
+  await page.goto('/'); await openLocal(page); await page.getByLabel('Search outline').fill('Apex sinew');
   await expect(page.getByRole('button', {name:'Edit values for Apex sinew'})).toBeVisible();
   await expect(page.getByRole('button', {name:'Collapse Reading', exact:true})).toHaveCount(0);
   await page.getByLabel('Clear search').click();
@@ -72,14 +77,15 @@ test('search, export/import, invalid import, and mobile layout', async ({page}) 
   await expect(page.getByRole('button', {name:'Edit values for Apex sinew'})).toContainText('116');
   await page.screenshot({path:'artifacts/mobile.png', fullPage:true});
 });
-test('standalone HTML needs no assets and preserves progress', async ({page}) => {
+test('standalone HTML loads tracker without JS assets and preserves local progress', async ({page}) => {
   const requests = [];
   page.on('request', request => requests.push(request.url()));
   await page.route('**/standalone.html', route => route.fulfill({contentType:'text/html', body:readFileSync('dist/bar-app.html', 'utf8')}));
-  await page.goto('/standalone.html');
-  expect(requests).toEqual(['http://127.0.0.1:5173/standalone.html']);
+  await page.goto('/standalone.html'); await openLocal(page);
+  expect(requests.every(url => url.endsWith('/standalone.html') || url.includes('/tracker.json?'))).toBe(true);
+  expect(requests.some(url => url.includes('/tracker.json?'))).toBe(true);
   await page.getByRole('checkbox', {name:'Episode 8', exact:true}).click();
-  await page.reload();
+  await page.reload(); await openLocal(page);
   await expect(page.getByRole('checkbox', {name:'Episode 8', exact:true})).toHaveAttribute('aria-checked', 'true');
   await page.setViewportSize({width:390, height:844});
   await page.getByLabel('Actions for checkbox 1', {exact:true}).click();
@@ -90,7 +96,7 @@ test('standalone HTML needs no assets and preserves progress', async ({page}) =>
   await expect(page.getByRole('checkbox', {name:'Pilot', exact:true})).toBeVisible();
 });
 test('menus stay reachable and the outline fits narrow viewports', async ({page}) => {
-  await page.goto('/');
+  await page.goto('/'); await openLocal(page);
   for (const width of [1280, 768, 390, 320]) {
     await page.setViewportSize({width, height:844});
     await page.getByLabel('Actions for checkbox 1', {exact:true}).click();

@@ -1,36 +1,43 @@
 # Bar-App
 
-A quiet, single-page progress outline. React + Vite, without accounts, external APIs, or a backend.
+A single-page progress outline with nested groups, checkbox tiles, and counters. React + Vite; no backend or accounts.
+
+## GitHub-managed tracking
+
+`public/tracker.json` is the canonical public dataset. Ask an agent with repository access to read [AGENTS.md](AGENTS.md), edit the JSON, validate it, and commit the update. No application code changes are needed for progress updates. Pushes to `main` validate, build, and deploy through the existing GitHub Pages workflow.
+
+The website loads `tracker.json` at runtime relative to its page, including at `https://skragus.github.io/bar_app/`. Refresh the page or choose **Reload Data** after deployment finishes. Fetches bypass browser caches and include a cache-busting query. There is no polling or browser-to-GitHub write path.
+
+The default GitHub-managed view is read-only; groups still expand/collapse for viewing. **Export JSON** exports the displayed dataset. Failed reloads show an error and keep the previous valid data visible; an initial failure never falls back to old local progress or hardcoded examples.
+
+## Existing local progress
+
+Old `bar-app.v1` data is preserved. If it differs from GitHub, a notice offers **Export local backup** and **Open local-only mode** to review it. No automatic merge or silent replacement occurs. Local-only mode keeps the original browser editing features (creation, counters, checkboxes, list/tiles, moving, notes, imports). Edits are explicitly local, not synchronized to GitHub. Reloading always returns to GitHub-managed mode; re-enter local-only mode to see your saved local data. A fresh local workspace copies canonical data only when you explicitly open that mode.
+
+Invalid local data is left untouched; export it before making local edits. Storage failures show a warning. Clearing site data removes local progress. Export before changing browsers or origins. To reconcile local changes with GitHub, give an agent your exported JSON and specify which changes to apply.
+
+All GitHub data and image URLs are public. Do not store private information or credentials. Remote images are not embedded in exports. This app has no authentication, database, or write endpoints.
 
 ## Development
 
-Requires Node.js 22+ and npm.
+Node.js 22+ and npm:
 
 ```sh
 npm ci
 npm run dev -- --port 5173
 ```
 
-Open the address printed by Vite. The app seeds three editable examples on its first visit. Use **Add group**, expand rows, and open the row's **…** menu to add nested groups, counters, single checkboxes, or a numbered batch. Use **Edit details** for names, notes, optional icons/image URLs, and counter values. Click counter values to edit them directly.
-
-Checkbox display is a group presentation preference; changing list/tile display never changes the underlying units. Numbered batches switch that group's checkboxes to tiles. Move/reorder controls allow moving an item to any valid group, changing sibling order, or moving groups to the top level. A group cannot move inside itself or a descendant. Nonempty group deletion asks for confirmation.
-
-Progress averages eligible immediate children equally, recursively. Empty groups do not count. Counter progress is capped at 100%, but the actual value can exceed its target. Targets must be positive and current values nonnegative. The percentage measures requirements completed, not effort remaining.
-
-## Persistence and backups
-
-All data, expansion state, and display settings are saved automatically to this browser's `localStorage` under `bar-app.v1`. This session has no ChatGPT Sites storage/publishing integration. Storage is specific to the browser and origin: no cross-device synchronization. Clearing site data removes progress. Use **…** in the top header to export/import JSON. Import validates before asking to replace existing data. Image URLs are optional remote resources; images themselves are not included in backups.
-
-If saving fails, an on-screen warning appears; export a backup before leaving. If stored data is invalid, it is left untouched until you explicitly create/import changes.
-
-## Validation
+Use the existing checkout; cloud tasks are already isolated and need no additional worktrees. Server processes must restart after the machine restarts.
 
 ```sh
+npm run validate:data
 npm test
 npm run build
 npm run test:e2e
 ```
 
-Browser tests use Playwright with `/usr/bin/chromium` by default. Set `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to use another installed Chromium browser. Tests exercise deep nesting, mixed units, 13-checkbox batch creation, progress, layout switching, inline editing, movement, reload persistence, collapse state, search, JSON round-trips, invalid imports, and a mobile viewport. No credentials or external service is needed.
+Browser tests use `/usr/bin/chromium` (override with `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`). Tests cover core editing in explicit local mode, canonical loading at a project subpath, data-only updates, migration, invalid data, persistence, and narrow viewports.
 
-Build output is in `dist/`. Serve it with `npx vite preview --host 0.0.0.0 --port 4173`. Live processes need restarting after the cloud machine restarts. Use the existing checkout; cloud tasks are already isolated and do not need extra worktrees.
+Build output is `dist/`, including `tracker.json` and a bundled `bar-app.html`. The HTML still fetches `tracker.json` at runtime and must be served with it. It is no longer an offline single-file data snapshot. Preview with `npx vite preview --host 0.0.0.0 --port 4173`.
+
+Progress is an equal-weight average of eligible immediate children, recursively. Empty groups do not contribute. Counter progress caps at 100%, while actual values may exceed targets. It measures requirements completed, not effort remaining.

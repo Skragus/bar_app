@@ -27,6 +27,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Validate canonical tracker
+        run: npm run validate:data
       - name: Run model tests
         run: npm test
       - name: Build site

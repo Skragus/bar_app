@@ -35,8 +35,9 @@ export function validateData(value) {
     if (!Array.isArray(items) || depth > 100) throw new Error('Invalid outline or nesting exceeds 100 levels.');
     for (const item of items) {
       if (++count > 50000) throw new Error('This file contains too many items.');
-      if (!item || typeof item.id !== 'string' || !item.id || ids.has(item.id) || typeof item.name !== 'string' || !['group', 'checkbox', 'counter'].includes(item.type)) throw new Error('Invalid or duplicate item in this file.');
+      if (!item || typeof item.id !== 'string' || !item.id.trim() || ids.has(item.id) || typeof item.name !== 'string' || !['group', 'checkbox', 'counter'].includes(item.type)) throw new Error('Invalid or duplicate item in this file.');
       ids.add(item.id);
+      if (item.type !== 'checkbox' && !item.name.trim()) throw new Error('Groups and counters need a name.');
       for (const key of ['description', 'image', 'icon']) if (item[key] !== undefined && typeof item[key] !== 'string') throw new Error('Invalid item details.');
       if (depth === 0 && item.type !== 'group') throw new Error('Top-level items must be groups.');
       if (item.type === 'group') {

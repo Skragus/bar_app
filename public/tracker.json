@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "97b3c8f2-e1c9-48c7-8ed1-cdcbe4479773",
+      "type": "group",
+      "name": "Television",
+      "description": "",
+      "expanded": true,
+      "presentation": "list",
+      "children": [
+        {
+          "id": "2db15351-9f31-42da-b634-cb5db788083f",
+          "type": "group",
+          "name": "Example Show",
+          "description": "",
+          "expanded": true,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "2a56a82f-03f9-4db0-8430-ec857468dad2",
+              "type": "group",
+              "name": "Season 1",
+              "description": "One episode at a time.",
+              "expanded": true,
+              "presentation": "tiles",
+              "children": [
+                {
+                  "id": "d5ef4a6d-cf01-4113-8a13-470f056874e3",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": true,
+                  "number": 1
+                },
+                {
+                  "id": "1b49d843-264c-4900-92c2-cb4574340a67",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": true,
+                  "number": 2
+                },
+                {
+                  "id": "8472a3c0-813c-42e9-8819-69ec76c9e81a",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": true,
+                  "number": 3
+                },
+                {
+                  "id": "339beb7e-79a3-43d9-a0e3-9ee2cf6bbaf2",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": false,
+                  "number": 4
+                },
+                {
+                  "id": "b22a513b-3ee6-4b14-b27e-1d1cdf5524da",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": false,
+                  "number": 5
+                },
+                {
+                  "id": "27661911-ff89-4eb5-85ec-c1295beb4da6",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": false,
+                  "number": 6
+                },
+                {
+                  "id": "5261d6d1-1378-4268-9180-af9cdcaf4cea",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": false,
+                  "number": 7
+                },
+                {
+                  "id": "d4f0d698-3fd7-47f7-b000-46cef2f36b63",
+                  "type": "checkbox",
+                  "name": "",
+                  "description": "",
+                  "complete": false,
+                  "number": 8
+                }
+              ]
+            },
+            {
+              "id": "6a8ed05a-e5a0-4885-a490-988d7770f6b7",
+              "type": "group",
+              "name": "Season 2",
+              "description": "",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "9f54bbc5-2619-489f-b994-860ca2353d0e",
+                  "type": "counter",
+                  "name": "Episodes watched",
+                  "description": "",
+                  "current": 6,
+                  "target": 13
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "icon": "tv"
+    },
+    {
+      "id": "9c8f319c-f165-4376-ae87-517d804295af",
+      "type": "group",
+      "name": "RuneScape",
+      "description": "",
+      "expanded": true,
+      "presentation": "list",
+      "children": [
+        {
+          "id": "7d8dad89-9061-4bdc-a5f1-88e1b3d6dc1e",
+          "type": "group",
+          "name": "Masterwork Ranged",
+          "description": "",
+          "expanded": true,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "d7a20224-ae99-4eea-b7fd-2d98e4b4c5a8",
+              "type": "group",
+              "name": "Havenhythe Materials",
+              "description": "",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "1a0fea15-a7c8-43d6-8e55-2c24565f3f88",
+                  "type": "counter",
+                  "name": "Apex hides",
+                  "description": "",
+                  "current": 529,
+                  "target": 504
+                },
+                {
+                  "id": "b1cb73b1-517d-4880-b5cd-2ad9a3a14d2a",
+                  "type": "counter",
+                  "name": "Apex sinew",
+                  "description": "",
+                  "current": 115,
+                  "target": 262
+                }
+              ]
+            },
+            {
+              "id": "efe627bd-3ffb-44ea-b292-ce117d623029",
+              "type": "group",
+              "name": "Nex Materials",
+              "description": "",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "d9cd0430-0c60-41d2-9d6a-07d0708f5b07",
+                  "type": "checkbox",
+                  "name": "Materials acquired",
+                  "description": "",
+                  "complete": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "icon": "swords"
+    },
+    {
+      "id": "be41907d-5c12-4636-ba90-47caa411f6b9",
+      "type": "group",
+      "name": "Reading",
+      "description": "",
+      "expanded": true,
+      "presentation": "list",
+      "children": [
+        {
+          "id": "73ac5362-ee86-4831-b0ca-772b8a597574",
+          "type": "group",
+          "name": "Sun Eater",
+          "description": "",
+          "expanded": true,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "e0ef74c0-c4e1-4fff-9619-9d6ab8051d7c",
+              "type": "group",
+              "name": "Demon in White",
+              "description": "",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "143ae817-903d-4491-ad36-cf9ab8c6cf5b",
+                  "type": "counter",
+                  "name": "Percent read",
+                  "description": "",
+                  "current": 68,
+                  "target": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "icon": "book"
+    }
+  ]
+}

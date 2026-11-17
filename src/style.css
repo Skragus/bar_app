@@ -272,3 +272,16 @@ footer > span { display: flex; align-items: center; gap: 8px; }
   .counter-progress .progress-track { flex-basis: 100%; }
   .counter-value { flex: 1; }
 }
+
+.data-mode, .migration-notice { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 14px 16px; margin-bottom: 18px; background: var(--panel-nested); border: 1px solid var(--border); border-radius: var(--radius); }
+.data-mode strong { font-size: 15px; }
+.data-mode p, .migration-notice p { margin: 5px 0 0; max-width: 660px; color: var(--secondary); font-size: 14px; line-height: 1.5; }
+.data-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.data-controls button, .migration-notice button { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 12px; border: 1px solid var(--border); background: var(--control); font-size: 14px; }
+.data-controls button:hover, .migration-notice button:hover { background: var(--hover); }
+.migration-notice { border-color: #9b7e53; }
+.read-only .checkbox-button:disabled, .read-only .counter-name:disabled, .read-only .counter-value:disabled { opacity: 1; cursor: default; }
+.read-only .checkbox-button:disabled:hover, .read-only .counter-name:disabled:hover { background: transparent; }
+.read-only .tile-row .checkbox-button:disabled:hover { background: var(--inset); border-color: var(--border); }
+.read-only .tile-row .checkbox-button.checked:disabled:hover { background: var(--success-bg); border-color: var(--success-border); }
+.read-only .counter-value:disabled:hover { background: var(--inset); }
