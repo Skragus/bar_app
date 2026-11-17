@@ -1782,7 +1782,7 @@
           "id": "mw-20261117-0206",
           "type": "group",
           "name": "Masterwork 2h sword",
-          "description": "Item-first recipe: Masterwork 2h sword = sharpened masterwork blade + masterwork sword hilt. Also requires 'It Still Should Have Been Called Aetherium' (primal armour +5). 10 primed glorious bars total (10 glorious + 1,000 primal), 10 gold bars, one extra primal bar for sword trim, 4 kalphite essence, 4 demonic essence, 4 chaotic essence, one moonstone, one undead dragon leather, one brown dye. Every component has its own input tally; no shared totals duplicated as siblings. https://runescape.wiki/w/Masterwork_2h_sword",
+          "description": "Item-first recipe: Masterwork 2h sword = sharpened masterwork blade + masterwork sword hilt. Also requires 'It Still Should Have Been Called Aetherium' (primal armour +5). 10 primed glorious bars total (10 glorious + 1,000 primal), 10 gold bars, one extra primal bar for sword trim, 4 kalphite essence, 4 demonic essence, 4 chaotic essence, one moonstone, one undead dragon leather, one brown dye. Every component has its own input tally; no shared totals duplicated as siblings. https://runescape.wiki/w/Masterwork_2h_sword\nInventory note (17 Nov 2026): owns 2 drygore weapons and 2 Twin Furies blades. If sacrificed at a Dragonkin anvil, those yield the sword's 4 Kalphite essence and 4 Demonic essence. One drygore is currently the main-hand of the user's dual-wield setup, with an Abyssal scourge intended to replace it; verify whether the other drygore is the off-hand before dismantling. Weapons are NOT yet converted, so do not mark any essence counters completed.",
           "expanded": true,
           "presentation": "list",
           "children": [
