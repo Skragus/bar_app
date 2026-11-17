@@ -13,289 +13,1871 @@
           "id": "mw-20261117-0037",
           "type": "group",
           "name": "Ranged armour & cape",
-          "description": "Level 110 Crafting, plus completed 'It Should Have Been Called Chinskin'. One shared supply tally prevents hides/sinew being counted repeatedly. https://runescape.wiki/w/Masterwork_ranged_equipment",
+          "description": "Item-first Masterwork ranged tree: five T100 armour pieces with full nested leather, plate and sinew recipes, plus the cape and Chinskin prerequisite. Masterwork sinew → Apex sinew from giant kebbit/chinchompa meat + ordinary sinew from raw meat + regular thread. Shared existing banked supplies: 529/504 Apex hides and ~115/262 combined Havenhythe meat/Apex sinew equivalents, never multiplied into piece inventory. Crafting requires 110 Crafting and Chinskin. https://runescape.wiki/w/Masterwork_ranged_equipment",
           "expanded": true,
           "presentation": "list",
           "children": [
             {
-              "id": "mw-20261117-0008",
+              "id": "mwranged-tree-20261117-0147",
               "type": "group",
-              "name": "Apex hide +5 unlock",
-              "description": "Unlock chain: 384 apex hides/leather plus 12 apex sinew. Existing 529 hides are accounted for in the single shared counter here. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+              "name": "Masterwork ranged armour",
+              "description": "Five-item T100 armour set; each piece has its own ingredient tree. Total for the five pieces: 20 monochromatic +9 elasticated +1 chromatic leather, 12 ethereal plates, 1,200 Masterwork sinew and 5 Algarum thread. Cape is additional. https://runescape.wiki/w/Masterwork_ranged_equipment",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0026",
+                  "type": "group",
+                  "name": "Masterwork ranged cowl",
+                  "description": "Final T100 Masterwork ranged cowl; direct constituent recipe for this item. All ingredient quantities below are per piece. Known raw hide/meat stock remains in one shared bank record, not duplicated into ingredient inventories. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0006",
+                      "type": "group",
+                      "name": "Masterwork monochromatic dragon leather (3)",
+                      "description": "Craft 3 Masterwork monochromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0001",
+                          "type": "counter",
+                          "name": "Black dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0002",
+                          "type": "counter",
+                          "name": "Royal dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0003",
+                          "type": "counter",
+                          "name": "Undead dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0004",
+                          "type": "counter",
+                          "name": "Dinosaur leather",
+                          "description": "1 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0005",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 3 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 3
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0012",
+                      "type": "group",
+                      "name": "Masterwork elasticated leather (2)",
+                      "description": "Craft 2 Masterwork elasticated leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0007",
+                          "type": "counter",
+                          "name": "Snakeskin",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0008",
+                          "type": "counter",
+                          "name": "Carapace",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0009",
+                          "type": "counter",
+                          "name": "Dagannoth hide",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0010",
+                          "type": "counter",
+                          "name": "Leather",
+                          "description": "1 for each elasticated leather.",
+                          "current": 0,
+                          "target": 2
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0011",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 2 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 2
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0018",
+                      "type": "group",
+                      "name": "Masterwork chromatic dragon leather (1)",
+                      "description": "Craft 1 Masterwork chromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0013",
+                          "type": "counter",
+                          "name": "Green dragon leather",
+                          "description": "8 for each chromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0014",
+                          "type": "counter",
+                          "name": "Blue dragon leather",
+                          "description": "8 for each chromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0015",
+                          "type": "counter",
+                          "name": "Red dragon leather",
+                          "description": "8 for each chromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0016",
+                          "type": "counter",
+                          "name": "Hard leather",
+                          "description": "1 for each chromatic leather.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0017",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0027",
+                      "type": "group",
+                      "name": "Ethereal draconic plates (2)",
+                      "description": "For 2 ethereal draconic plates: make ranged plates, add 10 shards + 10 lacquer apiece, line with 10 Apex leather apiece, then imbue via Runecrafting/Magic. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0022",
+                          "type": "group",
+                          "name": "Masterwork ranged plates (2)",
+                          "description": "At a dragonkin anvil: 2 glorious bars, 2 ranged Praesulic essence and 2 Sirenic essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0019",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "1 glorious bar per masterwork ranged plate.",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0020",
+                              "type": "counter",
+                              "name": "Praesulic essence (ranged)",
+                              "description": "1 ranged Praesulic essence per plate from breaking down Pernix armour.",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0021",
+                              "type": "counter",
+                              "name": "Sirenic essence",
+                              "description": "1 Sirenic essence per plate from breaking down Sirenic armour.",
+                              "current": 0,
+                              "target": 2
+                            }
+                          ],
+                          "weight": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0023",
+                          "type": "counter",
+                          "name": "Draconic shards",
+                          "description": "20 shards are added to turn the ranged plates into draconic plates; fletch from a draconic visage.",
+                          "current": 0,
+                          "target": 20,
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0024",
+                          "type": "counter",
+                          "name": "Lacquer",
+                          "description": "Port lacquer (10 per draconic plate).",
+                          "current": 0,
+                          "target": 20,
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0026",
+                          "type": "group",
+                          "name": "Lining — apex leather (20)",
+                          "description": "Each draconic plate requires 10 Apex leather; those hides are part of the single 529/504 shared acquisition goal.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0025",
+                              "type": "counter",
+                              "name": "Apex leather crafted / reserved",
+                              "description": "Tan 20 Apex hides into 20 Apex leather for these plates. Your existing shared 529-hide stockpile has not been assigned here yet; count processing/reservation, not another bank inventory.",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ],
+                          "weight": 2
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0033",
+                      "type": "group",
+                      "name": "Masterwork sinew (200)",
+                      "description": "Make 200 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0029",
+                          "type": "group",
+                          "name": "Apex sinew (40)",
+                          "description": "Make 40 Apex sinew from 40 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0028",
+                              "type": "counter",
+                              "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                              "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                              "current": 0,
+                              "target": 40
+                            }
+                          ],
+                          "weight": 4
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0031",
+                          "type": "group",
+                          "name": "Regular sinew (40)",
+                          "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0030",
+                              "type": "counter",
+                              "name": "Raw beef / bear / wolf / yak meat",
+                              "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                              "current": 0,
+                              "target": 40
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0032",
+                          "type": "counter",
+                          "name": "Thread",
+                          "description": "10 thread per batch of 10 Masterwork sinew, 20 batches total.",
+                          "current": 0,
+                          "target": 200,
+                          "weight": 0.5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0034",
+                      "type": "counter",
+                      "name": "Algarum thread",
+                      "description": "One Algarum thread used in the final piece. Additional algarum may be needed for crafting Sirenic armour before breakdown.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mw-20261117-0027",
+                  "type": "group",
+                  "name": "Masterwork ranged body",
+                  "description": "Final T100 Masterwork ranged body; direct constituent recipe for this item. All ingredient quantities below are per piece. Known raw hide/meat stock remains in one shared bank record, not duplicated into ingredient inventories. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": true,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0040",
+                      "type": "group",
+                      "name": "Masterwork monochromatic dragon leather (10)",
+                      "description": "Craft 10 Masterwork monochromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0035",
+                          "type": "counter",
+                          "name": "Black dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 80
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0036",
+                          "type": "counter",
+                          "name": "Royal dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 80
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0037",
+                          "type": "counter",
+                          "name": "Undead dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 80
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0038",
+                          "type": "counter",
+                          "name": "Dinosaur leather",
+                          "description": "1 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 10
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0039",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 10 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0046",
+                      "type": "group",
+                      "name": "Masterwork elasticated leather (3)",
+                      "description": "Craft 3 Masterwork elasticated leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0041",
+                          "type": "counter",
+                          "name": "Snakeskin",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0042",
+                          "type": "counter",
+                          "name": "Carapace",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0043",
+                          "type": "counter",
+                          "name": "Dagannoth hide",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 24
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0044",
+                          "type": "counter",
+                          "name": "Leather",
+                          "description": "1 for each elasticated leather.",
+                          "current": 0,
+                          "target": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0045",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 3 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 3
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0055",
+                      "type": "group",
+                      "name": "Ethereal draconic plates (5)",
+                      "description": "For 5 ethereal draconic plates: make ranged plates, add 10 shards + 10 lacquer apiece, line with 10 Apex leather apiece, then imbue via Runecrafting/Magic. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0050",
+                          "type": "group",
+                          "name": "Masterwork ranged plates (5)",
+                          "description": "At a dragonkin anvil: 5 glorious bars, 5 ranged Praesulic essence and 5 Sirenic essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0047",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "1 glorious bar per masterwork ranged plate.",
+                              "current": 0,
+                              "target": 5
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0048",
+                              "type": "counter",
+                              "name": "Praesulic essence (ranged)",
+                              "description": "1 ranged Praesulic essence per plate from breaking down Pernix armour.",
+                              "current": 0,
+                              "target": 5
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0049",
+                              "type": "counter",
+                              "name": "Sirenic essence",
+                              "description": "1 Sirenic essence per plate from breaking down Sirenic armour.",
+                              "current": 0,
+                              "target": 5
+                            }
+                          ],
+                          "weight": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0051",
+                          "type": "counter",
+                          "name": "Draconic shards",
+                          "description": "50 shards are added to turn the ranged plates into draconic plates; fletch from a draconic visage.",
+                          "current": 0,
+                          "target": 50,
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0052",
+                          "type": "counter",
+                          "name": "Lacquer",
+                          "description": "Port lacquer (10 per draconic plate).",
+                          "current": 0,
+                          "target": 50,
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0054",
+                          "type": "group",
+                          "name": "Lining — apex leather (50)",
+                          "description": "Each draconic plate requires 10 Apex leather; those hides are part of the single 529/504 shared acquisition goal.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0053",
+                              "type": "counter",
+                              "name": "Apex leather crafted / reserved",
+                              "description": "Tan 50 Apex hides into 50 Apex leather for these plates. Your existing shared 529-hide stockpile has not been assigned here yet; count processing/reservation, not another bank inventory.",
+                              "current": 0,
+                              "target": 50
+                            }
+                          ],
+                          "weight": 2
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0061",
+                      "type": "group",
+                      "name": "Masterwork sinew (500)",
+                      "description": "Make 500 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0057",
+                          "type": "group",
+                          "name": "Apex sinew (100)",
+                          "description": "Make 100 Apex sinew from 100 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0056",
+                              "type": "counter",
+                              "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                              "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ],
+                          "weight": 4
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0059",
+                          "type": "group",
+                          "name": "Regular sinew (100)",
+                          "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0058",
+                              "type": "counter",
+                              "name": "Raw beef / bear / wolf / yak meat",
+                              "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0060",
+                          "type": "counter",
+                          "name": "Thread",
+                          "description": "10 thread per batch of 10 Masterwork sinew, 50 batches total.",
+                          "current": 0,
+                          "target": 500,
+                          "weight": 0.5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0062",
+                      "type": "counter",
+                      "name": "Algarum thread",
+                      "description": "One Algarum thread used in the final piece. Additional algarum may be needed for crafting Sirenic armour before breakdown.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mw-20261117-0028",
+                  "type": "group",
+                  "name": "Masterwork ranged chaps",
+                  "description": "Final T100 Masterwork ranged chaps; direct constituent recipe for this item. All ingredient quantities below are per piece. Known raw hide/meat stock remains in one shared bank record, not duplicated into ingredient inventories. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0068",
+                      "type": "group",
+                      "name": "Masterwork monochromatic dragon leather (5)",
+                      "description": "Craft 5 Masterwork monochromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0063",
+                          "type": "counter",
+                          "name": "Black dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 40
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0064",
+                          "type": "counter",
+                          "name": "Royal dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 40
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0065",
+                          "type": "counter",
+                          "name": "Undead dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 40
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0066",
+                          "type": "counter",
+                          "name": "Dinosaur leather",
+                          "description": "1 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0067",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 5 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0074",
+                      "type": "group",
+                      "name": "Masterwork elasticated leather (2)",
+                      "description": "Craft 2 Masterwork elasticated leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0069",
+                          "type": "counter",
+                          "name": "Snakeskin",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0070",
+                          "type": "counter",
+                          "name": "Carapace",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0071",
+                          "type": "counter",
+                          "name": "Dagannoth hide",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 16
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0072",
+                          "type": "counter",
+                          "name": "Leather",
+                          "description": "1 for each elasticated leather.",
+                          "current": 0,
+                          "target": 2
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0073",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 2 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 2
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0083",
+                      "type": "group",
+                      "name": "Ethereal draconic plates (3)",
+                      "description": "For 3 ethereal draconic plates: make ranged plates, add 10 shards + 10 lacquer apiece, line with 10 Apex leather apiece, then imbue via Runecrafting/Magic. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0078",
+                          "type": "group",
+                          "name": "Masterwork ranged plates (3)",
+                          "description": "At a dragonkin anvil: 3 glorious bars, 3 ranged Praesulic essence and 3 Sirenic essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0075",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "1 glorious bar per masterwork ranged plate.",
+                              "current": 0,
+                              "target": 3
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0076",
+                              "type": "counter",
+                              "name": "Praesulic essence (ranged)",
+                              "description": "1 ranged Praesulic essence per plate from breaking down Pernix armour.",
+                              "current": 0,
+                              "target": 3
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0077",
+                              "type": "counter",
+                              "name": "Sirenic essence",
+                              "description": "1 Sirenic essence per plate from breaking down Sirenic armour.",
+                              "current": 0,
+                              "target": 3
+                            }
+                          ],
+                          "weight": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0079",
+                          "type": "counter",
+                          "name": "Draconic shards",
+                          "description": "30 shards are added to turn the ranged plates into draconic plates; fletch from a draconic visage.",
+                          "current": 0,
+                          "target": 30,
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0080",
+                          "type": "counter",
+                          "name": "Lacquer",
+                          "description": "Port lacquer (10 per draconic plate).",
+                          "current": 0,
+                          "target": 30,
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0082",
+                          "type": "group",
+                          "name": "Lining — apex leather (30)",
+                          "description": "Each draconic plate requires 10 Apex leather; those hides are part of the single 529/504 shared acquisition goal.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0081",
+                              "type": "counter",
+                              "name": "Apex leather crafted / reserved",
+                              "description": "Tan 30 Apex hides into 30 Apex leather for these plates. Your existing shared 529-hide stockpile has not been assigned here yet; count processing/reservation, not another bank inventory.",
+                              "current": 0,
+                              "target": 30
+                            }
+                          ],
+                          "weight": 2
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0089",
+                      "type": "group",
+                      "name": "Masterwork sinew (300)",
+                      "description": "Make 300 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0085",
+                          "type": "group",
+                          "name": "Apex sinew (60)",
+                          "description": "Make 60 Apex sinew from 60 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0084",
+                              "type": "counter",
+                              "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                              "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                              "current": 0,
+                              "target": 60
+                            }
+                          ],
+                          "weight": 4
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0087",
+                          "type": "group",
+                          "name": "Regular sinew (60)",
+                          "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0086",
+                              "type": "counter",
+                              "name": "Raw beef / bear / wolf / yak meat",
+                              "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                              "current": 0,
+                              "target": 60
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0088",
+                          "type": "counter",
+                          "name": "Thread",
+                          "description": "10 thread per batch of 10 Masterwork sinew, 30 batches total.",
+                          "current": 0,
+                          "target": 300,
+                          "weight": 0.5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0090",
+                      "type": "counter",
+                      "name": "Algarum thread",
+                      "description": "One Algarum thread used in the final piece. Additional algarum may be needed for crafting Sirenic armour before breakdown.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mw-20261117-0029",
+                  "type": "group",
+                  "name": "Masterwork ranged vambraces",
+                  "description": "Final T100 Masterwork ranged vambraces; direct constituent recipe for this item. All ingredient quantities below are per piece. Known raw hide/meat stock remains in one shared bank record, not duplicated into ingredient inventories. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0096",
+                      "type": "group",
+                      "name": "Masterwork monochromatic dragon leather (1)",
+                      "description": "Craft 1 Masterwork monochromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0091",
+                          "type": "counter",
+                          "name": "Black dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0092",
+                          "type": "counter",
+                          "name": "Royal dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0093",
+                          "type": "counter",
+                          "name": "Undead dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0094",
+                          "type": "counter",
+                          "name": "Dinosaur leather",
+                          "description": "1 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0095",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0102",
+                      "type": "group",
+                      "name": "Masterwork elasticated leather (1)",
+                      "description": "Craft 1 Masterwork elasticated leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0097",
+                          "type": "counter",
+                          "name": "Snakeskin",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0098",
+                          "type": "counter",
+                          "name": "Carapace",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0099",
+                          "type": "counter",
+                          "name": "Dagannoth hide",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0100",
+                          "type": "counter",
+                          "name": "Leather",
+                          "description": "1 for each elasticated leather.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0101",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0111",
+                      "type": "group",
+                      "name": "Ethereal draconic plates (1)",
+                      "description": "For 1 ethereal draconic plates: make ranged plates, add 10 shards + 10 lacquer apiece, line with 10 Apex leather apiece, then imbue via Runecrafting/Magic. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0106",
+                          "type": "group",
+                          "name": "Masterwork ranged plates (1)",
+                          "description": "At a dragonkin anvil: 1 glorious bars, 1 ranged Praesulic essence and 1 Sirenic essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0103",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "1 glorious bar per masterwork ranged plate.",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0104",
+                              "type": "counter",
+                              "name": "Praesulic essence (ranged)",
+                              "description": "1 ranged Praesulic essence per plate from breaking down Pernix armour.",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0105",
+                              "type": "counter",
+                              "name": "Sirenic essence",
+                              "description": "1 Sirenic essence per plate from breaking down Sirenic armour.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ],
+                          "weight": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0107",
+                          "type": "counter",
+                          "name": "Draconic shards",
+                          "description": "10 shards are added to turn the ranged plates into draconic plates; fletch from a draconic visage.",
+                          "current": 0,
+                          "target": 10,
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0108",
+                          "type": "counter",
+                          "name": "Lacquer",
+                          "description": "Port lacquer (10 per draconic plate).",
+                          "current": 0,
+                          "target": 10,
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0110",
+                          "type": "group",
+                          "name": "Lining — apex leather (10)",
+                          "description": "Each draconic plate requires 10 Apex leather; those hides are part of the single 529/504 shared acquisition goal.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0109",
+                              "type": "counter",
+                              "name": "Apex leather crafted / reserved",
+                              "description": "Tan 10 Apex hides into 10 Apex leather for these plates. Your existing shared 529-hide stockpile has not been assigned here yet; count processing/reservation, not another bank inventory.",
+                              "current": 0,
+                              "target": 10
+                            }
+                          ],
+                          "weight": 2
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0117",
+                      "type": "group",
+                      "name": "Masterwork sinew (100)",
+                      "description": "Make 100 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0113",
+                          "type": "group",
+                          "name": "Apex sinew (20)",
+                          "description": "Make 20 Apex sinew from 20 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0112",
+                              "type": "counter",
+                              "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                              "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ],
+                          "weight": 4
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0115",
+                          "type": "group",
+                          "name": "Regular sinew (20)",
+                          "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0114",
+                              "type": "counter",
+                              "name": "Raw beef / bear / wolf / yak meat",
+                              "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0116",
+                          "type": "counter",
+                          "name": "Thread",
+                          "description": "10 thread per batch of 10 Masterwork sinew, 10 batches total.",
+                          "current": 0,
+                          "target": 100,
+                          "weight": 0.5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0118",
+                      "type": "counter",
+                      "name": "Algarum thread",
+                      "description": "One Algarum thread used in the final piece. Additional algarum may be needed for crafting Sirenic armour before breakdown.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mw-20261117-0030",
+                  "type": "group",
+                  "name": "Masterwork ranged boots",
+                  "description": "Final T100 Masterwork ranged boots; direct constituent recipe for this item. All ingredient quantities below are per piece. Known raw hide/meat stock remains in one shared bank record, not duplicated into ingredient inventories. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0124",
+                      "type": "group",
+                      "name": "Masterwork monochromatic dragon leather (1)",
+                      "description": "Craft 1 Masterwork monochromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0119",
+                          "type": "counter",
+                          "name": "Black dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0120",
+                          "type": "counter",
+                          "name": "Royal dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0121",
+                          "type": "counter",
+                          "name": "Undead dragon leather",
+                          "description": "8 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0122",
+                          "type": "counter",
+                          "name": "Dinosaur leather",
+                          "description": "1 for each monochromatic leather.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0123",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0130",
+                      "type": "group",
+                      "name": "Masterwork elasticated leather (1)",
+                      "description": "Craft 1 Masterwork elasticated leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0125",
+                          "type": "counter",
+                          "name": "Snakeskin",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0126",
+                          "type": "counter",
+                          "name": "Carapace",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0127",
+                          "type": "counter",
+                          "name": "Dagannoth hide",
+                          "description": "8 for each elasticated leather.",
+                          "current": 0,
+                          "target": 8
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0128",
+                          "type": "counter",
+                          "name": "Leather",
+                          "description": "1 for each elasticated leather.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0129",
+                          "type": "counter",
+                          "name": "Masterwork thread",
+                          "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0139",
+                      "type": "group",
+                      "name": "Ethereal draconic plates (1)",
+                      "description": "For 1 ethereal draconic plates: make ranged plates, add 10 shards + 10 lacquer apiece, line with 10 Apex leather apiece, then imbue via Runecrafting/Magic. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0134",
+                          "type": "group",
+                          "name": "Masterwork ranged plates (1)",
+                          "description": "At a dragonkin anvil: 1 glorious bars, 1 ranged Praesulic essence and 1 Sirenic essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0131",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "1 glorious bar per masterwork ranged plate.",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0132",
+                              "type": "counter",
+                              "name": "Praesulic essence (ranged)",
+                              "description": "1 ranged Praesulic essence per plate from breaking down Pernix armour.",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwranged-tree-20261117-0133",
+                              "type": "counter",
+                              "name": "Sirenic essence",
+                              "description": "1 Sirenic essence per plate from breaking down Sirenic armour.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ],
+                          "weight": 5
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0135",
+                          "type": "counter",
+                          "name": "Draconic shards",
+                          "description": "10 shards are added to turn the ranged plates into draconic plates; fletch from a draconic visage.",
+                          "current": 0,
+                          "target": 10,
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0136",
+                          "type": "counter",
+                          "name": "Lacquer",
+                          "description": "Port lacquer (10 per draconic plate).",
+                          "current": 0,
+                          "target": 10,
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0138",
+                          "type": "group",
+                          "name": "Lining — apex leather (10)",
+                          "description": "Each draconic plate requires 10 Apex leather; those hides are part of the single 529/504 shared acquisition goal.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0137",
+                              "type": "counter",
+                              "name": "Apex leather crafted / reserved",
+                              "description": "Tan 10 Apex hides into 10 Apex leather for these plates. Your existing shared 529-hide stockpile has not been assigned here yet; count processing/reservation, not another bank inventory.",
+                              "current": 0,
+                              "target": 10
+                            }
+                          ],
+                          "weight": 2
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0145",
+                      "type": "group",
+                      "name": "Masterwork sinew (100)",
+                      "description": "Make 100 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0141",
+                          "type": "group",
+                          "name": "Apex sinew (20)",
+                          "description": "Make 20 Apex sinew from 20 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0140",
+                              "type": "counter",
+                              "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                              "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ],
+                          "weight": 4
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0143",
+                          "type": "group",
+                          "name": "Regular sinew (20)",
+                          "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0142",
+                              "type": "counter",
+                              "name": "Raw beef / bear / wolf / yak meat",
+                              "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0144",
+                          "type": "counter",
+                          "name": "Thread",
+                          "description": "10 thread per batch of 10 Masterwork sinew, 10 batches total.",
+                          "current": 0,
+                          "target": 100,
+                          "weight": 0.5
+                        }
+                      ],
+                      "weight": 3
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0146",
+                      "type": "counter",
+                      "name": "Algarum thread",
+                      "description": "One Algarum thread used in the final piece. Additional algarum may be needed for crafting Sirenic armour before breakdown.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                }
+              ],
+              "weight": 5
+            },
+            {
+              "id": "mw-20261117-0035",
+              "type": "group",
+              "name": "Masterwork ranged cape",
+              "description": "Masterwork ranged cape is a separate crafted item: 1 masterwork white cloth, 1 chromatic leather and 50 masterwork sinew, all nested to their ingredients. No separate final craft checkbox. https://runescape.wiki/w/Masterwork_ranged_equipment",
               "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0001",
-                  "type": "counter",
-                  "name": "Apex hides (achievement uses 384; also used for 120 ranged armour)",
-                  "description": "Shared total 384 for apex +5 and 120 for masterwork ranged plates. 529 last confirmed. Do NOT add the 384 and 120 again elsewhere.",
-                  "current": 529,
-                  "target": 504
+                  "id": "mw-20261117-0033",
+                  "type": "group",
+                  "name": "Masterwork white cloth",
+                  "description": "Craft 1 Masterwork white cloth from 50 Starbloom cloth and 10 Croesus flakes; status not yet reported.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0148",
+                      "type": "counter",
+                      "name": "Starbloom cloth",
+                      "description": "Material for 1 masterwork white cloth.",
+                      "current": 0,
+                      "target": 50
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0149",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Material for 1 masterwork white cloth.",
+                      "current": 0,
+                      "target": 10
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0002",
-                  "type": "checkbox",
-                  "name": "Apex hide cowl +5",
-                  "description": "64 apex leather and 2 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
+                  "id": "mwranged-tree-20261117-0155",
+                  "type": "group",
+                  "name": "Masterwork chromatic dragon leather (1)",
+                  "description": "Craft 1 Masterwork chromatic dragon leather using the listed leather and thread inputs. Recipe resources here belong to this item, not shared duplicate totals. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0150",
+                      "type": "counter",
+                      "name": "Green dragon leather",
+                      "description": "8 for each chromatic leather.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0151",
+                      "type": "counter",
+                      "name": "Blue dragon leather",
+                      "description": "8 for each chromatic leather.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0152",
+                      "type": "counter",
+                      "name": "Red dragon leather",
+                      "description": "8 for each chromatic leather.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0153",
+                      "type": "counter",
+                      "name": "Hard leather",
+                      "description": "1 for each chromatic leather.",
+                      "current": 0,
+                      "target": 1
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0154",
+                      "type": "counter",
+                      "name": "Masterwork thread",
+                      "description": "For 1 specialty leathers. Spun in batches of 10 from 10 thread + 1 each Fallfaced, Springsheared, Summerdown and Winterwold wool. Needs 'It Should Have Been Called Ancestral' achievement. Shared batch leftovers may be used across leather recipes; no wool stock assumed. https://runescape.wiki/w/Masterwork_thread",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ],
+                  "weight": 2
                 },
                 {
-                  "id": "mw-20261117-0003",
-                  "type": "checkbox",
-                  "name": "Apex hide body +5",
-                  "description": "160 apex leather and 5 apex sinew. Also 1 steel stud and 1 steel bar. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
-                },
+                  "id": "mwranged-tree-20261117-0161",
+                  "type": "group",
+                  "name": "Masterwork sinew (50)",
+                  "description": "Make 50 Masterwork sinew at a spinning wheel: each batch of 10 uses 2 Apex sinew (from giant kebbit/chinchompa meat), 2 ordinary sinew (from raw beef/bear/wolf/yak meat), and 10 thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwranged-tree-20261117-0157",
+                      "type": "group",
+                      "name": "Apex sinew (10)",
+                      "description": "Make 10 Apex sinew from 10 suitable Havenhythe meats at a range. The ~115 shared raw meat / apex sinew equivalents are counted once elsewhere.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0156",
+                          "type": "counter",
+                          "name": "Raw giant kebbit / giant chinchompa meat allocated",
+                          "description": "1 usable raw giant kebbit or giant chinchompa meat -> 1 Apex sinew using a range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece. https://runescape.wiki/w/Apex_sinew",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 4
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0159",
+                      "type": "group",
+                      "name": "Regular sinew (10)",
+                      "description": "One regular sinew per raw beef/bear/wolf/yak meat, processed on a range.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0158",
+                          "type": "counter",
+                          "name": "Raw beef / bear / wolf / yak meat",
+                          "description": "Convert ordinary raw meat into regular sinew at a cooking range. Ingredient acquisition/crafting for this specific finished item, currently unverified. Raw Havenhythe meat and apex hides already owned are recorded once in the shared raw supply branch; they have NOT yet been assigned or converted for this particular piece.",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 1
+                    },
+                    {
+                      "id": "mwranged-tree-20261117-0160",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "10 thread per batch of 10 Masterwork sinew, 5 batches total.",
+                      "current": 0,
+                      "target": 50,
+                      "weight": 0.5
+                    }
+                  ],
+                  "weight": 3
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0008",
+              "type": "group",
+              "name": "Apex hide +5 unlock",
+              "description": "Craft five Apex hide +5 armour pieces to unlock Masterwork ranged crafting. Finished items → allocated/processed leather and Apex sinew → meat. The overall raw hide/meat supply is one separately tracked shared stockpile, not duplicated per piece. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
                 {
-                  "id": "mw-20261117-0004",
-                  "type": "checkbox",
-                  "name": "Apex hide chaps +5",
-                  "description": "96 apex leather and 3 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0005",
-                  "type": "checkbox",
-                  "name": "Apex hide vambraces +5",
-                  "description": "32 apex leather and 1 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0006",
-                  "type": "checkbox",
-                  "name": "Apex hide boots +5",
-                  "description": "32 apex leather and 1 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
+                  "id": "mwranged-tree-20261117-0186",
+                  "type": "group",
+                  "name": "Apex hide +5 armour pieces",
+                  "description": "Apex hide +5 pieces required for the Chinskin achievement. Together consume 384 apex leather and 12 apex sinew, with steel materials. Raw hide and giant meat inventory is tracked in one separate shared bank component and cannot be automatically allocated here. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-20261117-0002",
+                      "type": "group",
+                      "name": "Apex hide cowl +5",
+                      "description": "Craft and upgrade one Apex hide cowl +5 through +5 for the 'It Should Have Been Called Chinskin' unlock. Totals include base-piece inputs and upgrades; leather is allocated after tanning from the single shared hide stock. 64 apex leather and 2 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0163",
+                          "type": "group",
+                          "name": "Apex leather (64)",
+                          "description": "These 64 leather come from the shared raw hide acquisition pool; item-level processing/assignment not yet confirmed.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0162",
+                              "type": "counter",
+                              "name": "Apex leather prepared / committed",
+                              "description": "Tan acquired Apex hides to leather and allocate it to this specific +5 piece. Shared raw hide stock is recorded only once, separately.",
+                              "current": 0,
+                              "target": 64
+                            }
+                          ],
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0165",
+                          "type": "group",
+                          "name": "Apex sinew (2)",
+                          "description": "Apex sinew from suitable Havenhythe giant kebbit/chinchompa meat, 1:1.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0164",
+                              "type": "counter",
+                              "name": "Giant kebbit / giant chinchompa meat processed / committed",
+                              "description": "Make Apex sinew at a range from suitable Havenhythe meat; recorded shared meat/sinew stock is not allocated to a particular piece yet.",
+                              "current": 0,
+                              "target": 2
+                            }
+                          ],
+                          "weight": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0003",
+                      "type": "group",
+                      "name": "Apex hide body +5",
+                      "description": "Craft and upgrade one Apex hide body +5 through +5 for the 'It Should Have Been Called Chinskin' unlock. Totals include base-piece inputs and upgrades; leather is allocated after tanning from the single shared hide stock. 160 apex leather and 5 apex sinew. Also 1 steel stud and 1 steel bar. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0167",
+                          "type": "group",
+                          "name": "Apex leather (160)",
+                          "description": "These 160 leather come from the shared raw hide acquisition pool; item-level processing/assignment not yet confirmed.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0166",
+                              "type": "counter",
+                              "name": "Apex leather prepared / committed",
+                              "description": "Tan acquired Apex hides to leather and allocate it to this specific +5 piece. Shared raw hide stock is recorded only once, separately.",
+                              "current": 0,
+                              "target": 160
+                            }
+                          ],
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0169",
+                          "type": "group",
+                          "name": "Apex sinew (5)",
+                          "description": "Apex sinew from suitable Havenhythe giant kebbit/chinchompa meat, 1:1.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0168",
+                              "type": "counter",
+                              "name": "Giant kebbit / giant chinchompa meat processed / committed",
+                              "description": "Make Apex sinew at a range from suitable Havenhythe meat; recorded shared meat/sinew stock is not allocated to a particular piece yet.",
+                              "current": 0,
+                              "target": 5
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0170",
+                          "type": "counter",
+                          "name": "Steel studs",
+                          "description": "For the basic Apex hide armour piece.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0171",
+                          "type": "counter",
+                          "name": "Steel bar",
+                          "description": "Additional steel bar for the Apex hide body.",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0004",
+                      "type": "group",
+                      "name": "Apex hide chaps +5",
+                      "description": "Craft and upgrade one Apex hide chaps +5 through +5 for the 'It Should Have Been Called Chinskin' unlock. Totals include base-piece inputs and upgrades; leather is allocated after tanning from the single shared hide stock. 96 apex leather and 3 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0173",
+                          "type": "group",
+                          "name": "Apex leather (96)",
+                          "description": "These 96 leather come from the shared raw hide acquisition pool; item-level processing/assignment not yet confirmed.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0172",
+                              "type": "counter",
+                              "name": "Apex leather prepared / committed",
+                              "description": "Tan acquired Apex hides to leather and allocate it to this specific +5 piece. Shared raw hide stock is recorded only once, separately.",
+                              "current": 0,
+                              "target": 96
+                            }
+                          ],
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0175",
+                          "type": "group",
+                          "name": "Apex sinew (3)",
+                          "description": "Apex sinew from suitable Havenhythe giant kebbit/chinchompa meat, 1:1.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0174",
+                              "type": "counter",
+                              "name": "Giant kebbit / giant chinchompa meat processed / committed",
+                              "description": "Make Apex sinew at a range from suitable Havenhythe meat; recorded shared meat/sinew stock is not allocated to a particular piece yet.",
+                              "current": 0,
+                              "target": 3
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0176",
+                          "type": "counter",
+                          "name": "Steel studs",
+                          "description": "For the basic Apex hide armour piece.",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0005",
+                      "type": "group",
+                      "name": "Apex hide vambraces +5",
+                      "description": "Craft and upgrade one Apex hide vambraces +5 through +5 for the 'It Should Have Been Called Chinskin' unlock. Totals include base-piece inputs and upgrades; leather is allocated after tanning from the single shared hide stock. 32 apex leather and 1 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0178",
+                          "type": "group",
+                          "name": "Apex leather (32)",
+                          "description": "These 32 leather come from the shared raw hide acquisition pool; item-level processing/assignment not yet confirmed.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0177",
+                              "type": "counter",
+                              "name": "Apex leather prepared / committed",
+                              "description": "Tan acquired Apex hides to leather and allocate it to this specific +5 piece. Shared raw hide stock is recorded only once, separately.",
+                              "current": 0,
+                              "target": 32
+                            }
+                          ],
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0180",
+                          "type": "group",
+                          "name": "Apex sinew (1)",
+                          "description": "Apex sinew from suitable Havenhythe giant kebbit/chinchompa meat, 1:1.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0179",
+                              "type": "counter",
+                              "name": "Giant kebbit / giant chinchompa meat processed / committed",
+                              "description": "Make Apex sinew at a range from suitable Havenhythe meat; recorded shared meat/sinew stock is not allocated to a particular piece yet.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ],
+                          "weight": 1
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0181",
+                          "type": "counter",
+                          "name": "Steel studs",
+                          "description": "For the basic Apex hide armour piece.",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0006",
+                      "type": "group",
+                      "name": "Apex hide boots +5",
+                      "description": "Craft and upgrade one Apex hide boots +5 through +5 for the 'It Should Have Been Called Chinskin' unlock. Totals include base-piece inputs and upgrades; leather is allocated after tanning from the single shared hide stock. 32 apex leather and 1 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwranged-tree-20261117-0183",
+                          "type": "group",
+                          "name": "Apex leather (32)",
+                          "description": "These 32 leather come from the shared raw hide acquisition pool; item-level processing/assignment not yet confirmed.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0182",
+                              "type": "counter",
+                              "name": "Apex leather prepared / committed",
+                              "description": "Tan acquired Apex hides to leather and allocate it to this specific +5 piece. Shared raw hide stock is recorded only once, separately.",
+                              "current": 0,
+                              "target": 32
+                            }
+                          ],
+                          "weight": 3
+                        },
+                        {
+                          "id": "mwranged-tree-20261117-0185",
+                          "type": "group",
+                          "name": "Apex sinew (1)",
+                          "description": "Apex sinew from suitable Havenhythe giant kebbit/chinchompa meat, 1:1.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwranged-tree-20261117-0184",
+                              "type": "counter",
+                              "name": "Giant kebbit / giant chinchompa meat processed / committed",
+                              "description": "Make Apex sinew at a range from suitable Havenhythe meat; recorded shared meat/sinew stock is not allocated to a particular piece yet.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ],
+                          "weight": 1
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0007",
                   "type": "checkbox",
                   "name": "It Should Have Been Called Chinskin completed",
                   "description": "Craft and upgrade all five apex hide items to +5. Unlocks masterwork ranged crafting; 100 Crafting. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
-                  "complete": false
+                  "complete": false,
+                  "weight": 0
                 }
-              ]
+              ],
+              "weight": 0.6
             },
             {
-              "id": "mw-20261117-0013",
+              "id": "mwranged-tree-20261117-0189",
               "type": "group",
-              "name": "Sinew supply (armour + cape + unlock)",
-              "description": "These are transformations of the SAME resources, not additional apex sinew demands. Keep the raw/processed numbers reconciled when updating. https://runescape.wiki/w/Spinning_wheel",
+              "name": "Shared raw Apex materials",
+              "description": "One canonical banked-stock record for the two shared materials that feed multiple finished items; item recipes show required amounts and track separately when materials are processed/committed. 529 raw Apex hides and about 115 meat/Apex-sinew equivalents confirmed previously.",
               "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0009",
-                  "type": "counter",
-                  "name": "Raw Havenhythe meat / apex sinew equivalent",
-                  "description": "~115 last reported, unverified current balance. Counts usable raw meat OR apex sinew in one combined approximation; do not add it twice. Needs 12 for +5 unlock, 240 for armour, 10 for cape. Process each meat into apex sinew.",
-                  "current": 115,
-                  "target": 262
+                  "id": "mwranged-tree-20261117-0187",
+                  "type": "group",
+                  "name": "Apex leather source (504)",
+                  "description": "Tan raw Apex hides into leather for 384 prerequisite + 120 lining. Currently 529 hides acquired, but processing/usage not verified. https://runescape.wiki/w/Apex_leather",
+                  "expanded": true,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-20261117-0001",
+                      "type": "counter",
+                      "name": "Apex hides acquired (384 unlock + 120 plates)",
+                      "description": "529 raw Apex hides last confirmed, 504 total required (384 for Chinskin + 120 for ethereal plate linings). These are total materials acquired; do not duplicate this stock in item subbranches. Upstream processing to Apex leather still needs to be tracked.",
+                      "current": 529,
+                      "target": 504
+                    }
+                  ],
+                  "weight": 2
                 },
                 {
-                  "id": "mw-20261117-0010",
-                  "type": "counter",
-                  "name": "Regular sinew for masterwork sinew",
-                  "description": "Need 2 regular sinew per batch of 10 masterwork sinew, 125 batches for 1,250.",
-                  "current": 0,
-                  "target": 250
-                },
-                {
-                  "id": "mw-20261117-0011",
-                  "type": "counter",
-                  "name": "Masterwork sinew crafted",
-                  "description": "For 1,200 armour + 50 cape. Every 10 masterwork sinew uses 2 apex sinew +2 regular sinew +10 thread (125 batches). The 250 apex required here plus 12 for unlock equals 262.",
-                  "current": 0,
-                  "target": 1250
-                },
-                {
-                  "id": "mw-20261117-0012",
-                  "type": "counter",
-                  "name": "Regular thread for sinew",
-                  "description": "1250 regular thread to craft 125 batches of masterwork sinew. Does not include masterwork thread consumed in making specialist leather.",
-                  "current": 0,
-                  "target": 1250
+                  "id": "mwranged-tree-20261117-0188",
+                  "type": "group",
+                  "name": "Apex sinew source (262)",
+                  "description": "Turn suitable Havenhythe giant kebbit or giant chinchompa meat into Apex sinew on a range. 12 go into the Chinskin unlock; 250 go into 125 batches of 10 Masterwork sinew (1,250 total across armour and cape). ~115 combined equivalents is user-reported estimate, not a confirmed distribution. https://runescape.wiki/w/Apex_sinew",
+                  "expanded": true,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-20261117-0009",
+                      "type": "counter",
+                      "name": "Havenhythe giant meat / Apex sinew equivalent acquired",
+                      "description": "~115 unverified combined raw giant kebbit/chinchompa meat and/or Apex sinew equivalent, out of 262 total (12 for +5 prerequisite, 250 for 1,250 Masterwork sinew). IMPORTANT combined approximation, not confirmed processed/apportioned Apex sinew; not assigned per piece and NOT double counted.",
+                      "current": 115,
+                      "target": 262
+                    }
+                  ],
+                  "weight": 3
                 }
-              ]
-            },
-            {
-              "id": "mw-20261117-0018",
-              "type": "group",
-              "name": "Leather crafting (shared full set + cape)",
-              "description": "Finished intermediary totals for the full ranged set AND cape. Raw recipe details appear on each type. https://runescape.wiki/w/Masterwork_ranged_equipment",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0014",
-                  "type": "counter",
-                  "name": "Masterwork monochromatic dragon leather",
-                  "description": "10 body +5 chaps +3 cowl +1 vambraces +1 boots. Each requires 8 black, 8 royal, 8 undead dragon leather, 1 dinosaur leather and 1 masterwork thread.",
-                  "current": 0,
-                  "target": 20
-                },
-                {
-                  "id": "mw-20261117-0015",
-                  "type": "counter",
-                  "name": "Masterwork elasticated leather",
-                  "description": "3 body +2 chaps +2 cowl +1 vambraces +1 boots. Each requires 8 snakeskin, 8 carapace, 8 dagannoth hide, 1 leather and 1 masterwork thread.",
-                  "current": 0,
-                  "target": 9
-                },
-                {
-                  "id": "mw-20261117-0016",
-                  "type": "counter",
-                  "name": "Masterwork chromatic dragon leather",
-                  "description": "1 cowl +1 cape. Each requires 8 green, 8 blue, 8 red dragon leather, 1 hard leather and 1 masterwork thread.",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0017",
-                  "type": "counter",
-                  "name": "Masterwork thread for those leathers",
-                  "description": "20 monochromatic +9 elasticated +2 chromatic; ingredient count already represented in leather recipes.",
-                  "current": 0,
-                  "target": 31
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0025",
-              "type": "group",
-              "name": "Ethereal draconic plates (12)",
-              "description": "Chain: 12 glorious +12 Praesulic ranged essence +12 Sirenic essence -> 12 masterwork ranged plates -> 12 draconic plates (120 shards +120 lacquer) -> 12 lined plates (120 apex leather) -> 12 ethereal plates. https://runescape.wiki/w/Lined_draconic_plate_(unimbued)",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0019",
-                  "type": "counter",
-                  "name": "Glorious bars for ranged plates",
-                  "description": "12 masterwork ranged plates; one glorious bar each.",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0020",
-                  "type": "counter",
-                  "name": "Praesulic essence (ranged)",
-                  "description": "Break down Pernix armour at dragonkin anvil for ranged essence.",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0021",
-                  "type": "counter",
-                  "name": "Sirenic essence",
-                  "description": "Break down Sirenic armour at dragonkin anvil; full undamaged set produces 12.",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0022",
-                  "type": "counter",
-                  "name": "Draconic shards",
-                  "description": "12 draconic plates require 120 draconic shards (can be obtained from a draconic visage).",
-                  "current": 0,
-                  "target": 120
-                },
-                {
-                  "id": "mw-20261117-0023",
-                  "type": "counter",
-                  "name": "Lacquer",
-                  "description": "Player-owned ports lacquer; used for 12 draconic plates.",
-                  "current": 0,
-                  "target": 120
-                },
-                {
-                  "id": "mw-20261117-0024",
-                  "type": "counter",
-                  "name": "Ethereal draconic plates crafted",
-                  "description": "12 masterwork ranged plates -> draconic plates -> lined with 120 apex leather -> imbued as ethereal draconic plates. The 120 apex leather is INCLUDED in 504-hide shared total, not another 120.",
-                  "current": 0,
-                  "target": 12
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0032",
-              "type": "group",
-              "name": "Armour pieces — individual recipes",
-              "description": "Individual final items; costs are listed in descriptions. Their supplies are pooled ABOVE, not duplicated into separate per-piece counters.",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0026",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged cowl",
-                  "description": "3 monochromatic leather +2 elasticated leather +1 chromatic leather +2 ethereal draconic plates +200 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0027",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged body",
-                  "description": "10 monochromatic leather +3 elasticated leather +5 ethereal draconic plates +500 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0028",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged chaps",
-                  "description": "5 monochromatic leather +2 elasticated leather +3 ethereal draconic plates +300 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0029",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged vambraces",
-                  "description": "1 monochromatic leather +1 elasticated leather +1 ethereal draconic plate +100 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0030",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged boots",
-                  "description": "1 monochromatic leather +1 elasticated leather +1 ethereal draconic plate +100 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0031",
-                  "type": "counter",
-                  "name": "Algarum thread for final armour recipes",
-                  "description": "5 for five final pieces. Additional algarum thread may be needed if crafting Sirenic armour before converting it to essence.",
-                  "current": 0,
-                  "target": 5
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0035",
-              "type": "group",
-              "name": "Masterwork ranged cape",
-              "description": "Additional crafted item. Its 1 chromatic leather, 50 sinew, and their raw inputs are INCLUDED above.",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0033",
-                  "type": "counter",
-                  "name": "Masterwork white cloth",
-                  "description": "1 white cloth from 50 starbloom cloth and 10 Croesus flakes, if making from scratch.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0034",
-                  "type": "checkbox",
-                  "name": "Masterwork ranged cape crafted",
-                  "description": "Requires 1 masterwork white cloth +1 masterwork chromatic dragon leather +50 masterwork sinew. Chromatic leather and sinew are already included in the ranged shared totals. https://runescape.wiki/w/Masterwork_chromatic_dragon_leather",
-                  "complete": false
-                }
-              ]
+              ],
+              "weight": 1
             },
             {
               "id": "mw-20261117-0036",
