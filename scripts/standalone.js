@@ -1,0 +1,10 @@
+import {readFileSync, writeFileSync} from 'node:fs';
+const html = readFileSync('dist/index.html', 'utf8');
+const script = html.match(/<script[^>]+src="([^"]+)"[^>]*><\/script>/)[0];
+const style = html.match(/<link[^>]+href="([^"]+\.css)"[^>]*>/)[0];
+const jsPath = script.match(/src="([^"]+)"/)[1];
+const cssPath = style.match(/href="([^"]+)"/)[1];
+const js = readFileSync('dist' + jsPath, 'utf8').replace(/<\/script/gi, '<\\/script');
+const css = readFileSync('dist' + cssPath, 'utf8');
+writeFileSync('dist/bar-app.html', html.replace(script, () => `<script type="module">${js}</script>`).replace(style, () => `<style>${css}</style>`));
+console.log('Standalone browser build: dist/bar-app.html');
