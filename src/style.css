@@ -93,9 +93,9 @@ h1 span { color: var(--accent); }
 .item-count { padding: 2px 7px; font-size: 13px; line-height: 1.4; background: var(--inset); color: var(--secondary); border: 1px solid var(--border); border-radius: 4px; }
 .group-progress { display: flex; align-items: center; gap: 12px; margin-left: auto; color: var(--secondary); font-size: 14px; font-weight: 500; font-variant-numeric: tabular-nums; flex-shrink: 0; }
 .group-progress > span { min-width: 40px; text-align: right; }
-.progress-track { width: 136px; height: 14px; background: var(--inset); border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px #71869d30; }
+.progress-track { width: 260px; height: 14px; background: var(--inset); border-radius: 4px; overflow: hidden; box-shadow: inset 0 0 0 1px #71869d30; }
 .progress-track i { display: block; height: 100%; background: var(--accent); border-radius: 3px; transition: width .22s ease; }
-.root-node > .item-row .progress-track { width: 168px; }
+.root-node > .item-row .progress-track { width: 320px; }
 .is-complete .progress-track i { background: var(--success); }
 .is-complete .group-progress { color: var(--success); }
 .is-complete .counter-value strong { color: var(--success); }
@@ -126,7 +126,7 @@ h1 span { color: var(--accent); }
 .counter-icon { color: var(--secondary); width: 18px; height: 18px; }
 .counter-name { flex: 1; min-width: 60px; min-height: 40px; padding: 6px; font-size: 16px; color: var(--text); text-align: left; overflow-wrap: anywhere; border-radius: 4px; }
 .counter-progress { display: flex; align-items: center; gap: 12px; }
-.counter-progress .progress-track { width: 136px; }
+.counter-progress .progress-track { width: 260px; }
 .counter-value { display: flex; align-items: center; justify-content: flex-end; gap: 6px; min-width: 110px; min-height: 34px; padding: 5px 8px; border: 1px solid var(--border); background: var(--inset); font-size: 16px; font-variant-numeric: tabular-nums; border-radius: 4px; }
 .counter-value strong { color: var(--text); font-weight: 600; }
 .counter-value span { color: var(--secondary); }
@@ -193,8 +193,8 @@ footer > span { display: flex; align-items: center; gap: 8px; }
 @keyframes reveal { from { opacity: .5; } to { opacity: 1; } }
 
 @media (max-width: 1000px) {
-  .group-progress .progress-track, .root-node > .item-row .progress-track { width: 108px; }
-  .counter-progress .progress-track { width: 80px; }
+  .group-progress .progress-track, .root-node > .item-row .progress-track { width: 160px; }
+  .counter-progress .progress-track { width: 120px; }
   .counter-progress { gap: 8px; }
   .children { margin-left: 8px; padding-left: 10px; }
   .children .children { margin-left: 6px; padding-left: 10px; }
@@ -234,9 +234,9 @@ footer > span { display: flex; align-items: center; gap: 8px; }
   .unit-row > .row-actions { grid-column: 2; grid-row: 1; }
   .counter-icon { display: none; }
   .counter-name { min-width: 0; font-size: 16px; }
-  .counter-progress { grid-column: 1 / -1; grid-row: 2; width: 100%; gap: 8px; }
-  .counter-progress .progress-track { flex: 1; min-width: 24px; width: auto; }
-  .counter-value { min-width: 96px; font-size: 15px; padding: 6px; }
+  .counter-progress { grid-column: 1 / -1; grid-row: 2; width: 100%; gap: 8px; flex-wrap: wrap; }
+  .counter-progress .progress-track { flex: 1 0 100%; min-width: 24px; width: auto; }
+  .counter-value { min-width: 96px; font-size: 15px; padding: 6px; margin-left: auto; }
   .stepper button { width: 36px; height: 38px; }
   .icon-button { width: 38px; height: 38px; }
   .item-note, .group-note { margin-left: 6px; font-size: 14px; }
