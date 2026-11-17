@@ -1106,285 +1106,665 @@
           "id": "mw-20261117-0188",
           "type": "group",
           "name": "Masterwork staff",
-          "description": "110 Runecrafting and Crafting to Your Own Rune achievement. The inputs and intermediary steps are separate tracked stages of the same item. https://runescape.wiki/w/Masterwork_staff",
-          "expanded": false,
+          "description": "Item-first recipe: Masterwork staff = handle + focus, with Crafting to Your Own Rune prerequisite. Nested component branches contain the actual required items. Zero means you reported no progress on this staff yet. Wiki: https://runescape.wiki/w/Masterwork_staff",
+          "expanded": true,
           "presentation": "list",
           "children": [
             {
               "id": "mw-20261117-0153",
-              "type": "checkbox",
-              "name": "Crafting to Your Own Rune achievement completed",
-              "description": "Required before crafting Masterwork staff. https://runescape.wiki/w/Masterwork_staff",
-              "complete": false
+              "type": "counter",
+              "name": "Crafting to Your Own Rune",
+              "description": "Unlock by making and upgrading the required eternal magic weaponry to +5. Needed before creating the staff. https://runescape.wiki/w/Crafting_to_Your_Own_Rune",
+              "current": 0,
+              "target": 1
             },
             {
-              "id": "mw-20261117-0171",
+              "id": "mw-20261117-0185",
               "type": "group",
-              "name": "Runic brick resources",
-              "description": "3 volatile runic bricks, each uses 1,000 pure essence + 1,000 of each of 15 rune types. Runes are raw inputs to the bricks, not additional costs. https://runescape.wiki/w/Masterwork_staff",
-              "expanded": false,
+              "name": "Masterwork staff handle",
+              "description": "Imbue one grounded base and 2 wrapped grips at a Runecrafting altar. https://runescape.wiki/w/Masterwork_staff",
+              "expanded": true,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0154",
-                  "type": "counter",
-                  "name": "Pure essence",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
+                  "id": "mw-20261117-0182",
+                  "type": "group",
+                  "name": "Grounded masterwork staff base",
+                  "description": "Forge two gold bars + one volatile runic brick + four crystalline essence. https://runescape.wiki/w/Masterwork_staff",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-20261117-0173",
+                      "type": "counter",
+                      "name": "Gold bars",
+                      "description": "Two gold bars for the grounded base; two additional gold bars go into the focus bracket.",
+                      "current": 0,
+                      "target": 2
+                    },
+                    {
+                      "id": "mw-20261117-0170",
+                      "type": "group",
+                      "name": "Volatile runic brick",
+                      "description": "One of three bricks for the staff; each requires 1,000 pure essence fragments and 1,000 of each of 15 runes, processed at a Runecrafting altar. https://runescape.wiki/w/Masterwork_staff",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mw-20261117-0154",
+                          "type": "counter",
+                          "name": "Pure essence",
+                          "description": "Chisel into 1,000 pure essence fragments to make the volatile runic brick used in grounded base.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0155",
+                          "type": "counter",
+                          "name": "Air runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0156",
+                          "type": "counter",
+                          "name": "Mind runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0157",
+                          "type": "counter",
+                          "name": "Water runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0158",
+                          "type": "counter",
+                          "name": "Earth runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0159",
+                          "type": "counter",
+                          "name": "Fire runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0160",
+                          "type": "counter",
+                          "name": "Body runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0161",
+                          "type": "counter",
+                          "name": "Cosmic runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0162",
+                          "type": "counter",
+                          "name": "Chaos runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0163",
+                          "type": "counter",
+                          "name": "Astral runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0164",
+                          "type": "counter",
+                          "name": "Nature runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0165",
+                          "type": "counter",
+                          "name": "Law runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0166",
+                          "type": "counter",
+                          "name": "Death runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0167",
+                          "type": "counter",
+                          "name": "Blood runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0168",
+                          "type": "counter",
+                          "name": "Soul runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mw-20261117-0169",
+                          "type": "counter",
+                          "name": "Time runes",
+                          "description": "One of the 15 runes required for the grounded base volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0178",
+                      "type": "group",
+                      "name": "Crystalline essence (4)",
+                      "description": "Four essence from two fully repaired attuned crystal wands/orbs. Alternative attuned crystal staffs require more harmonic dust.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwstaff-recipe-20261117-0003",
+                          "type": "group",
+                          "name": "Attuned crystal wands / orbs (2)",
+                          "description": "Produce two attuned magic weapons, then break them down at a dragonkin anvil for 4 crystalline essence.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwstaff-recipe-20261117-0001",
+                              "type": "counter",
+                              "name": "Attuned crystal weapon seeds",
+                              "description": "Use 2 attuned crystal weapon seeds at a singing bowl; source for the 2 attuned wands/orbs.",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0002",
+                              "type": "counter",
+                              "name": "Harmonic dust",
+                              "description": "Use 2,000 harmonic dust for 2 attuned wands/orbs. Crystal staffs instead require 4,000.",
+                              "current": 0,
+                              "target": 2000
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0155",
-                  "type": "counter",
-                  "name": "Air runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0156",
-                  "type": "counter",
-                  "name": "Mind runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0157",
-                  "type": "counter",
-                  "name": "Water runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0158",
-                  "type": "counter",
-                  "name": "Earth runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0159",
-                  "type": "counter",
-                  "name": "Fire runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0160",
-                  "type": "counter",
-                  "name": "Body runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0161",
-                  "type": "counter",
-                  "name": "Cosmic runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0162",
-                  "type": "counter",
-                  "name": "Chaos runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0163",
-                  "type": "counter",
-                  "name": "Astral runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0164",
-                  "type": "counter",
-                  "name": "Nature runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0165",
-                  "type": "counter",
-                  "name": "Law runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0166",
-                  "type": "counter",
-                  "name": "Death runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0167",
-                  "type": "counter",
-                  "name": "Blood runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0168",
-                  "type": "counter",
-                  "name": "Soul runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0169",
-                  "type": "counter",
-                  "name": "Time runes",
-                  "description": "",
-                  "current": 0,
-                  "target": 3000
-                },
-                {
-                  "id": "mw-20261117-0170",
-                  "type": "counter",
-                  "name": "Volatile runic bricks",
-                  "description": "",
-                  "current": 0,
-                  "target": 3
+                  "id": "mw-20261117-0183",
+                  "type": "group",
+                  "name": "Wrapped masterwork staff grips (2)",
+                  "description": "Two grips; each requires a chain starting from 20 eternal magic logs and one dyed undead dragon leather. Both grips together use 40 logs, 2 leather, 2 dye.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-20261117-0172",
+                      "type": "counter",
+                      "name": "Eternal magic logs",
+                      "description": "40 eternal magic logs → 20 inert eternal magic staves → 2 unwrapped grips.",
+                      "current": 0,
+                      "target": 40
+                    },
+                    {
+                      "id": "mw-20261117-0175",
+                      "type": "counter",
+                      "name": "Undead dragon leather",
+                      "description": "Dye 2 undead dragon leather brown, then wrap the 2 unwrapped grips.",
+                      "current": 0,
+                      "target": 2
+                    },
+                    {
+                      "id": "mw-20261117-0176",
+                      "type": "counter",
+                      "name": "Brown dye",
+                      "description": "One brown dye per piece of undead dragon leather.",
+                      "current": 0,
+                      "target": 2
+                    }
+                  ]
                 }
               ]
             },
             {
-              "id": "mw-20261117-0187",
+              "id": "mw-20261117-0186",
               "type": "group",
-              "name": "Handle, housing and focus",
-              "description": "Detailed wiki steps: https://runescape.wiki/w/Masterwork_staff",
+              "name": "Masterwork staff focus",
+              "description": "House the unhoused focus, then combine the housed focus with the focus bracket at a Runecrafting altar.",
               "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0172",
-                  "type": "counter",
-                  "name": "Eternal magic logs",
-                  "description": "",
-                  "current": 0,
-                  "target": 40
-                },
-                {
-                  "id": "mw-20261117-0173",
-                  "type": "counter",
-                  "name": "Gold bars",
-                  "description": "",
-                  "current": 0,
-                  "target": 4
-                },
-                {
-                  "id": "mw-20261117-0174",
-                  "type": "counter",
-                  "name": "Glorious bar",
-                  "description": "",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0175",
-                  "type": "counter",
-                  "name": "Undead dragon leather",
-                  "description": "",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0176",
-                  "type": "counter",
-                  "name": "Brown dye",
-                  "description": "",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0177",
-                  "type": "counter",
-                  "name": "Diamond",
-                  "description": "",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0178",
-                  "type": "counter",
-                  "name": "Crystalline essence",
-                  "description": "",
-                  "current": 0,
-                  "target": 4
-                },
-                {
-                  "id": "mw-20261117-0179",
-                  "type": "counter",
-                  "name": "Binding essence",
-                  "description": "2 fully repaired Seismic wand/singularity weapons converted to essence.",
-                  "current": 0,
-                  "target": 4
-                },
-                {
-                  "id": "mw-20261117-0180",
-                  "type": "counter",
-                  "name": "Melodic essence",
-                  "description": "2 fully repaired Cywir wands/orbs converted to essence.",
-                  "current": 0,
-                  "target": 4
-                },
-                {
-                  "id": "mw-20261117-0181",
-                  "type": "counter",
-                  "name": "Abyssal runic synapse",
-                  "description": "Untradeable Abyss Runecrafting drop.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0182",
-                  "type": "checkbox",
-                  "name": "Grounded masterwork staff base",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0183",
-                  "type": "checkbox",
-                  "name": "Two wrapped masterwork staff grips",
-                  "description": "",
-                  "complete": false
-                },
-                {
                   "id": "mw-20261117-0184",
-                  "type": "checkbox",
-                  "name": "Masterwork focus housing and focus completed",
-                  "description": "",
-                  "complete": false
+                  "type": "group",
+                  "name": "Masterwork focus housing",
+                  "description": "Imbue runic conduit, then add abyssal runic synapse at a Runecrafting altar. https://runescape.wiki/w/Masterwork_staff",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwstaff-recipe-20261117-0022",
+                      "type": "group",
+                      "name": "Masterwork runic conduit",
+                      "description": "Four melodic essence and one volatile runic brick make the conduit; imbue into an imbued masterwork runic conduit.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mw-20261117-0180",
+                          "type": "group",
+                          "name": "Melodic essence (4)",
+                          "description": "Four melodic essence from 2 fully repaired Cywir weapons; both are consumed in breakdown.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwstaff-recipe-20261117-0004",
+                              "type": "counter",
+                              "name": "Cywir wand / orb",
+                              "description": "Break down two fully repaired Wand of the Cywir elders or Orb of the Cywir elders at a dragonkin anvil for four melodic essence.",
+                              "current": 0,
+                              "target": 2
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0021",
+                          "type": "group",
+                          "name": "Volatile runic brick",
+                          "description": "One of three bricks for the staff; each requires 1,000 pure essence fragments and 1,000 of each of 15 runes, processed at a Runecrafting altar. https://runescape.wiki/w/Masterwork_staff",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwstaff-recipe-20261117-0005",
+                              "type": "counter",
+                              "name": "Pure essence",
+                              "description": "Chisel into 1,000 pure essence fragments to make the volatile runic brick used in focus housing.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0006",
+                              "type": "counter",
+                              "name": "Air runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0007",
+                              "type": "counter",
+                              "name": "Mind runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0008",
+                              "type": "counter",
+                              "name": "Water runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0009",
+                              "type": "counter",
+                              "name": "Earth runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0010",
+                              "type": "counter",
+                              "name": "Fire runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0011",
+                              "type": "counter",
+                              "name": "Body runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0012",
+                              "type": "counter",
+                              "name": "Cosmic runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0013",
+                              "type": "counter",
+                              "name": "Chaos runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0014",
+                              "type": "counter",
+                              "name": "Astral runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0015",
+                              "type": "counter",
+                              "name": "Nature runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0016",
+                              "type": "counter",
+                              "name": "Law runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0017",
+                              "type": "counter",
+                              "name": "Death runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0018",
+                              "type": "counter",
+                              "name": "Blood runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0019",
+                              "type": "counter",
+                              "name": "Soul runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            },
+                            {
+                              "id": "mwstaff-recipe-20261117-0020",
+                              "type": "counter",
+                              "name": "Time runes",
+                              "description": "One of the 15 runes required for the focus housing volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                              "current": 0,
+                              "target": 1000
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0181",
+                      "type": "counter",
+                      "name": "Abyssal runic synapse",
+                      "description": "Untradeable reward from runecrafting through the Abyss; used to imbue the conduit into the housing.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0185",
-                  "type": "checkbox",
-                  "name": "Masterwork staff handle completed",
-                  "description": "",
-                  "complete": false
+                  "id": "mwstaff-recipe-20261117-0043",
+                  "type": "group",
+                  "name": "Unhoused masterwork focus",
+                  "description": "Smoothed catalysed elemental diamond + one volatile runic brick to make an unhoused masterwork focus.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwstaff-recipe-20261117-0025",
+                      "type": "group",
+                      "name": "Smoothed catalysed elemental diamond",
+                      "description": "Runic imbued diamond transformed at required altars and then smoothed for 10 minutes.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwstaff-recipe-20261117-0024",
+                          "type": "group",
+                          "name": "Runic imbued diamond",
+                          "description": "Imbue at elemental altars (air, water, earth, fire), then catalytic altars (mind, body, cosmic, chaos, law, nature, astral, death, blood, soul, time), then smooth the diamond.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mw-20261117-0179",
+                              "type": "group",
+                              "name": "Binding essence (4)",
+                              "description": "Four binding essence from 2 fully repaired Seismic weapons.",
+                              "expanded": false,
+                              "presentation": "list",
+                              "children": [
+                                {
+                                  "id": "mwstaff-recipe-20261117-0023",
+                                  "type": "counter",
+                                  "name": "Seismic wand / singularity",
+                                  "description": "Break down two fully repaired Seismic wand or Seismic singularity weapons at a dragonkin anvil for four binding essence.",
+                                  "current": 0,
+                                  "target": 2
+                                }
+                              ]
+                            },
+                            {
+                              "id": "mw-20261117-0177",
+                              "type": "counter",
+                              "name": "Diamond",
+                              "description": "Combine with four binding essence before visiting the elemental and catalytic runecrafting altars.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwstaff-recipe-20261117-0042",
+                      "type": "group",
+                      "name": "Volatile runic brick",
+                      "description": "One of three bricks for the staff; each requires 1,000 pure essence fragments and 1,000 of each of 15 runes, processed at a Runecrafting altar. https://runescape.wiki/w/Masterwork_staff",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwstaff-recipe-20261117-0026",
+                          "type": "counter",
+                          "name": "Pure essence",
+                          "description": "Chisel into 1,000 pure essence fragments to make the volatile runic brick used in unhoused focus.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0027",
+                          "type": "counter",
+                          "name": "Air runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0028",
+                          "type": "counter",
+                          "name": "Mind runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0029",
+                          "type": "counter",
+                          "name": "Water runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0030",
+                          "type": "counter",
+                          "name": "Earth runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0031",
+                          "type": "counter",
+                          "name": "Fire runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0032",
+                          "type": "counter",
+                          "name": "Body runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0033",
+                          "type": "counter",
+                          "name": "Cosmic runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0034",
+                          "type": "counter",
+                          "name": "Chaos runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0035",
+                          "type": "counter",
+                          "name": "Astral runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0036",
+                          "type": "counter",
+                          "name": "Nature runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0037",
+                          "type": "counter",
+                          "name": "Law runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0038",
+                          "type": "counter",
+                          "name": "Death runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0039",
+                          "type": "counter",
+                          "name": "Blood runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0040",
+                          "type": "counter",
+                          "name": "Soul runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        },
+                        {
+                          "id": "mwstaff-recipe-20261117-0041",
+                          "type": "counter",
+                          "name": "Time runes",
+                          "description": "One of the 15 runes required for the unhoused focus volatile runic brick; 1,000 per brick, 3,000 across all three bricks.",
+                          "current": 0,
+                          "target": 1000
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0186",
-                  "type": "checkbox",
-                  "name": "Masterwork staff finished",
-                  "description": "",
-                  "complete": false
+                  "id": "mwstaff-recipe-20261117-0045",
+                  "type": "group",
+                  "name": "Masterwork focus bracket",
+                  "description": "Smith 2 gold bars and one glorious bar into the focus bracket.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwstaff-recipe-20261117-0044",
+                      "type": "counter",
+                      "name": "Gold bars",
+                      "description": "Two additional gold bars for the bracket, bringing the staff's total to 4.",
+                      "current": 0,
+                      "target": 2
+                    },
+                    {
+                      "id": "mw-20261117-0174",
+                      "type": "counter",
+                      "name": "Glorious bar",
+                      "description": "Smith the bracket with 2 gold bars and 1 glorious bar.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
                 }
               ]
             }
