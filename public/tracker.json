@@ -921,7 +921,7 @@
               "type": "checkbox",
               "name": "Fletch Quest",
               "description": "Requires upgraded eternal magic shortbow and primal crossbows to Mk. 5; prerequisite. https://runescape.wiki/w/Masterwork_bow",
-              "complete": false
+              "complete": true
             },
             {
               "id": "mwbow-tree-20261117-011",
