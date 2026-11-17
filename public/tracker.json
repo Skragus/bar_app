@@ -912,16 +912,17 @@
           "id": "mw-20261117-0152",
           "type": "group",
           "name": "Masterwork bow",
-          "description": "Crafting recipe tree. Branches are craftable components; terminal counters are the item requirements. Previously finished materials are folded into their finished components, never counted twice. https://runescape.wiki/w/Masterwork_bow",
+          "description": "Masterwork bow item recipe. The progress bar represents its requirements: Fletch Quest, an unstrung masterwork bow (limbs, grooves, and grip), and waxed masterwork string. Each nested branch breaks down into the parts needed; no separate duplicate final-item counters. Assembly steps are described in the wiki. https://runescape.wiki/w/Masterwork_bow",
           "expanded": true,
           "presentation": "list",
           "children": [
             {
               "id": "mw-20261117-0114",
-              "type": "checkbox",
+              "type": "counter",
               "name": "Fletch Quest",
               "description": "Requires upgraded eternal magic shortbow and primal crossbows to Mk. 5; prerequisite. https://runescape.wiki/w/Masterwork_bow",
-              "complete": true
+              "current": 1,
+              "target": 1
             },
             {
               "id": "mwbow-tree-20261117-011",
@@ -1094,48 +1095,6 @@
                   "type": "counter",
                   "name": "Magic string",
                   "description": "From magic roots; inventory unconfirmed.",
-                  "current": 0,
-                  "target": 1
-                }
-              ]
-            },
-            {
-              "id": "mwbow-tree-20261117-021",
-              "type": "group",
-              "name": "Final bow items",
-              "description": "These are the actual item outputs, not separate task/checklist labels. Mark each item 1/1 once made.",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mwbow-tree-20261117-017",
-                  "type": "counter",
-                  "name": "Unstrung masterwork bow",
-                  "description": "Smith from two masterwork bow limbs + two bowstring grooves + one masterwork bow grip.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mwbow-tree-20261117-018",
-                  "type": "counter",
-                  "name": "Masterwork bow (untightened)",
-                  "description": "Fletch using unstrung masterwork bow + waxed masterwork string.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mwbow-tree-20261117-019",
-                  "type": "counter",
-                  "name": "Masterwork bow (untillered)",
-                  "description": "Fletch from untightened bow.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mwbow-tree-20261117-020",
-                  "type": "counter",
-                  "name": "Masterwork bow",
-                  "description": "Final tillering stage; completed bow.",
                   "current": 0,
                   "target": 1
                 }
