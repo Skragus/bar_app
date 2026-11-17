@@ -2160,7 +2160,7 @@
                   "description": "Already owned and confirmed by user. Fully restored T90 spear, not merely the Archaeology tip. Its entire Archaeology restoration chain is DONE and does not need to be tracked separately. https://runescape.wiki/w/Spear_of_Annihilation_tip",
                   "current": 1,
                   "target": 1,
-                  "weight": 8
+                  "weight": 20
                 },
                 {
                   "id": "mw-20261117-0208",
@@ -2195,7 +2195,7 @@
                       "target": 4
                     }
                   ],
-                  "weight": 4
+                  "weight": 3
                 },
                 {
                   "id": "mw-20261117-0209",
@@ -2204,10 +2204,10 @@
                   "description": "One glorious bar consumed when smithing the prepared spear at the Imcando anvil.",
                   "current": 0,
                   "target": 1,
-                  "weight": 1
+                  "weight": 0.5
                 }
               ],
-              "weight": 8
+              "weight": 12
             },
             {
               "id": "mw-spear-tree-20261117-008",
@@ -2242,7 +2242,7 @@
                   "target": 3
                 }
               ],
-              "weight": 3
+              "weight": 2.5
             },
             {
               "id": "mw-spear-tree-20261117-009",
@@ -2250,7 +2250,8 @@
               "name": "Glorious bar",
               "description": "One additional glorious bar for the final upgrade from prepared spear.",
               "current": 0,
-              "target": 1
+              "target": 1,
+              "weight": 0.5
             },
             {
               "id": "mw-20261117-0210",
