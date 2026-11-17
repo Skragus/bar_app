@@ -2141,55 +2141,135 @@
           "id": "mw-20261117-0213",
           "type": "group",
           "name": "Masterwork Spear of Annihilation",
-          "description": "Independent weapon goal, separate from 12-trim armour set: crafting BOTH spear and trimmed melee set requires 19 trims in total. https://runescape.wiki/w/Masterwork_melee_armour_trim",
-          "expanded": false,
+          "description": "Item-first recipe tree: Masterwork Spear of Annihilation requires a prepared spear, 3 further masterwork melee armour trims, 1 glorious bar and 100 masterwork rivets. Prepared spear needs the already-owned Spear of Annihilation (1/1), 4 trims and 1 glorious bar. Total remaining: 7 armour trims (7 elder rune bars, 7 malevolent essence, 7 Praesulic essence melee), 2 glorious bars and 100 rivets (10 steel bars). Components are nested where consumed, no duplicate final-item checkbox. You have confirmed you own the Spear of Annihilation. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+          "expanded": true,
           "presentation": "list",
           "children": [
             {
-              "id": "mw-20261117-0207",
+              "id": "mw-20261117-0211",
+              "type": "group",
+              "name": "Prepared masterwork Spear of Annihilation",
+              "description": "Spear of Annihilation +4 masterwork melee armour trim +1 glorious bar at the Imcando anvil (99 Smithing). Recipe step, not a separate completion checkbox. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+              "expanded": true,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0207",
+                  "type": "counter",
+                  "name": "Spear of Annihilation",
+                  "description": "Already owned and confirmed by user. Fully restored T90 spear, not merely the Archaeology tip. Its entire Archaeology restoration chain is DONE and does not need to be tracked separately. https://runescape.wiki/w/Spear_of_Annihilation_tip",
+                  "current": 1,
+                  "target": 1,
+                  "weight": 8
+                },
+                {
+                  "id": "mw-20261117-0208",
+                  "type": "group",
+                  "name": "Masterwork melee armour trim (4)",
+                  "description": "Craft 4 masterwork melee armour trim at an anvil. Each consumes 1 elder rune bar, 1 malevolent essence and 1 Praesulic essence (melee). These leaves represent the ingredients of the trim, not separate extra requirements. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-spear-tree-20261117-001",
+                      "type": "counter",
+                      "name": "Elder rune bars",
+                      "description": "1 elder rune bar per masterwork melee armour trim; 4 trims for this step.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mw-spear-tree-20261117-002",
+                      "type": "counter",
+                      "name": "Malevolent essence",
+                      "description": "1 malevolent essence per trim; sourced from breaking down repaired Malevolent equipment at a dragonkin anvil.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mw-spear-tree-20261117-003",
+                      "type": "counter",
+                      "name": "Praesulic essence (melee)",
+                      "description": "1 Praesulic essence (melee) per trim; sourced from breaking down repaired Torva equipment at a dragonkin anvil.",
+                      "current": 0,
+                      "target": 4
+                    }
+                  ],
+                  "weight": 4
+                },
+                {
+                  "id": "mw-20261117-0209",
+                  "type": "counter",
+                  "name": "Glorious bar",
+                  "description": "One glorious bar consumed when smithing the prepared spear at the Imcando anvil.",
+                  "current": 0,
+                  "target": 1,
+                  "weight": 1
+                }
+              ],
+              "weight": 8
+            },
+            {
+              "id": "mw-spear-tree-20261117-008",
+              "type": "group",
+              "name": "Masterwork melee armour trim (3)",
+              "description": "Craft 3 masterwork melee armour trim at an anvil. Each consumes 1 elder rune bar, 1 malevolent essence and 1 Praesulic essence (melee). These leaves represent the ingredients of the trim, not separate extra requirements. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-spear-tree-20261117-005",
+                  "type": "counter",
+                  "name": "Elder rune bars",
+                  "description": "1 elder rune bar per masterwork melee armour trim; 3 trims for this step.",
+                  "current": 0,
+                  "target": 3
+                },
+                {
+                  "id": "mw-spear-tree-20261117-006",
+                  "type": "counter",
+                  "name": "Malevolent essence",
+                  "description": "1 malevolent essence per trim; sourced from breaking down repaired Malevolent equipment at a dragonkin anvil.",
+                  "current": 0,
+                  "target": 3
+                },
+                {
+                  "id": "mw-spear-tree-20261117-007",
+                  "type": "counter",
+                  "name": "Praesulic essence (melee)",
+                  "description": "1 Praesulic essence (melee) per trim; sourced from breaking down repaired Torva equipment at a dragonkin anvil.",
+                  "current": 0,
+                  "target": 3
+                }
+              ],
+              "weight": 3
+            },
+            {
+              "id": "mw-spear-tree-20261117-009",
               "type": "counter",
-              "name": "Spear of Annihilation (Archaeology)",
-              "description": "Source Archaeology; part of the precursor spear grind.",
+              "name": "Glorious bar",
+              "description": "One additional glorious bar for the final upgrade from prepared spear.",
               "current": 0,
               "target": 1
             },
             {
-              "id": "mw-20261117-0208",
-              "type": "counter",
-              "name": "Masterwork melee armour trim",
-              "description": "4 trim to prepare the spear; 3 more to finish.",
-              "current": 0,
-              "target": 7
-            },
-            {
-              "id": "mw-20261117-0209",
-              "type": "counter",
-              "name": "Glorious bars",
-              "description": "One for prepared spear and one for the final spear.",
-              "current": 0,
-              "target": 2
-            },
-            {
               "id": "mw-20261117-0210",
-              "type": "counter",
-              "name": "Masterwork rivets",
-              "description": "Final stage.",
-              "current": 0,
-              "target": 100
-            },
-            {
-              "id": "mw-20261117-0211",
-              "type": "checkbox",
-              "name": "Prepared masterwork Spear of Annihilation",
-              "description": "Spear of Annihilation +4 masterwork melee armour trims +1 glorious bar.",
-              "complete": false
-            },
-            {
-              "id": "mw-20261117-0212",
-              "type": "checkbox",
-              "name": "Masterwork Spear of Annihilation completed",
-              "description": "Prepared spear +3 masterwork trims +1 glorious bar +100 masterwork rivets, at Imcando anvil.",
-              "complete": false
+              "type": "group",
+              "name": "Masterwork rivets (100)",
+              "description": "Make 100 masterwork rivets from 10 steel bars at an anvil. This is the exact input chain; do not additionally count 100 rivets as independent ingredients.",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-spear-tree-20261117-004",
+                  "type": "counter",
+                  "name": "Steel bars",
+                  "description": "Each steel bar produces 10 masterwork rivets; 10 bars make the 100 rivets required for the final spear.",
+                  "current": 0,
+                  "target": 10
+                }
+              ],
+              "weight": 0.25
             }
           ]
         }
