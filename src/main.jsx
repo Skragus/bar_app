@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useRef, useState} from 'react';
+import React, {createContext, useContext, useEffect, useLayoutEffect, useRef, useState} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Plus, ChevronDown, ChevronRight, MoreHorizontal, Check, X, Minus, Folder, Tv, Swords, BookOpen, Search, Download, Upload, Pencil, Trash2, ArrowUpDown, ArrowUp, ArrowDown, LayoutGrid, List, Hash, Square, Layers, CheckCheck} from 'lucide-react';
 import {STORAGE_KEY, group, checkbox, counter, progress, updateItem, findItem, removeItem, moveItem, contains, groupOptions, validateData, seed} from './model.js';
@@ -35,8 +35,8 @@ function App() {
     catch (error) { setNotice('Import failed: ' + error.message); }
   };
   return <AppContext.Provider value={{items, patch, change, setEditor, setMoving, edit, openCreate, setMenu, deleteItem, menu, query, matches, editor, moving}}><header className="app-header"><div className="header-inner"><a className="brand" href="" aria-label="Bar-App home"><span className="brand-mark"><i/><i/><i/></span>bar-app<span className="brand-dot">.</span></a><div className="header-right"><span className={'save-status ' + (storageError ? 'unsaved' : '')}><span/>{storageError ? 'Not saved' : 'Saved on this device'}</span><div className="menu-anchor" data-menu><button className="icon-button" aria-label="Backup options" onClick={() => setMenu(menu === 'backup' ? null : 'backup')}><MoreHorizontal size={20}/></button>{menu === 'backup' && <div className="dropdown"><button onClick={exportData}><Download size={14}/>Export JSON</button><button onClick={() => {importInput.current.click(); setMenu(null);}}><Upload size={14}/>Import JSON</button><p className="menu-hint">Stored in this browser.<br/>Export to back up or transfer.</p></div>}</div></div></div></header>
-    <main><div className="page-heading"><div><div className="eyebrow">ONE THING AT A TIME</div><h1>Your progress<span>.</span></h1><p>Everything you’re working through, in one quiet place.</p></div><button className="primary add-root" onClick={() => openCreate(null, 'group')}><Plus size={16}/>Add group</button></div>
-    <div className="outline-toolbar"><div className="outline-label"><Layers size={14}/>MY OUTLINE<span>{items.length} groups</span></div><label className="search"><Search size={14}/><input aria-label="Search outline" value={query} onChange={event => setQuery(event.target.value)} placeholder="Find something…"/>{query && <button className="icon-button" aria-label="Clear search" onClick={() => setQuery('')}><X size={13}/></button>}</label></div>
+    <main><div className="page-heading"><div><div className="eyebrow">One thing at a time</div><h1>Your progress<span>.</span></h1><p>Everything you’re working through, in one quiet place.</p></div><button className="primary add-root" onClick={() => openCreate(null, 'group')}><Plus size={16}/>Add group</button></div>
+    <div className="outline-toolbar"><div className="outline-label"><Layers size={14}/>My outline<span>{items.length} groups</span></div><label className="search"><Search size={14}/><input aria-label="Search outline" value={query} onChange={event => setQuery(event.target.value)} placeholder="Find something…"/>{query && <button className="icon-button" aria-label="Clear search" onClick={() => setQuery('')}><X size={13}/></button>}</label></div>
     {storageError && <div className="alert" role="alert">{storageError}</div>}
     {importing && <div className="confirm-panel" role="alertdialog" aria-label="Confirm import"><strong>Replace this outline?</strong><p>This imports {importing.length} root groups and replaces your current data. Export a backup first if you want to keep it.</p><div><button onClick={exportData}>Export current outline</button><button onClick={() => setImporting(null)}>Cancel</button><button className="primary" onClick={() => {change(importing); setImporting(null); setEditor(null); setMoving(null); setDeleting(null); setNotice('Outline imported.');}}>Replace & import</button></div></div>}
     {deleting && <div className="confirm-panel" role="alertdialog" aria-label="Confirm deletion"><strong>Delete “{deleting.name}” and everything inside?</strong><p>This removes all its groups, checkboxes, and counters.</p><div><button onClick={() => setDeleting(null)}>Keep group</button><button className="danger-button" onClick={() => {change(old => removeItem(old, deleting.id)); setDeleting(null); setEditor(null); setMoving(null);}}>Delete group</button></div></div>}
@@ -87,7 +87,31 @@ function App() {
   }
   function ItemMenu({item}) {
     const {edit, openCreate, patch, setMenu, setMoving, setEditor, deleteItem} = useContext(AppContext);
-    return <div className="dropdown" role="menu"><button role="menuitem" onClick={() => edit(item)}><Pencil size={14}/>Edit details</button>{item.type === 'group' && <><div className="menu-label">ADD TO GROUP</div><button role="menuitem" onClick={() => openCreate(item.id, 'group')}><Folder size={14}/>Nested group</button><button role="menuitem" onClick={() => openCreate(item.id, 'checkbox')}><Square size={14}/>Checkbox</button><button role="menuitem" onClick={() => openCreate(item.id, 'counter')}><Hash size={14}/>Counter</button><button role="menuitem" onClick={() => openCreate(item.id, 'batch')}><LayoutGrid size={14}/>Numbered checkboxes</button><div className="menu-divider"/><button role="menuitem" onClick={() => {patch(item.id, {presentation: item.presentation === 'tiles' ? 'list' : 'tiles'}); setMenu(null);}}>{item.presentation === 'tiles' ? <List size={14}/> : <LayoutGrid size={14}/>}Show checkboxes as {item.presentation === 'tiles' ? 'list' : 'tiles'}</button></>}<button role="menuitem" onClick={() => {setMoving(item.id); setMenu(null); setEditor(null);}}><ArrowUpDown size={14}/>Move or reorder</button><div className="menu-divider"/><button className="danger" role="menuitem" onClick={() => deleteItem(item)}><Trash2 size={14}/>Delete {item.type}</button></div>;
+    const menuRef = useRef(null);
+    useLayoutEffect(() => {
+      const place = () => {
+        const menu = menuRef.current;
+        // Phone menus use the fixed sheet defined in CSS.
+        if (window.innerWidth <= 700) {
+          ['left', 'right', 'top'].forEach(property => menu.style.removeProperty(property));
+          return;
+        }
+        const anchor = menu.parentElement.getBoundingClientRect();
+        const {width, height} = menu.getBoundingClientRect();
+        const left = Math.max(12, Math.min(anchor.right - width, window.innerWidth - width - 12));
+        const below = anchor.bottom + 6;
+        const top = below + height <= window.innerHeight - 12 ? below : Math.max(12, anchor.top - height - 6);
+        Object.assign(menu.style, {left: left + 'px', right: 'auto', top: top + 'px'});
+      };
+      place();
+      window.addEventListener('resize', place);
+      window.addEventListener('scroll', place, true);
+      return () => {
+        window.removeEventListener('resize', place);
+        window.removeEventListener('scroll', place, true);
+      };
+    }, []);
+    return <div ref={menuRef} className="dropdown item-menu" role="menu"><button role="menuitem" onClick={() => edit(item)}><Pencil size={14}/>Edit details</button>{item.type === 'group' && <><div className="menu-label">Add to group</div><button role="menuitem" onClick={() => openCreate(item.id, 'group')}><Folder size={14}/>Nested group</button><button role="menuitem" onClick={() => openCreate(item.id, 'checkbox')}><Square size={14}/>Checkbox</button><button role="menuitem" onClick={() => openCreate(item.id, 'counter')}><Hash size={14}/>Counter</button><button role="menuitem" onClick={() => openCreate(item.id, 'batch')}><LayoutGrid size={14}/>Numbered checkboxes</button><div className="menu-divider"/><button role="menuitem" onClick={() => {patch(item.id, {presentation: item.presentation === 'tiles' ? 'list' : 'tiles'}); setMenu(null);}}>{item.presentation === 'tiles' ? <List size={14}/> : <LayoutGrid size={14}/>}Show checkboxes as {item.presentation === 'tiles' ? 'list' : 'tiles'}</button></>}<button role="menuitem" onClick={() => {setMoving(item.id); setMenu(null); setEditor(null);}}><ArrowUpDown size={14}/>Move or reorder</button><div className="menu-divider"/><button className="danger" role="menuitem" onClick={() => deleteItem(item)}><Trash2 size={14}/>Delete {item.type}</button></div>;
   }
   function Actions({item}) {
     const {openCreate, menu, setMenu} = useContext(AppContext);

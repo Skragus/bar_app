@@ -89,3 +89,24 @@ test('standalone HTML needs no assets and preserves progress', async ({page}) =>
   await page.getByRole('button', {name:'Save changes'}).click();
   await expect(page.getByRole('checkbox', {name:'Pilot', exact:true})).toBeVisible();
 });
+test('menus stay reachable and the outline fits narrow viewports', async ({page}) => {
+  await page.goto('/');
+  for (const width of [1280, 768, 390, 320]) {
+    await page.setViewportSize({width, height:844});
+    await page.getByLabel('Actions for checkbox 1', {exact:true}).click();
+    const menu = page.getByRole('menu');
+    await expect(menu).toBeVisible();
+    const bounds = await menu.boundingBox();
+    expect(bounds.x).toBeGreaterThanOrEqual(0);
+    expect(bounds.y).toBeGreaterThanOrEqual(0);
+    expect(bounds.x + bounds.width).toBeLessThanOrEqual(width);
+    expect(bounds.y + bounds.height).toBeLessThanOrEqual(844);
+    await page.keyboard.press('Escape');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  }
+  const addButton = page.getByRole('button', {name:'Add group', exact:true});
+  await addButton.focus();
+  await expect(addButton).toBeFocused();
+  await page.keyboard.press('Enter');
+  await expect(page.getByRole('form', {name:'Create item'}).getByLabel('Name', {exact:true})).toBeFocused();
+});
