@@ -912,282 +912,30 @@
           "id": "mw-20261117-0152",
           "type": "group",
           "name": "Masterwork bow",
-          "description": "110 Fletching, 110 Woodcutting, 99 Smithing, 90 Crafting, 90 Runecrafting, 90 Magic and Fletch Quest. https://runescape.wiki/w/Masterwork_bow",
+          "description": "Crafting recipe tree. Branches are craftable components; terminal counters are the item requirements. Previously finished materials are folded into their finished components, never counted twice. https://runescape.wiki/w/Masterwork_bow",
           "expanded": true,
           "presentation": "list",
           "children": [
             {
               "id": "mw-20261117-0114",
               "type": "checkbox",
-              "name": "Fletch Quest achievement completed",
+              "name": "Fletch Quest",
               "description": "Requires upgraded eternal magic shortbow and primal crossbows to Mk. 5; prerequisite. https://runescape.wiki/w/Masterwork_bow",
               "complete": false
             },
             {
-              "id": "mw-20261117-0130",
+              "id": "mwbow-tree-20261117-011",
               "type": "group",
-              "name": "Untradeable wood and glue",
-              "description": "Each log group makes 200 matching shavings; 2 eternal magic sap +20 ground mud +20 ground miasma produce 2 buckets of glue. https://runescape.wiki/w/Masterwork_bow Completed supply stages are marked as consumed into the 2 already-crafted limbs; totals are historical fulfilled requirements, not current bank stock.",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0115",
-                  "type": "counter",
-                  "name": "Perfect eternal magic branches",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0116",
-                  "type": "counter",
-                  "name": "Buckets of eternal magic sap",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0117",
-                  "type": "counter",
-                  "name": "Ground mud runes",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 20,
-                  "target": 20
-                },
-                {
-                  "id": "mw-20261117-0118",
-                  "type": "counter",
-                  "name": "Ground miasma runes",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 20,
-                  "target": 20
-                },
-                {
-                  "id": "mw-20261117-0119",
-                  "type": "counter",
-                  "name": "Logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0120",
-                  "type": "counter",
-                  "name": "Oak logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0121",
-                  "type": "counter",
-                  "name": "Willow logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0122",
-                  "type": "counter",
-                  "name": "Teak logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0123",
-                  "type": "counter",
-                  "name": "Maple logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0124",
-                  "type": "counter",
-                  "name": "Acadia logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0125",
-                  "type": "counter",
-                  "name": "Mahogany logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0126",
-                  "type": "counter",
-                  "name": "Yew logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0127",
-                  "type": "counter",
-                  "name": "Magic logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0128",
-                  "type": "counter",
-                  "name": "Elder logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                },
-                {
-                  "id": "mw-20261117-0129",
-                  "type": "counter",
-                  "name": "Eternal magic logs for shavings",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 200,
-                  "target": 200
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0142",
-              "type": "group",
-              "name": "Smithing, essences and other materials",
-              "description": "These are material input totals from the wiki quick checklist. https://runescape.wiki/w/Masterwork_bow Bars, leather and dye required for the bow limbs, grooves, wrapped grip and plain supports are marked as used/completed, not currently owned. Remaining sapphire, wax and string requirements are still unrecorded.",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0131",
-                  "type": "counter",
-                  "name": "Glorious bars",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 7,
-                  "target": 7
-                },
-                {
-                  "id": "mw-20261117-0132",
-                  "type": "counter",
-                  "name": "Gold bars",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 14,
-                  "target": 14
-                },
-                {
-                  "id": "mw-20261117-0133",
-                  "type": "counter",
-                  "name": "Steel bars",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0134",
-                  "type": "counter",
-                  "name": "Noxious essence",
-                  "description": "Break down one fully repaired noxious weapon.",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0135",
-                  "type": "counter",
-                  "name": "Ascended essence",
-                  "description": "Break down one fully repaired ascension crossbow.",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0136",
-                  "type": "counter",
-                  "name": "Sapphires",
-                  "description": "",
-                  "current": 0,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0137",
-                  "type": "counter",
-                  "name": "Undead dragon leather",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 1,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0138",
-                  "type": "counter",
-                  "name": "Brown dye",
-                  "description": "Fulfilled and consumed during crafting of the already-owned masterwork bow components (not the quantity currently held in bank).",
-                  "current": 1,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0139",
-                  "type": "counter",
-                  "name": "Bucket of wax",
-                  "description": "",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0140",
-                  "type": "counter",
-                  "name": "Bucket of water",
-                  "description": "",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0141",
-                  "type": "counter",
-                  "name": "Magic string",
-                  "description": "",
-                  "current": 0,
-                  "target": 1
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0151",
-              "type": "group",
-              "name": "Assembly stages",
-              "description": "Crafting milestones based on https://runescape.wiki/w/Masterwork_bow . The components counters labelled 'owned' are your current parts; earlier intermediates/materials labelled 'consumed' have been marked fulfilled, NOT currently banked.",
+              "name": "Unstrung masterwork bow",
+              "description": "Only uncrafted components expand to show their required ingredient items; completed parts are terminal counters.",
               "expanded": true,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0143",
-                  "type": "counter",
-                  "name": "Hollowed masterwork bow limbs",
-                  "description": "Past crafting step completed, materials consumed into the 2 finished bow limbs now owned. Not 2 currently banked intermediate components.",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0144",
-                  "type": "counter",
-                  "name": "Composite wood cylinders",
-                  "description": "Past crafting step completed, materials consumed into the 2 finished bow limbs now owned. Not 2 currently banked intermediate components.",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-20261117-0145",
-                  "type": "counter",
-                  "name": "Strengthened masterwork bow limbs",
-                  "description": "Past crafting step completed, materials consumed into the 2 finished bow limbs now owned. Not 2 currently banked intermediate components.",
-                  "current": 2,
-                  "target": 2
-                },
-                {
                   "id": "mw-bow-owned-20261117-001",
                   "type": "counter",
-                  "name": "Masterwork bow limbs (finished)",
-                  "description": "Confirmed owned: 2 finished masterwork bow limbs, ready for unstrung bow.",
+                  "name": "Masterwork bow limbs",
+                  "description": "Finished and owned. Upstream wood, glorious bars, limb supports and rivets are already consumed; no need to track them twice.",
                   "current": 2,
                   "target": 2
                 },
@@ -1195,84 +943,201 @@
                   "id": "mw-bow-owned-20261117-002",
                   "type": "counter",
                   "name": "Masterwork bowstring grooves",
-                  "description": "Confirmed owned: 2 masterwork bowstring grooves.",
+                  "description": "Finished and owned; earlier glorious/gold bars already consumed.",
                   "current": 2,
                   "target": 2
                 },
                 {
-                  "id": "mw-bow-owned-20261117-003",
+                  "id": "mwbow-tree-20261117-010",
+                  "type": "group",
+                  "name": "Masterwork bow grip",
+                  "description": "Wrapped grip + upper decorated support + lower decorated support. https://runescape.wiki/w/Masterwork_bow",
+                  "expanded": true,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mw-bow-owned-20261117-003",
+                      "type": "counter",
+                      "name": "Wrapped masterwork bow grip",
+                      "description": "Finished and owned; its raw glorious/gold/leather/dye supplies were already consumed.",
+                      "current": 1,
+                      "target": 1
+                    },
+                    {
+                      "id": "mwbow-tree-20261117-004",
+                      "type": "group",
+                      "name": "Upper decorated masterwork bow grip support",
+                      "description": "Combines one plain support with one faceted noxious sapphire. Finished decorated support not yet confirmed.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mw-bow-owned-20261117-004",
+                          "type": "counter",
+                          "name": "Masterwork bow grip support",
+                          "description": "One of the two already-owned plain supports.",
+                          "current": 1,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwbow-tree-20261117-003",
+                          "type": "group",
+                          "name": "Faceted noxious sapphire",
+                          "description": "2 noxious essence + 1 sapphire → unimbued → imbued → faceted. Source: https://runescape.wiki/w/Masterwork_bow",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwbow-tree-20261117-001",
+                              "type": "counter",
+                              "name": "Noxious essence",
+                              "description": "For noxious sapphire (unimbued); verify current inventory before updating.",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwbow-tree-20261117-002",
+                              "type": "counter",
+                              "name": "Sapphire",
+                              "description": "One sapphire for this specific gem; second sapphire needed in the other support branch.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwbow-tree-20261117-009",
+                      "type": "group",
+                      "name": "Lower decorated masterwork bow grip support",
+                      "description": "Combines one plain support with one faceted ascended sapphire. Finished decorated support not yet confirmed.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwbow-tree-20261117-005",
+                          "type": "counter",
+                          "name": "Masterwork bow grip support",
+                          "description": "The other already-owned plain support.",
+                          "current": 1,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwbow-tree-20261117-008",
+                          "type": "group",
+                          "name": "Faceted ascended sapphire",
+                          "description": "2 ascended essence + 1 sapphire → unimbued → imbued → faceted. Source: https://runescape.wiki/w/Masterwork_bow",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwbow-tree-20261117-006",
+                              "type": "counter",
+                              "name": "Ascended essence",
+                              "description": "For ascended sapphire (unimbued); verify current inventory before updating.",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwbow-tree-20261117-007",
+                              "type": "counter",
+                              "name": "Sapphire",
+                              "description": "One sapphire for this specific gem; second sapphire needed in the other support branch.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "mwbow-tree-20261117-016",
+              "type": "group",
+              "name": "Waxed masterwork string",
+              "description": "One bucket of refined wax + one magic string. https://runescape.wiki/w/Masterwork_bow",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mwbow-tree-20261117-014",
+                  "type": "group",
+                  "name": "Bucket of refined wax",
+                  "description": "Note: RS Wiki 16 Mar 2026 update replaced bucket of vis wax with refined wax.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwbow-tree-20261117-012",
+                      "type": "counter",
+                      "name": "Bucket of wax",
+                      "description": "Obtained from a beehive using insect repellent; unconfirmed.",
+                      "current": 0,
+                      "target": 1
+                    },
+                    {
+                      "id": "mwbow-tree-20261117-013",
+                      "type": "counter",
+                      "name": "Bucket of water",
+                      "description": "To refine the wax; unconfirmed.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
+                },
+                {
+                  "id": "mwbow-tree-20261117-015",
                   "type": "counter",
-                  "name": "Wrapped masterwork bow grip",
-                  "description": "Confirmed owned: 1 wrapped grip. It still needs 2 decorated supports to become the final bow grip.",
-                  "current": 1,
+                  "name": "Magic string",
+                  "description": "From magic roots; inventory unconfirmed.",
+                  "current": 0,
                   "target": 1
-                },
+                }
+              ]
+            },
+            {
+              "id": "mwbow-tree-20261117-021",
+              "type": "group",
+              "name": "Final bow items",
+              "description": "These are the actual item outputs, not separate task/checklist labels. Mark each item 1/1 once made.",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
                 {
-                  "id": "mw-bow-owned-20261117-004",
+                  "id": "mwbow-tree-20261117-017",
                   "type": "counter",
-                  "name": "Masterwork bow grip supports (plain)",
-                  "description": "Confirmed owned: 2 plain grip supports. One needs a faceted noxious sapphire and the other a faceted ascended sapphire.",
-                  "current": 2,
-                  "target": 2
-                },
-                {
-                  "id": "mw-bow-owned-20261117-005",
-                  "type": "counter",
-                  "name": "Upper decorated masterwork bow grip support",
-                  "description": "Craft using one owned plain support plus faceted noxious sapphire. 2 noxious essence + sapphire required for the gemstone chain.",
+                  "name": "Unstrung masterwork bow",
+                  "description": "Smith from two masterwork bow limbs + two bowstring grooves + one masterwork bow grip.",
                   "current": 0,
                   "target": 1
                 },
                 {
-                  "id": "mw-bow-owned-20261117-006",
+                  "id": "mwbow-tree-20261117-018",
                   "type": "counter",
-                  "name": "Lower decorated masterwork bow grip support",
-                  "description": "Craft using one owned plain support plus faceted ascended sapphire. 2 ascended essence + sapphire required for the gemstone chain.",
+                  "name": "Masterwork bow (untightened)",
+                  "description": "Fletch using unstrung masterwork bow + waxed masterwork string.",
                   "current": 0,
                   "target": 1
                 },
                 {
-                  "id": "mw-bow-owned-20261117-007",
+                  "id": "mwbow-tree-20261117-019",
                   "type": "counter",
-                  "name": "Masterwork rivets (used in owned limbs)",
-                  "description": "20 rivets necessarily consumed in the 2 finished limbs. Historical completed stage, not 20 currently owned.",
-                  "current": 20,
-                  "target": 20
+                  "name": "Masterwork bow (untillered)",
+                  "description": "Fletch from untightened bow.",
+                  "current": 0,
+                  "target": 1
                 },
                 {
-                  "id": "mw-20261117-0146",
-                  "type": "checkbox",
-                  "name": "Masterwork bow grip assembled (decorated supports fitted)",
-                  "description": "NOT complete: you have 1 wrapped grip and 2 plain supports; upper/lower must each be decorated with faceted noxious/ascended sapphire and attached to the grip.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0147",
-                  "type": "checkbox",
-                  "name": "Waxed masterwork string prepared",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0148",
-                  "type": "checkbox",
-                  "name": "Unstrung masterwork bow assembled",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0149",
-                  "type": "checkbox",
-                  "name": "Untillered masterwork bow assembled",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0150",
-                  "type": "checkbox",
-                  "name": "Masterwork bow finished (tillering)",
-                  "description": "",
-                  "complete": false
+                  "id": "mwbow-tree-20261117-020",
+                  "type": "counter",
+                  "name": "Masterwork bow",
+                  "description": "Final tillering stage; completed bow.",
+                  "current": 0,
+                  "target": 1
                 }
               ]
             }
