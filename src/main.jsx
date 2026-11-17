@@ -8,12 +8,13 @@ const icons = {tv: Tv, swords: Swords, book: BookOpen};
 const num = value => new Intl.NumberFormat(undefined, {maximumFractionDigits: 2}).format(value);
 const AppContext = createContext(null);
 function App() {
-  const [initial] = useState(() => readLocal());
+  const [initial, setInitial] = useState(() => readLocal());
   const [localItems, setLocalItems] = useState(initial.items), [canonical, setCanonical] = useState(null);
   const [mode, setMode] = useState('github'), [viewExpanded, setViewExpanded] = useState({});
   const readOnly = mode === 'github', items = (readOnly ? canonical : localItems) || [];
   const [storageError, setStorageError] = useState(initial.error), [dataError, setDataError] = useState(''), [loading, setLoading] = useState(true);
   const [query, setQuery] = useState(''), [menu, setMenu] = useState(null), [editor, setEditor] = useState(null), [moving, setMoving] = useState(null), [deleting, setDeleting] = useState(null), [notice, setNotice] = useState(''), [importing, setImporting] = useState(null);
+  const [syncConfirm, setSyncConfirm] = useState(false), [syncing, setSyncing] = useState(false), [syncError, setSyncError] = useState('');
   const dirty = useRef(false), importInput = useRef();
   const change = next => { if (readOnly) return; dirty.current = true; setLocalItems(previous => typeof next === 'function' ? next(previous || []) : next); };
   const reloadCanonical = async signal => {
@@ -35,7 +36,7 @@ function App() {
   };
   useEffect(() => { if (!notice) return; const timer = setTimeout(() => setNotice(''), 4500); return () => clearTimeout(timer); }, [notice]);
   useEffect(() => { const close = event => { if (!event.target.closest('[data-menu]')) setMenu(null); }; document.addEventListener('pointerdown', close); return () => document.removeEventListener('pointerdown', close); }, []);
-  useEffect(() => { const close = event => { if (event.key === 'Escape') { setMenu(null); setEditor(null); setMoving(null); setDeleting(null); setImporting(null); } }; document.addEventListener('keydown', close); return () => document.removeEventListener('keydown', close); }, []);
+  useEffect(() => { const close = event => { if (event.key === 'Escape') { setMenu(null); setEditor(null); setMoving(null); setDeleting(null); setImporting(null); if (!syncing) setSyncConfirm(false); } }; document.addEventListener('keydown', close); return () => document.removeEventListener('keydown', close); }, [syncing]);
   const patch = (id, data) => {
     if (readOnly) { if (typeof data.expanded === 'boolean') setViewExpanded(old => ({...old, [id]: data.expanded})); return; }
     change(old => updateItem(old, id, item => ({...item, ...data})));
@@ -51,6 +52,25 @@ function App() {
   };
   const exportData = () => download(JSON.stringify({version: 1, items}, null, 2), 'bar-app-backup.json');
   const exportLocal = () => download(initial.error && !dirty.current ? initial.raw || '' : JSON.stringify({version: 1, items: localItems || []}, null, 2), 'bar-app-local-backup.json');
+  const syncFromGitHub = async () => {
+    setSyncing(true); setSyncError('');
+    try {
+      // Fetch and validate before touching local storage. A failed fetch/write
+      // leaves the user's existing local copy and the warning intact.
+      const next = await fetchTracker();
+      const raw = JSON.stringify(next);
+      localStorage.setItem(STORAGE_KEY, raw);
+      dirty.current = false;
+      setInitial({items: next, raw, error: ''});
+      setLocalItems(next); setCanonical(next); setStorageError(''); setDataError('');
+      setMode('github'); setViewExpanded({}); setQuery('');
+      setEditor(null); setMoving(null); setDeleting(null); setImporting(null);
+      setSyncConfirm(false); setNotice('Local progress now matches GitHub data.');
+    } catch (error) {
+      setSyncError('Could not sync local progress: ' + error.message + ' Your existing local data has been kept.');
+    } finally { setSyncing(false); }
+  };
+  const openSync = () => { setSyncConfirm(true); setSyncError(''); setMenu(null); };
   const localDiffers = canonical !== null && (initial.raw !== null || dirty.current) && JSON.stringify(localItems) !== JSON.stringify(canonical);
   const importData = async event => { if (readOnly) return;
     const file = event.target.files[0]; event.target.value = ''; if (!file) return;
@@ -61,9 +81,15 @@ function App() {
     <main><div className="page-heading"><div><div className="eyebrow">One thing at a time</div><h1>Your progress<span>.</span></h1><p>Everything you’re working through, in one quiet place.</p></div>{!readOnly && <button className="primary add-root" onClick={() => openCreate(null, 'group')}><Plus size={16}/>Add group</button>}</div>
     <section className="data-mode" aria-label="Data source">
       <div><strong>{readOnly ? 'GitHub-managed' : 'Local-only mode'}</strong><p>{readOnly ? 'Public tracker data. Ask your agent to update it in GitHub, then reload.' : 'Edits save only in this browser. They are not synchronized to GitHub.'}</p></div>
-      <div className="data-controls">{readOnly && <button disabled={loading} onClick={() => reloadCanonical()}><RefreshCw size={16}/>{loading ? 'Loading…' : 'Reload Data'}</button>}<button disabled={readOnly && !canonical && localItems === null && !initial.raw} onClick={switchMode}>{readOnly ? 'Open local-only mode' : 'Back to GitHub data'}</button></div>
+      <div className="data-controls">{readOnly && <button disabled={loading || syncing} onClick={() => reloadCanonical()}><RefreshCw size={16}/>{loading ? 'Loading…' : 'Reload Data'}</button>}<button disabled={syncing || (readOnly && !canonical && localItems === null && !initial.raw)} onClick={switchMode}>{readOnly ? 'Open local-only mode' : 'Back to GitHub data'}</button><button disabled={loading || syncing} onClick={openSync}><RefreshCw size={16}/>Sync local from GitHub</button></div>
     </section>
-    {readOnly && localDiffers && <div className="migration-notice"><p>Your saved local progress differs from GitHub. It has been preserved and is not used to override GitHub data. Export a backup or open local-only mode to review it. No automatic merge is performed.</p><button onClick={exportLocal}><Download size={16}/>Export local backup</button></div>}
+    {readOnly && localDiffers && <div className="migration-notice"><p>Your saved local progress differs from GitHub. It has been preserved and is not used to override GitHub data. Export a backup or open local-only mode to review it. Use “Sync local from GitHub” to replace the saved local copy and clear this warning.</p><button onClick={exportLocal}><Download size={16}/>Export local backup</button></div>}
+    {syncConfirm && <div className="confirm-panel" role="alertdialog" aria-label="Confirm GitHub sync">
+      <strong>Replace local progress with GitHub data?</strong>
+      <p>This replaces all progress saved in this browser with the latest deployed GitHub dataset. Local-only changes will be lost. GitHub itself will not be changed. Export a backup first if you want to keep your local changes.</p>
+      {syncError && <p className="error" role="alert">{syncError}</p>}
+      <div><button disabled={syncing} onClick={exportLocal}>Export local backup</button><button disabled={syncing} onClick={() => setSyncConfirm(false)}>Keep local progress</button><button disabled={syncing} className="primary" onClick={syncFromGitHub}>{syncing ? 'Syncing…' : 'Replace local with GitHub'}</button></div>
+    </div>}
     {readOnly && dataError && <div className="alert" role="alert">{dataError}</div>}
     <div className="outline-toolbar"><div className="outline-label"><Layers size={14}/>My outline<span>{items.length} groups</span></div><label className="search"><Search size={14}/><input aria-label="Search outline" value={query} onChange={event => setQuery(event.target.value)} placeholder="Find something…"/>{query && <button className="icon-button" aria-label="Clear search" onClick={() => setQuery('')}><X size={13}/></button>}</label></div>
     {storageError && <div className="alert" role="alert">{storageError}{initial.raw && <button className="text-button" onClick={exportLocal}>Export local backup</button>}</div>}
