@@ -308,60 +308,10 @@
           ]
         },
         {
-          "id": "mw-20261117-0071",
-          "type": "group",
-          "name": "Melee armour",
-          "description": "Owned finished T90 basic masterwork melee set — helm, platebody, platelegs, gloves, boots, all 1/1. Recipe ingredients and the unverified historical Elder rune +5 prerequisite were removed from the active tree because you already have the complete set. These are acquisition milestones that remain completed even when consumed in T100 upgrades. https://runescape.wiki/w/Masterwork_melee_armour",
-          "expanded": true,
-          "presentation": "list",
-          "children": [
-            {
-              "id": "mw-20261117-0065",
-              "type": "counter",
-              "name": "Masterwork melee helm",
-              "description": "T90 untrimmed helm finished and owned. Historical crafting inputs already consumed. This is an acquisition milestone; upgrading it to T100 consumes the item without invalidating the milestone. See https://runescape.wiki/w/Masterwork_melee_armour",
-              "current": 1,
-              "target": 1
-            },
-            {
-              "id": "mw-20261117-0066",
-              "type": "counter",
-              "name": "Masterwork melee platebody",
-              "description": "T90 untrimmed platebody finished and owned. Historical crafting inputs already consumed. This is an acquisition milestone; upgrading it to T100 consumes the item without invalidating the milestone. See https://runescape.wiki/w/Masterwork_melee_armour",
-              "current": 1,
-              "target": 1
-            },
-            {
-              "id": "mw-20261117-0067",
-              "type": "counter",
-              "name": "Masterwork melee platelegs",
-              "description": "T90 untrimmed platelegs finished and owned. Historical crafting inputs already consumed. This is an acquisition milestone; upgrading it to T100 consumes the item without invalidating the milestone. See https://runescape.wiki/w/Masterwork_melee_armour",
-              "current": 1,
-              "target": 1
-            },
-            {
-              "id": "mw-20261117-0068",
-              "type": "counter",
-              "name": "Masterwork melee gloves",
-              "description": "T90 untrimmed gloves finished and owned. Historical crafting inputs already consumed. This is an acquisition milestone; upgrading it to T100 consumes the item without invalidating the milestone. See https://runescape.wiki/w/Masterwork_melee_armour",
-              "current": 1,
-              "target": 1
-            },
-            {
-              "id": "mw-20261117-0069",
-              "type": "counter",
-              "name": "Masterwork melee boots",
-              "description": "T90 untrimmed boots finished and owned. Historical crafting inputs already consumed. This is an acquisition milestone; upgrading it to T100 consumes the item without invalidating the milestone. See https://runescape.wiki/w/Masterwork_melee_armour",
-              "current": 1,
-              "target": 1
-            }
-          ]
-        },
-        {
           "id": "mw-20261117-0084",
           "type": "group",
           "name": "Trimmed masterwork melee armour",
-          "description": "T100 trimmed Masterwork melee armour — five item-first recipe branches under 'T100 trimmed armour pieces'. Each piece uses an already-owned T90 Masterwork melee piece (weight 0, tracked separately), a provisional number of masterwork melee armour trims (legacy 2/5/3/1/1), and some Primed Glorious Bars (exact per-piece and total quantity still unpublished). Placeholder 0/1 for primed bars is a supply-ready indicator, NOT a statement that only one bar is needed. 110 Smithing + primal +5 achievement prerequisites shown separately. Once final Nov 23 patch details arrive, update quantities. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+          "description": "Single T100 trimmed Masterwork melee armour goal. Each piece's nested recipe contains the already-acquired T90 base armour piece plus provisional melee trims and primed glorious bars. T90 is not a separate goal. Exact T100 trim and primed glorious bar amounts still require the final Nov 23 patch recipe. https://runescape.wiki/w/Trimmed_masterwork_armour",
           "expanded": false,
           "presentation": "list",
           "children": [
@@ -369,18 +319,10 @@
               "id": "mw-trim-preview-20261117-000",
               "type": "group",
               "name": "T100 upgrade — confirmed prerequisites",
-              "description": "Confirmed prerequisites for proposed T100 upgrade: full five-piece T90 basic Masterwork set already owned, and 'It Still Should Have Been Called Aetherium' completed. 110 Smithing still needed (~1.3m XP last reported). This branch is informational (weight 0); acquisition of T90 items is shown within the piece recipes. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+              "description": "Upgrade prerequisites (not crafting resources): primal +5 achievement completed; 110 Smithing still needed (~1.3m XP remaining as last reported). Five owned T90 pieces are tracked under their individual T100 recipes, rather than as a separate armour section.",
               "expanded": false,
               "presentation": "list",
               "children": [
-                {
-                  "id": "mw-trim-preview-20261117-003",
-                  "type": "counter",
-                  "name": "Untrimmed T90 masterwork melee set owned",
-                  "description": "All 5 basic Masterwork melee armour pieces owned and recorded under the sibling Melee armour section; use as upgrade inputs. This is shared ownership, not an extra set or crafting-material requirement.",
-                  "current": 1,
-                  "target": 1
-                },
                 {
                   "id": "mw-trim-preview-20261117-001",
                   "type": "counter",
@@ -405,7 +347,7 @@
               "id": "mw-20261117-0082",
               "type": "group",
               "name": "T100 trimmed armour pieces",
-              "description": "Five finished-item recipe branches, each containing the owned T90 base (weight 0), a provisional legacy trim recipe, and a binary Primed Glorious Bar readiness placeholder (actual quantities not announced). No duplicate total essence / trim counters. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+              "description": "Five independent T100 armour item recipes. Each includes its actual owned T90 base piece, a provisional legacy trim ingredient branch and the not-yet-confirmed primed-glorious supply requirement. No extra T90 tracker or duplicated materials.",
               "expanded": true,
               "presentation": "list",
               "children": [
@@ -413,18 +355,18 @@
                   "id": "mw-20261117-0077",
                   "type": "group",
                   "name": "Trimmed masterwork melee helm",
-                  "description": "T100 trimmed masterwork melee helm: your owned T90 helm, masterwork armour trim and primed glorious bars. Old T92 guide uses 2 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+                  "description": "T100 trimmed masterwork melee helm: Your acquired T90 helm, masterwork armour trim and primed glorious bars. Old T92 guide uses 2 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                   "expanded": false,
                   "presentation": "list",
                   "children": [
                     {
-                      "id": "mw-t100-item-20261117-001",
+                      "id": "mw-20261117-0065",
                       "type": "counter",
                       "name": "Masterwork melee helm",
-                      "description": "Already acquired and recorded under Melee armour. Referenced here as an input to the T100 upgrade, not a second item; excluded from this upgrade's crafting percentage.",
+                      "description": "Basic T90 Masterwork melee helm, confirmed owned (1/1). This finished piece is the required ingredient for the corresponding T100 upgrade; historical bars and crafting stages are already complete.",
                       "current": 1,
                       "target": 1,
-                      "weight": 0
+                      "weight": 3
                     },
                     {
                       "id": "mw-t100-item-20261117-005",
@@ -458,7 +400,8 @@
                           "current": 0,
                           "target": 2
                         }
-                      ]
+                      ],
+                      "weight": 5
                     },
                     {
                       "id": "mw-t100-item-20261117-006",
@@ -466,7 +409,8 @@
                       "name": "Primed glorious bars — requirement secured (quantity TBC)",
                       "description": "BINARY readiness milestone (0/1 means not yet supplied; 1/1 means supplied), NOT one primed glorious bar. Jagex confirmed primed glorious bars are required for T100 trimmed armour but has not stated the total or per-piece counts. Once released, replace with an accurate item quantity and recipe; primed glorious bar currently uses 1 glorious bar + 100 primal bars each. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                       "current": 0,
-                      "target": 1
+                      "target": 1,
+                      "weight": 2
                     }
                   ]
                 },
@@ -474,18 +418,18 @@
                   "id": "mw-20261117-0078",
                   "type": "group",
                   "name": "Trimmed masterwork melee platebody",
-                  "description": "T100 trimmed masterwork melee platebody: your owned T90 platebody, masterwork armour trim and primed glorious bars. Old T92 guide uses 5 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+                  "description": "T100 trimmed masterwork melee platebody: Your acquired T90 platebody, masterwork armour trim and primed glorious bars. Old T92 guide uses 5 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                   "expanded": false,
                   "presentation": "list",
                   "children": [
                     {
-                      "id": "mw-t100-item-20261117-007",
+                      "id": "mw-20261117-0066",
                       "type": "counter",
                       "name": "Masterwork melee platebody",
-                      "description": "Already acquired and recorded under Melee armour. Referenced here as an input to the T100 upgrade, not a second item; excluded from this upgrade's crafting percentage.",
+                      "description": "Basic T90 Masterwork melee platebody, confirmed owned (1/1). This finished piece is the required ingredient for the corresponding T100 upgrade; historical bars and crafting stages are already complete.",
                       "current": 1,
                       "target": 1,
-                      "weight": 0
+                      "weight": 3
                     },
                     {
                       "id": "mw-t100-item-20261117-011",
@@ -519,7 +463,8 @@
                           "current": 0,
                           "target": 5
                         }
-                      ]
+                      ],
+                      "weight": 5
                     },
                     {
                       "id": "mw-t100-item-20261117-012",
@@ -527,7 +472,8 @@
                       "name": "Primed glorious bars — requirement secured (quantity TBC)",
                       "description": "BINARY readiness milestone (0/1 means not yet supplied; 1/1 means supplied), NOT one primed glorious bar. Jagex confirmed primed glorious bars are required for T100 trimmed armour but has not stated the total or per-piece counts. Once released, replace with an accurate item quantity and recipe; primed glorious bar currently uses 1 glorious bar + 100 primal bars each. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                       "current": 0,
-                      "target": 1
+                      "target": 1,
+                      "weight": 2
                     }
                   ]
                 },
@@ -535,18 +481,18 @@
                   "id": "mw-20261117-0079",
                   "type": "group",
                   "name": "Trimmed masterwork melee platelegs",
-                  "description": "T100 trimmed masterwork melee platelegs: your owned T90 platelegs, masterwork armour trim and primed glorious bars. Old T92 guide uses 3 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+                  "description": "T100 trimmed masterwork melee platelegs: Your acquired T90 platelegs, masterwork armour trim and primed glorious bars. Old T92 guide uses 3 trims for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                   "expanded": false,
                   "presentation": "list",
                   "children": [
                     {
-                      "id": "mw-t100-item-20261117-013",
+                      "id": "mw-20261117-0067",
                       "type": "counter",
                       "name": "Masterwork melee platelegs",
-                      "description": "Already acquired and recorded under Melee armour. Referenced here as an input to the T100 upgrade, not a second item; excluded from this upgrade's crafting percentage.",
+                      "description": "Basic T90 Masterwork melee platelegs, confirmed owned (1/1). This finished piece is the required ingredient for the corresponding T100 upgrade; historical bars and crafting stages are already complete.",
                       "current": 1,
                       "target": 1,
-                      "weight": 0
+                      "weight": 3
                     },
                     {
                       "id": "mw-t100-item-20261117-017",
@@ -580,7 +526,8 @@
                           "current": 0,
                           "target": 3
                         }
-                      ]
+                      ],
+                      "weight": 5
                     },
                     {
                       "id": "mw-t100-item-20261117-018",
@@ -588,7 +535,8 @@
                       "name": "Primed glorious bars — requirement secured (quantity TBC)",
                       "description": "BINARY readiness milestone (0/1 means not yet supplied; 1/1 means supplied), NOT one primed glorious bar. Jagex confirmed primed glorious bars are required for T100 trimmed armour but has not stated the total or per-piece counts. Once released, replace with an accurate item quantity and recipe; primed glorious bar currently uses 1 glorious bar + 100 primal bars each. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                       "current": 0,
-                      "target": 1
+                      "target": 1,
+                      "weight": 2
                     }
                   ]
                 },
@@ -596,18 +544,18 @@
                   "id": "mw-20261117-0080",
                   "type": "group",
                   "name": "Trimmed masterwork melee gloves",
-                  "description": "T100 trimmed masterwork melee gloves: your owned T90 gloves, masterwork armour trim and primed glorious bars. Old T92 guide uses 1 trim for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+                  "description": "T100 trimmed masterwork melee gloves: Your acquired T90 gloves, masterwork armour trim and primed glorious bars. Old T92 guide uses 1 trim for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                   "expanded": false,
                   "presentation": "list",
                   "children": [
                     {
-                      "id": "mw-t100-item-20261117-019",
+                      "id": "mw-20261117-0068",
                       "type": "counter",
                       "name": "Masterwork melee gloves",
-                      "description": "Already acquired and recorded under Melee armour. Referenced here as an input to the T100 upgrade, not a second item; excluded from this upgrade's crafting percentage.",
+                      "description": "Basic T90 Masterwork melee gloves, confirmed owned (1/1). This finished piece is the required ingredient for the corresponding T100 upgrade; historical bars and crafting stages are already complete.",
                       "current": 1,
                       "target": 1,
-                      "weight": 0
+                      "weight": 3
                     },
                     {
                       "id": "mw-t100-item-20261117-023",
@@ -641,7 +589,8 @@
                           "current": 0,
                           "target": 1
                         }
-                      ]
+                      ],
+                      "weight": 5
                     },
                     {
                       "id": "mw-t100-item-20261117-024",
@@ -649,7 +598,8 @@
                       "name": "Primed glorious bars — requirement secured (quantity TBC)",
                       "description": "BINARY readiness milestone (0/1 means not yet supplied; 1/1 means supplied), NOT one primed glorious bar. Jagex confirmed primed glorious bars are required for T100 trimmed armour but has not stated the total or per-piece counts. Once released, replace with an accurate item quantity and recipe; primed glorious bar currently uses 1 glorious bar + 100 primal bars each. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                       "current": 0,
-                      "target": 1
+                      "target": 1,
+                      "weight": 2
                     }
                   ]
                 },
@@ -657,18 +607,18 @@
                   "id": "mw-20261117-0081",
                   "type": "group",
                   "name": "Trimmed masterwork melee boots",
-                  "description": "T100 trimmed masterwork melee boots: your owned T90 boots, masterwork armour trim and primed glorious bars. Old T92 guide uses 1 trim for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
+                  "description": "T100 trimmed masterwork melee boots: Your acquired T90 boots, masterwork armour trim and primed glorious bars. Old T92 guide uses 1 trim for this piece, but Jagex has not published the exact T100 per-piece recipe. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                   "expanded": false,
                   "presentation": "list",
                   "children": [
                     {
-                      "id": "mw-t100-item-20261117-025",
+                      "id": "mw-20261117-0069",
                       "type": "counter",
                       "name": "Masterwork melee boots",
-                      "description": "Already acquired and recorded under Melee armour. Referenced here as an input to the T100 upgrade, not a second item; excluded from this upgrade's crafting percentage.",
+                      "description": "Basic T90 Masterwork melee boots, confirmed owned (1/1). This finished piece is the required ingredient for the corresponding T100 upgrade; historical bars and crafting stages are already complete.",
                       "current": 1,
                       "target": 1,
-                      "weight": 0
+                      "weight": 3
                     },
                     {
                       "id": "mw-t100-item-20261117-029",
@@ -702,7 +652,8 @@
                           "current": 0,
                           "target": 1
                         }
-                      ]
+                      ],
+                      "weight": 5
                     },
                     {
                       "id": "mw-t100-item-20261117-030",
@@ -710,7 +661,8 @@
                       "name": "Primed glorious bars — requirement secured (quantity TBC)",
                       "description": "BINARY readiness milestone (0/1 means not yet supplied; 1/1 means supplied), NOT one primed glorious bar. Jagex confirmed primed glorious bars are required for T100 trimmed armour but has not stated the total or per-piece counts. Once released, replace with an accurate item quantity and recipe; primed glorious bar currently uses 1 glorious bar + 100 primal bars each. https://runenation.org/news-and-updates/runescape-news/13151-late-game-rebalance-design-preview",
                       "current": 0,
-                      "target": 1
+                      "target": 1,
+                      "weight": 2
                     }
                   ]
                 }
