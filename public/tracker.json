@@ -2264,228 +2264,1761 @@
           "id": "mw-20261117-0113",
           "type": "group",
           "name": "Magic armour",
-          "description": "Requires level 110 Crafting and 'It Should Have Been Called Ancestral'. https://runescape.wiki/w/Masterwork_magic_equipment",
-          "expanded": false,
+          "description": "Five T100 finished Magic Masterwork armour items, each split into actual nested craft components and then source ingredients. No separate raw-material shopping list or final-item checkboxes. White cloth → Starbloom cloth → thread → flowers + Croesus flakes; blue cloth → strips / tiered magic hides and cloth; green cloth → flakes / starbloom; pearlescent plates → Tectonic & magic Praesulic essences, Ports pearls, platinum and dyed undead dragon leather; Masterwork thread → seasonal wools + ordinary thread. Requires 110 Crafting and Ancestral (Starbloom +5) achievement, currently unconfirmed/incomplete. https://runescape.wiki/w/Masterwork_magic_equipment",
+          "expanded": true,
           "presentation": "list",
           "children": [
             {
+              "id": "mw-20261117-0107",
+              "type": "group",
+              "name": "Masterwork magic hat",
+              "description": "Finished T100 Masterwork magic hat. Direct item-first crafting tree: 3 white cloth + 2 blue cloth + 1 green cloth + 2 ethereal pearlescent plates + 200 Masterwork thread + 1 stone of binding. Finished output itself is parent, not duplicate checkbox. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "weight": 2,
+              "children": [
+                {
+                  "id": "mwmagic-recipe-20261117-0005",
+                  "type": "group",
+                  "name": "Masterwork white cloth (3)",
+                  "description": "Craft 3 Masterwork white cloth, each requiring 50 Starbloom cloth plus 10 Croesus flakes. Starbloom cloth comes from thread, spun from Starbloom flowers. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0003",
+                      "type": "group",
+                      "name": "Starbloom cloth (150)",
+                      "description": "Craft 150 Starbloom cloth: 300 flowers → 300 thread → 150 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0002",
+                          "type": "group",
+                          "name": "Starbloom thread (300)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0001",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 300
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0004",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Ten Croesus flakes per white cloth, 3 pieces total.",
+                      "current": 0,
+                      "target": 30
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0014",
+                  "type": "group",
+                  "name": "Masterwork blue cloth (2)",
+                  "description": "One Masterwork blue cloth = 4 strips of cloth, 4 each of Imphide, spider silk, batwing, mystic cloth, and 2 each of bark and fine cloth. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0007",
+                      "type": "group",
+                      "name": "Strip of cloth (8)",
+                      "description": "Weave two balls of wool into one strip of cloth.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0006",
+                          "type": "counter",
+                          "name": "Balls of wool",
+                          "description": "Two balls of wool make one strip of cloth, so 16 balls for 8 strips.",
+                          "current": 0,
+                          "target": 16
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0008",
+                      "type": "counter",
+                      "name": "Imphide",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0009",
+                      "type": "counter",
+                      "name": "Spider silk",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0010",
+                      "type": "counter",
+                      "name": "Batwing",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0011",
+                      "type": "counter",
+                      "name": "Mystic cloth",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0012",
+                      "type": "counter",
+                      "name": "Bark",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0013",
+                      "type": "counter",
+                      "name": "Fine cloth",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0021",
+                  "type": "group",
+                  "name": "Masterwork green cloth (1)",
+                  "description": "Craft 1 Masterwork green cloth: each uses 10 Starbloom cloth and 1,000 each fungal, grifolic and ganodermic flakes. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0017",
+                      "type": "group",
+                      "name": "Starbloom cloth (10)",
+                      "description": "Craft 10 Starbloom cloth: 20 flowers → 20 thread → 10 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0016",
+                          "type": "group",
+                          "name": "Starbloom thread (20)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0015",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 20
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0018",
+                      "type": "counter",
+                      "name": "Fungal flakes",
+                      "description": "1,000 fungal flakes per green cloth.",
+                      "current": 0,
+                      "target": 1000
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0019",
+                      "type": "counter",
+                      "name": "Grifolic flakes",
+                      "description": "1,000 grifolic flakes per green cloth.",
+                      "current": 0,
+                      "target": 1000
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0020",
+                      "type": "counter",
+                      "name": "Ganodermic flakes",
+                      "description": "1,000 ganodermic flakes per green cloth.",
+                      "current": 0,
+                      "target": 1000
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0032",
+                  "type": "group",
+                  "name": "Ethereal pearlescent plates (2)",
+                  "description": "Each ethereal pearlescent plate uses a pearlescent substrate (1 Tectonic essence +1 magic Praesulic essence +5 Ports pearls), 10 platinum bars and one brown-dyed undead dragon leather; intermediate substrate/plate/lining/imbuing stages are transformations, not extra independent items. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0025",
+                      "type": "group",
+                      "name": "Pearlescent substrates (2)",
+                      "description": "Create unimbued pearlescent substrates from Tectonic + magic Praesulic essence and 5 Ports pearls each; imbue as part of the plate crafting chain. https://runescape.wiki/w/Masterwork_magic_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0022",
+                          "type": "counter",
+                          "name": "Tectonic essence",
+                          "description": "One Tectonic essence per substrate, from converting Tectonic equipment at a Dragonkin anvil.",
+                          "current": 0,
+                          "target": 2
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0023",
+                          "type": "counter",
+                          "name": "Praesulic essence (magic)",
+                          "description": "One magic Praesulic essence per substrate, obtained by breaking down Virtus armour.",
+                          "current": 0,
+                          "target": 2
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0024",
+                          "type": "counter",
+                          "name": "Pearls (Player-owned Ports)",
+                          "description": "Five Ports pearls per pearlescent substrate.",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0027",
+                      "type": "group",
+                      "name": "Platinum bars (20)",
+                      "description": "Smelt 20 platinum bars from platinum ore, 10 bars per pearlescent plate.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0026",
+                          "type": "counter",
+                          "name": "Platinum ore",
+                          "description": "One ore per platinum bar; needed to coat the pearlescent substrate.",
+                          "current": 0,
+                          "target": 20
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0031",
+                      "type": "group",
+                      "name": "Dyed undead dragon leather (2)",
+                      "description": "Dye 2 undead dragon leather brown to line 2 pearlescent plates.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0029",
+                          "type": "group",
+                          "name": "Undead dragon leather (2)",
+                          "description": "Tan 2 undead dragonhide into leather.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0028",
+                              "type": "counter",
+                              "name": "Undead dragonhide",
+                              "description": "Tan undead dragonhide to undead dragon leather for plate lining.",
+                              "current": 0,
+                              "target": 2
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0030",
+                          "type": "counter",
+                          "name": "Brown dye",
+                          "description": "One brown dye per plate lining.",
+                          "current": 0,
+                          "target": 2
+                        }
+                      ],
+                      "weight": 1
+                    }
+                  ],
+                  "weight": 5
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0038",
+                  "type": "group",
+                  "name": "Masterwork thread (200)",
+                  "description": "200 Masterwork thread in batches of 10: each batch consumes 10 ordinary thread and one each of the four seasonal wools. The four wools are named separately because they're collected from different seasonal sheep. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0033",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "Ordinary thread used to spin Masterwork thread, 10 per batch of 10.",
+                      "current": 0,
+                      "target": 200
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0034",
+                      "type": "counter",
+                      "name": "Fallfaced wool",
+                      "description": "One per batch of 10 Masterwork thread, 20 batches.",
+                      "current": 0,
+                      "target": 20
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0035",
+                      "type": "counter",
+                      "name": "Springsheared wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 20
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0036",
+                      "type": "counter",
+                      "name": "Summerdown wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 20
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0037",
+                      "type": "counter",
+                      "name": "Winterwold wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 20
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0039",
+                  "type": "counter",
+                  "name": "Stone of binding",
+                  "description": "One stone of binding is consumed when crafting the final magic armour piece.",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0108",
+              "type": "group",
+              "name": "Masterwork magic robe top",
+              "description": "Finished T100 Masterwork magic robe top. Direct item-first crafting tree: 10 white cloth + 3 blue cloth + 0 green cloth + 5 ethereal pearlescent plates + 500 Masterwork thread + 1 stone of binding. Finished output itself is parent, not duplicate checkbox. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": true,
+              "presentation": "list",
+              "weight": 5,
+              "children": [
+                {
+                  "id": "mwmagic-recipe-20261117-0044",
+                  "type": "group",
+                  "name": "Masterwork white cloth (10)",
+                  "description": "Craft 10 Masterwork white cloth, each requiring 50 Starbloom cloth plus 10 Croesus flakes. Starbloom cloth comes from thread, spun from Starbloom flowers. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0042",
+                      "type": "group",
+                      "name": "Starbloom cloth (500)",
+                      "description": "Craft 500 Starbloom cloth: 1000 flowers → 1000 thread → 500 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0041",
+                          "type": "group",
+                          "name": "Starbloom thread (1000)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0040",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 1000
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0043",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Ten Croesus flakes per white cloth, 10 pieces total.",
+                      "current": 0,
+                      "target": 100
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0053",
+                  "type": "group",
+                  "name": "Masterwork blue cloth (3)",
+                  "description": "One Masterwork blue cloth = 4 strips of cloth, 4 each of Imphide, spider silk, batwing, mystic cloth, and 2 each of bark and fine cloth. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0046",
+                      "type": "group",
+                      "name": "Strip of cloth (12)",
+                      "description": "Weave two balls of wool into one strip of cloth.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0045",
+                          "type": "counter",
+                          "name": "Balls of wool",
+                          "description": "Two balls of wool make one strip of cloth, so 24 balls for 12 strips.",
+                          "current": 0,
+                          "target": 24
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0047",
+                      "type": "counter",
+                      "name": "Imphide",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 12
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0048",
+                      "type": "counter",
+                      "name": "Spider silk",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 12
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0049",
+                      "type": "counter",
+                      "name": "Batwing",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 12
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0050",
+                      "type": "counter",
+                      "name": "Mystic cloth",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 12
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0051",
+                      "type": "counter",
+                      "name": "Bark",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 6
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0052",
+                      "type": "counter",
+                      "name": "Fine cloth",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 6
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0064",
+                  "type": "group",
+                  "name": "Ethereal pearlescent plates (5)",
+                  "description": "Each ethereal pearlescent plate uses a pearlescent substrate (1 Tectonic essence +1 magic Praesulic essence +5 Ports pearls), 10 platinum bars and one brown-dyed undead dragon leather; intermediate substrate/plate/lining/imbuing stages are transformations, not extra independent items. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0057",
+                      "type": "group",
+                      "name": "Pearlescent substrates (5)",
+                      "description": "Create unimbued pearlescent substrates from Tectonic + magic Praesulic essence and 5 Ports pearls each; imbue as part of the plate crafting chain. https://runescape.wiki/w/Masterwork_magic_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0054",
+                          "type": "counter",
+                          "name": "Tectonic essence",
+                          "description": "One Tectonic essence per substrate, from converting Tectonic equipment at a Dragonkin anvil.",
+                          "current": 0,
+                          "target": 5
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0055",
+                          "type": "counter",
+                          "name": "Praesulic essence (magic)",
+                          "description": "One magic Praesulic essence per substrate, obtained by breaking down Virtus armour.",
+                          "current": 0,
+                          "target": 5
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0056",
+                          "type": "counter",
+                          "name": "Pearls (Player-owned Ports)",
+                          "description": "Five Ports pearls per pearlescent substrate.",
+                          "current": 0,
+                          "target": 25
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0059",
+                      "type": "group",
+                      "name": "Platinum bars (50)",
+                      "description": "Smelt 50 platinum bars from platinum ore, 10 bars per pearlescent plate.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0058",
+                          "type": "counter",
+                          "name": "Platinum ore",
+                          "description": "One ore per platinum bar; needed to coat the pearlescent substrate.",
+                          "current": 0,
+                          "target": 50
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0063",
+                      "type": "group",
+                      "name": "Dyed undead dragon leather (5)",
+                      "description": "Dye 5 undead dragon leather brown to line 5 pearlescent plates.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0061",
+                          "type": "group",
+                          "name": "Undead dragon leather (5)",
+                          "description": "Tan 5 undead dragonhide into leather.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0060",
+                              "type": "counter",
+                              "name": "Undead dragonhide",
+                              "description": "Tan undead dragonhide to undead dragon leather for plate lining.",
+                              "current": 0,
+                              "target": 5
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0062",
+                          "type": "counter",
+                          "name": "Brown dye",
+                          "description": "One brown dye per plate lining.",
+                          "current": 0,
+                          "target": 5
+                        }
+                      ],
+                      "weight": 1
+                    }
+                  ],
+                  "weight": 5
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0070",
+                  "type": "group",
+                  "name": "Masterwork thread (500)",
+                  "description": "500 Masterwork thread in batches of 10: each batch consumes 10 ordinary thread and one each of the four seasonal wools. The four wools are named separately because they're collected from different seasonal sheep. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0065",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "Ordinary thread used to spin Masterwork thread, 10 per batch of 10.",
+                      "current": 0,
+                      "target": 500
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0066",
+                      "type": "counter",
+                      "name": "Fallfaced wool",
+                      "description": "One per batch of 10 Masterwork thread, 50 batches.",
+                      "current": 0,
+                      "target": 50
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0067",
+                      "type": "counter",
+                      "name": "Springsheared wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 50
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0068",
+                      "type": "counter",
+                      "name": "Summerdown wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 50
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0069",
+                      "type": "counter",
+                      "name": "Winterwold wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 50
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0071",
+                  "type": "counter",
+                  "name": "Stone of binding",
+                  "description": "One stone of binding is consumed when crafting the final magic armour piece.",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0109",
+              "type": "group",
+              "name": "Masterwork magic robe bottom",
+              "description": "Finished T100 Masterwork magic robe bottom. Direct item-first crafting tree: 5 white cloth + 2 blue cloth + 0 green cloth + 3 ethereal pearlescent plates + 300 Masterwork thread + 1 stone of binding. Finished output itself is parent, not duplicate checkbox. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "weight": 3,
+              "children": [
+                {
+                  "id": "mwmagic-recipe-20261117-0076",
+                  "type": "group",
+                  "name": "Masterwork white cloth (5)",
+                  "description": "Craft 5 Masterwork white cloth, each requiring 50 Starbloom cloth plus 10 Croesus flakes. Starbloom cloth comes from thread, spun from Starbloom flowers. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0074",
+                      "type": "group",
+                      "name": "Starbloom cloth (250)",
+                      "description": "Craft 250 Starbloom cloth: 500 flowers → 500 thread → 250 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0073",
+                          "type": "group",
+                          "name": "Starbloom thread (500)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0072",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 500
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0075",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Ten Croesus flakes per white cloth, 5 pieces total.",
+                      "current": 0,
+                      "target": 50
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0085",
+                  "type": "group",
+                  "name": "Masterwork blue cloth (2)",
+                  "description": "One Masterwork blue cloth = 4 strips of cloth, 4 each of Imphide, spider silk, batwing, mystic cloth, and 2 each of bark and fine cloth. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0078",
+                      "type": "group",
+                      "name": "Strip of cloth (8)",
+                      "description": "Weave two balls of wool into one strip of cloth.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0077",
+                          "type": "counter",
+                          "name": "Balls of wool",
+                          "description": "Two balls of wool make one strip of cloth, so 16 balls for 8 strips.",
+                          "current": 0,
+                          "target": 16
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0079",
+                      "type": "counter",
+                      "name": "Imphide",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0080",
+                      "type": "counter",
+                      "name": "Spider silk",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0081",
+                      "type": "counter",
+                      "name": "Batwing",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0082",
+                      "type": "counter",
+                      "name": "Mystic cloth",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 8
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0083",
+                      "type": "counter",
+                      "name": "Bark",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0084",
+                      "type": "counter",
+                      "name": "Fine cloth",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0096",
+                  "type": "group",
+                  "name": "Ethereal pearlescent plates (3)",
+                  "description": "Each ethereal pearlescent plate uses a pearlescent substrate (1 Tectonic essence +1 magic Praesulic essence +5 Ports pearls), 10 platinum bars and one brown-dyed undead dragon leather; intermediate substrate/plate/lining/imbuing stages are transformations, not extra independent items. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0089",
+                      "type": "group",
+                      "name": "Pearlescent substrates (3)",
+                      "description": "Create unimbued pearlescent substrates from Tectonic + magic Praesulic essence and 5 Ports pearls each; imbue as part of the plate crafting chain. https://runescape.wiki/w/Masterwork_magic_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0086",
+                          "type": "counter",
+                          "name": "Tectonic essence",
+                          "description": "One Tectonic essence per substrate, from converting Tectonic equipment at a Dragonkin anvil.",
+                          "current": 0,
+                          "target": 3
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0087",
+                          "type": "counter",
+                          "name": "Praesulic essence (magic)",
+                          "description": "One magic Praesulic essence per substrate, obtained by breaking down Virtus armour.",
+                          "current": 0,
+                          "target": 3
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0088",
+                          "type": "counter",
+                          "name": "Pearls (Player-owned Ports)",
+                          "description": "Five Ports pearls per pearlescent substrate.",
+                          "current": 0,
+                          "target": 15
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0091",
+                      "type": "group",
+                      "name": "Platinum bars (30)",
+                      "description": "Smelt 30 platinum bars from platinum ore, 10 bars per pearlescent plate.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0090",
+                          "type": "counter",
+                          "name": "Platinum ore",
+                          "description": "One ore per platinum bar; needed to coat the pearlescent substrate.",
+                          "current": 0,
+                          "target": 30
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0095",
+                      "type": "group",
+                      "name": "Dyed undead dragon leather (3)",
+                      "description": "Dye 3 undead dragon leather brown to line 3 pearlescent plates.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0093",
+                          "type": "group",
+                          "name": "Undead dragon leather (3)",
+                          "description": "Tan 3 undead dragonhide into leather.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0092",
+                              "type": "counter",
+                              "name": "Undead dragonhide",
+                              "description": "Tan undead dragonhide to undead dragon leather for plate lining.",
+                              "current": 0,
+                              "target": 3
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0094",
+                          "type": "counter",
+                          "name": "Brown dye",
+                          "description": "One brown dye per plate lining.",
+                          "current": 0,
+                          "target": 3
+                        }
+                      ],
+                      "weight": 1
+                    }
+                  ],
+                  "weight": 5
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0102",
+                  "type": "group",
+                  "name": "Masterwork thread (300)",
+                  "description": "300 Masterwork thread in batches of 10: each batch consumes 10 ordinary thread and one each of the four seasonal wools. The four wools are named separately because they're collected from different seasonal sheep. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0097",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "Ordinary thread used to spin Masterwork thread, 10 per batch of 10.",
+                      "current": 0,
+                      "target": 300
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0098",
+                      "type": "counter",
+                      "name": "Fallfaced wool",
+                      "description": "One per batch of 10 Masterwork thread, 30 batches.",
+                      "current": 0,
+                      "target": 30
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0099",
+                      "type": "counter",
+                      "name": "Springsheared wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 30
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0100",
+                      "type": "counter",
+                      "name": "Summerdown wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 30
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0101",
+                      "type": "counter",
+                      "name": "Winterwold wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 30
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0103",
+                  "type": "counter",
+                  "name": "Stone of binding",
+                  "description": "One stone of binding is consumed when crafting the final magic armour piece.",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0110",
+              "type": "group",
+              "name": "Masterwork magic gloves",
+              "description": "Finished T100 Masterwork magic gloves. Direct item-first crafting tree: 1 white cloth + 1 blue cloth + 0 green cloth + 1 ethereal pearlescent plates + 100 Masterwork thread + 1 stone of binding. Finished output itself is parent, not duplicate checkbox. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "weight": 1,
+              "children": [
+                {
+                  "id": "mwmagic-recipe-20261117-0108",
+                  "type": "group",
+                  "name": "Masterwork white cloth (1)",
+                  "description": "Craft 1 Masterwork white cloth, each requiring 50 Starbloom cloth plus 10 Croesus flakes. Starbloom cloth comes from thread, spun from Starbloom flowers. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0106",
+                      "type": "group",
+                      "name": "Starbloom cloth (50)",
+                      "description": "Craft 50 Starbloom cloth: 100 flowers → 100 thread → 50 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0105",
+                          "type": "group",
+                          "name": "Starbloom thread (100)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0104",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0107",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Ten Croesus flakes per white cloth, 1 pieces total.",
+                      "current": 0,
+                      "target": 10
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0117",
+                  "type": "group",
+                  "name": "Masterwork blue cloth (1)",
+                  "description": "One Masterwork blue cloth = 4 strips of cloth, 4 each of Imphide, spider silk, batwing, mystic cloth, and 2 each of bark and fine cloth. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0110",
+                      "type": "group",
+                      "name": "Strip of cloth (4)",
+                      "description": "Weave two balls of wool into one strip of cloth.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0109",
+                          "type": "counter",
+                          "name": "Balls of wool",
+                          "description": "Two balls of wool make one strip of cloth, so 8 balls for 4 strips.",
+                          "current": 0,
+                          "target": 8
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0111",
+                      "type": "counter",
+                      "name": "Imphide",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0112",
+                      "type": "counter",
+                      "name": "Spider silk",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0113",
+                      "type": "counter",
+                      "name": "Batwing",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0114",
+                      "type": "counter",
+                      "name": "Mystic cloth",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0115",
+                      "type": "counter",
+                      "name": "Bark",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0116",
+                      "type": "counter",
+                      "name": "Fine cloth",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 2
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0128",
+                  "type": "group",
+                  "name": "Ethereal pearlescent plates (1)",
+                  "description": "Each ethereal pearlescent plate uses a pearlescent substrate (1 Tectonic essence +1 magic Praesulic essence +5 Ports pearls), 10 platinum bars and one brown-dyed undead dragon leather; intermediate substrate/plate/lining/imbuing stages are transformations, not extra independent items. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0121",
+                      "type": "group",
+                      "name": "Pearlescent substrates (1)",
+                      "description": "Create unimbued pearlescent substrates from Tectonic + magic Praesulic essence and 5 Ports pearls each; imbue as part of the plate crafting chain. https://runescape.wiki/w/Masterwork_magic_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0118",
+                          "type": "counter",
+                          "name": "Tectonic essence",
+                          "description": "One Tectonic essence per substrate, from converting Tectonic equipment at a Dragonkin anvil.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0119",
+                          "type": "counter",
+                          "name": "Praesulic essence (magic)",
+                          "description": "One magic Praesulic essence per substrate, obtained by breaking down Virtus armour.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0120",
+                          "type": "counter",
+                          "name": "Pearls (Player-owned Ports)",
+                          "description": "Five Ports pearls per pearlescent substrate.",
+                          "current": 0,
+                          "target": 5
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0123",
+                      "type": "group",
+                      "name": "Platinum bars (10)",
+                      "description": "Smelt 10 platinum bars from platinum ore, 10 bars per pearlescent plate.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0122",
+                          "type": "counter",
+                          "name": "Platinum ore",
+                          "description": "One ore per platinum bar; needed to coat the pearlescent substrate.",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0127",
+                      "type": "group",
+                      "name": "Dyed undead dragon leather (1)",
+                      "description": "Dye 1 undead dragon leather brown to line 1 pearlescent plates.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0125",
+                          "type": "group",
+                          "name": "Undead dragon leather (1)",
+                          "description": "Tan 1 undead dragonhide into leather.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0124",
+                              "type": "counter",
+                              "name": "Undead dragonhide",
+                              "description": "Tan undead dragonhide to undead dragon leather for plate lining.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0126",
+                          "type": "counter",
+                          "name": "Brown dye",
+                          "description": "One brown dye per plate lining.",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 1
+                    }
+                  ],
+                  "weight": 5
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0134",
+                  "type": "group",
+                  "name": "Masterwork thread (100)",
+                  "description": "100 Masterwork thread in batches of 10: each batch consumes 10 ordinary thread and one each of the four seasonal wools. The four wools are named separately because they're collected from different seasonal sheep. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0129",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "Ordinary thread used to spin Masterwork thread, 10 per batch of 10.",
+                      "current": 0,
+                      "target": 100
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0130",
+                      "type": "counter",
+                      "name": "Fallfaced wool",
+                      "description": "One per batch of 10 Masterwork thread, 10 batches.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0131",
+                      "type": "counter",
+                      "name": "Springsheared wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0132",
+                      "type": "counter",
+                      "name": "Summerdown wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0133",
+                      "type": "counter",
+                      "name": "Winterwold wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0135",
+                  "type": "counter",
+                  "name": "Stone of binding",
+                  "description": "One stone of binding is consumed when crafting the final magic armour piece.",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0111",
+              "type": "group",
+              "name": "Masterwork magic boots",
+              "description": "Finished T100 Masterwork magic boots. Direct item-first crafting tree: 1 white cloth + 1 blue cloth + 0 green cloth + 1 ethereal pearlescent plates + 100 Masterwork thread + 1 stone of binding. Finished output itself is parent, not duplicate checkbox. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "weight": 1,
+              "children": [
+                {
+                  "id": "mwmagic-recipe-20261117-0140",
+                  "type": "group",
+                  "name": "Masterwork white cloth (1)",
+                  "description": "Craft 1 Masterwork white cloth, each requiring 50 Starbloom cloth plus 10 Croesus flakes. Starbloom cloth comes from thread, spun from Starbloom flowers. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0138",
+                      "type": "group",
+                      "name": "Starbloom cloth (50)",
+                      "description": "Craft 50 Starbloom cloth: 100 flowers → 100 thread → 50 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0137",
+                          "type": "group",
+                          "name": "Starbloom thread (100)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0136",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0139",
+                      "type": "counter",
+                      "name": "Croesus flakes",
+                      "description": "Ten Croesus flakes per white cloth, 1 pieces total.",
+                      "current": 0,
+                      "target": 10
+                    }
+                  ],
+                  "weight": 3
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0149",
+                  "type": "group",
+                  "name": "Masterwork blue cloth (1)",
+                  "description": "One Masterwork blue cloth = 4 strips of cloth, 4 each of Imphide, spider silk, batwing, mystic cloth, and 2 each of bark and fine cloth. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0142",
+                      "type": "group",
+                      "name": "Strip of cloth (4)",
+                      "description": "Weave two balls of wool into one strip of cloth.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0141",
+                          "type": "counter",
+                          "name": "Balls of wool",
+                          "description": "Two balls of wool make one strip of cloth, so 8 balls for 4 strips.",
+                          "current": 0,
+                          "target": 8
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0143",
+                      "type": "counter",
+                      "name": "Imphide",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0144",
+                      "type": "counter",
+                      "name": "Spider silk",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0145",
+                      "type": "counter",
+                      "name": "Batwing",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0146",
+                      "type": "counter",
+                      "name": "Mystic cloth",
+                      "description": "Four per blue cloth.",
+                      "current": 0,
+                      "target": 4
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0147",
+                      "type": "counter",
+                      "name": "Bark",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0148",
+                      "type": "counter",
+                      "name": "Fine cloth",
+                      "description": "Two per blue cloth.",
+                      "current": 0,
+                      "target": 2
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0160",
+                  "type": "group",
+                  "name": "Ethereal pearlescent plates (1)",
+                  "description": "Each ethereal pearlescent plate uses a pearlescent substrate (1 Tectonic essence +1 magic Praesulic essence +5 Ports pearls), 10 platinum bars and one brown-dyed undead dragon leather; intermediate substrate/plate/lining/imbuing stages are transformations, not extra independent items. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0153",
+                      "type": "group",
+                      "name": "Pearlescent substrates (1)",
+                      "description": "Create unimbued pearlescent substrates from Tectonic + magic Praesulic essence and 5 Ports pearls each; imbue as part of the plate crafting chain. https://runescape.wiki/w/Masterwork_magic_equipment",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0150",
+                          "type": "counter",
+                          "name": "Tectonic essence",
+                          "description": "One Tectonic essence per substrate, from converting Tectonic equipment at a Dragonkin anvil.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0151",
+                          "type": "counter",
+                          "name": "Praesulic essence (magic)",
+                          "description": "One magic Praesulic essence per substrate, obtained by breaking down Virtus armour.",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0152",
+                          "type": "counter",
+                          "name": "Pearls (Player-owned Ports)",
+                          "description": "Five Ports pearls per pearlescent substrate.",
+                          "current": 0,
+                          "target": 5
+                        }
+                      ],
+                      "weight": 5
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0155",
+                      "type": "group",
+                      "name": "Platinum bars (10)",
+                      "description": "Smelt 10 platinum bars from platinum ore, 10 bars per pearlescent plate.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0154",
+                          "type": "counter",
+                          "name": "Platinum ore",
+                          "description": "One ore per platinum bar; needed to coat the pearlescent substrate.",
+                          "current": 0,
+                          "target": 10
+                        }
+                      ],
+                      "weight": 2
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0159",
+                      "type": "group",
+                      "name": "Dyed undead dragon leather (1)",
+                      "description": "Dye 1 undead dragon leather brown to line 1 pearlescent plates.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0157",
+                          "type": "group",
+                          "name": "Undead dragon leather (1)",
+                          "description": "Tan 1 undead dragonhide into leather.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0156",
+                              "type": "counter",
+                              "name": "Undead dragonhide",
+                              "description": "Tan undead dragonhide to undead dragon leather for plate lining.",
+                              "current": 0,
+                              "target": 1
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwmagic-recipe-20261117-0158",
+                          "type": "counter",
+                          "name": "Brown dye",
+                          "description": "One brown dye per plate lining.",
+                          "current": 0,
+                          "target": 1
+                        }
+                      ],
+                      "weight": 1
+                    }
+                  ],
+                  "weight": 5
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0166",
+                  "type": "group",
+                  "name": "Masterwork thread (100)",
+                  "description": "100 Masterwork thread in batches of 10: each batch consumes 10 ordinary thread and one each of the four seasonal wools. The four wools are named separately because they're collected from different seasonal sheep. https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0161",
+                      "type": "counter",
+                      "name": "Thread",
+                      "description": "Ordinary thread used to spin Masterwork thread, 10 per batch of 10.",
+                      "current": 0,
+                      "target": 100
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0162",
+                      "type": "counter",
+                      "name": "Fallfaced wool",
+                      "description": "One per batch of 10 Masterwork thread, 10 batches.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0163",
+                      "type": "counter",
+                      "name": "Springsheared wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0164",
+                      "type": "counter",
+                      "name": "Summerdown wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    },
+                    {
+                      "id": "mwmagic-recipe-20261117-0165",
+                      "type": "counter",
+                      "name": "Winterwold wool",
+                      "description": "One wool per batch of 10 Masterwork thread.",
+                      "current": 0,
+                      "target": 10
+                    }
+                  ],
+                  "weight": 2
+                },
+                {
+                  "id": "mwmagic-recipe-20261117-0167",
+                  "type": "counter",
+                  "name": "Stone of binding",
+                  "description": "One stone of binding is consumed when crafting the final magic armour piece.",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
               "id": "mw-20261117-0093",
               "type": "group",
-              "name": "Unlock: Starbloom +5",
-              "description": "384 cloth / 768 thread / 768 flower (a single production chain, not additive material demands). https://runescape.wiki/w/Masterwork_magic_equipment",
+              "name": "It Should Have Been Called Ancestral — Starbloom +5 unlock",
+              "description": "Craft and upgrade Starbloom hat, robe top, robe bottom, gloves and boots to +5. Individual items expand into Starbloom cloth → Starbloom thread → Starbloom flowers. In total the achievement requires 384 cloth / 768 flowers, counted once in per-piece recipes, not again in a shared shopping list. The achievement checkbox itself has weight 0 as a duplicate completion signal. Prerequisite to Masterwork magic crafting. https://runescape.wiki/w/It_Should_Have_Been_Called_Ancestral",
               "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0085",
-                  "type": "counter",
-                  "name": "Starbloom cloth for +5 set",
-                  "description": "",
-                  "current": 0,
-                  "target": 384
-                },
-                {
-                  "id": "mw-20261117-0086",
-                  "type": "counter",
-                  "name": "Starbloom thread for +5 set",
-                  "description": "768 starbloom threads are made from 768 starbloom flowers; they become 384 starbloom cloth.",
-                  "current": 0,
-                  "target": 768
-                },
-                {
                   "id": "mw-20261117-0087",
-                  "type": "checkbox",
+                  "type": "group",
                   "name": "Starbloom hat +5",
-                  "description": "64 starbloom cloth, 128 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
-                  "complete": false
+                  "description": "Craft and upgrade the Starbloom hat +5 through +5. 64 Starbloom cloth is made from 128 thread, spun from 128 flowers. This is one production chain (not independent costs). https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0170",
+                      "type": "group",
+                      "name": "Starbloom cloth (64)",
+                      "description": "Craft 64 Starbloom cloth: 128 flowers → 128 thread → 64 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0169",
+                          "type": "group",
+                          "name": "Starbloom thread (128)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0168",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 128
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0088",
-                  "type": "checkbox",
+                  "type": "group",
                   "name": "Starbloom robe top +5",
-                  "description": "160 starbloom cloth, 320 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
-                  "complete": false
+                  "description": "Craft and upgrade the Starbloom robe top +5 through +5. 160 Starbloom cloth is made from 320 thread, spun from 320 flowers. This is one production chain (not independent costs). https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0173",
+                      "type": "group",
+                      "name": "Starbloom cloth (160)",
+                      "description": "Craft 160 Starbloom cloth: 320 flowers → 320 thread → 160 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0172",
+                          "type": "group",
+                          "name": "Starbloom thread (320)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0171",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 320
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0089",
-                  "type": "checkbox",
+                  "type": "group",
                   "name": "Starbloom robe bottom +5",
-                  "description": "96 starbloom cloth, 192 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
-                  "complete": false
+                  "description": "Craft and upgrade the Starbloom robe bottom +5 through +5. 96 Starbloom cloth is made from 192 thread, spun from 192 flowers. This is one production chain (not independent costs). https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0176",
+                      "type": "group",
+                      "name": "Starbloom cloth (96)",
+                      "description": "Craft 96 Starbloom cloth: 192 flowers → 192 thread → 96 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0175",
+                          "type": "group",
+                          "name": "Starbloom thread (192)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0174",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 192
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0090",
-                  "type": "checkbox",
+                  "type": "group",
                   "name": "Starbloom gloves +5",
-                  "description": "32 starbloom cloth, 64 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
-                  "complete": false
+                  "description": "Craft and upgrade the Starbloom gloves +5 through +5. 32 Starbloom cloth is made from 64 thread, spun from 64 flowers. This is one production chain (not independent costs). https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0179",
+                      "type": "group",
+                      "name": "Starbloom cloth (32)",
+                      "description": "Craft 32 Starbloom cloth: 64 flowers → 64 thread → 32 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0178",
+                          "type": "group",
+                          "name": "Starbloom thread (64)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0177",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 64
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0091",
-                  "type": "checkbox",
+                  "type": "group",
                   "name": "Starbloom boots +5",
-                  "description": "32 starbloom cloth, 64 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
-                  "complete": false
+                  "description": "Craft and upgrade the Starbloom boots +5 through +5. 32 Starbloom cloth is made from 64 thread, spun from 64 flowers. This is one production chain (not independent costs). https://runescape.wiki/w/Masterwork_magic_equipment",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwmagic-recipe-20261117-0182",
+                      "type": "group",
+                      "name": "Starbloom cloth (32)",
+                      "description": "Craft 32 Starbloom cloth: 64 flowers → 64 thread → 32 cloth. Each level is a processing stage of the same source resource, not extra flowers.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwmagic-recipe-20261117-0181",
+                          "type": "group",
+                          "name": "Starbloom thread (64)",
+                          "description": "Raw 1:1 flower → thread conversion; 2 thread per finished cloth.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwmagic-recipe-20261117-0180",
+                              "type": "counter",
+                              "name": "Starbloom flowers",
+                              "description": "Spin one Starbloom flower into one Starbloom thread, then weave two thread per Starbloom cloth at a loom.",
+                              "current": 0,
+                              "target": 64
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "id": "mw-20261117-0092",
                   "type": "checkbox",
                   "name": "It Should Have Been Called Ancestral completed",
                   "description": "Full starbloom +5 set; prerequisite to masterwork magic armour.",
-                  "complete": false
+                  "complete": false,
+                  "weight": 0
                 }
-              ]
-            },
-            {
-              "id": "mw-20261117-0106",
-              "type": "group",
-              "name": "Magic set crafting components",
-              "description": "These are shared full-set requirements and intermediate crafting stages; don't count the same ingredient twice. https://runescape.wiki/w/Masterwork_magic_equipment",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0094",
-                  "type": "counter",
-                  "name": "Masterwork white cloth",
-                  "description": "Requires 1,000 starbloom cloth and 200 Croesus flakes to produce 20 white cloth.",
-                  "current": 0,
-                  "target": 20
-                },
-                {
-                  "id": "mw-20261117-0095",
-                  "type": "counter",
-                  "name": "Masterwork blue cloth",
-                  "description": "Requires 36 strips of cloth, 36 each imphide/spider silk/batwing/mystic cloth, 18 bark and 18 fine cloth.",
-                  "current": 0,
-                  "target": 9
-                },
-                {
-                  "id": "mw-20261117-0096",
-                  "type": "counter",
-                  "name": "Masterwork green cloth",
-                  "description": "Requires 10 starbloom cloth and 1,000 each fungal, grifolic and ganodermic flakes.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0097",
-                  "type": "counter",
-                  "name": "Masterwork thread",
-                  "description": "1,200 thread plus 120 each of Fallfaced, Springsheared, Summerdown, Winterwold wool to craft 1,200 masterwork thread.",
-                  "current": 0,
-                  "target": 1200
-                },
-                {
-                  "id": "mw-20261117-0098",
-                  "type": "counter",
-                  "name": "Ethereal pearlescent plates",
-                  "description": "For 12: 12 tectonic essence, 12 praesulic essence magic, 60 pearls, 120 platinum bars, 12 undead dragon leather and 12 brown dyes.",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0099",
-                  "type": "counter",
-                  "name": "Tectonic essence",
-                  "description": "",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0100",
-                  "type": "counter",
-                  "name": "Praesulic essence (magic) from Virtus",
-                  "description": "",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0101",
-                  "type": "counter",
-                  "name": "Pearls (Player-owned ports)",
-                  "description": "",
-                  "current": 0,
-                  "target": 60
-                },
-                {
-                  "id": "mw-20261117-0102",
-                  "type": "counter",
-                  "name": "Platinum bars",
-                  "description": "",
-                  "current": 0,
-                  "target": 120
-                },
-                {
-                  "id": "mw-20261117-0103",
-                  "type": "counter",
-                  "name": "Undead dragon leather (plate linings)",
-                  "description": "",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0104",
-                  "type": "counter",
-                  "name": "Brown dye (plate linings)",
-                  "description": "",
-                  "current": 0,
-                  "target": 12
-                },
-                {
-                  "id": "mw-20261117-0105",
-                  "type": "counter",
-                  "name": "Stones of binding",
-                  "description": "",
-                  "current": 0,
-                  "target": 5
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0112",
-              "type": "group",
-              "name": "Magic armour pieces",
-              "description": "Per-item recipes: https://runescape.wiki/w/Masterwork_magic_equipment",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0107",
-                  "type": "checkbox",
-                  "name": "Masterwork magic hat",
-                  "description": "3 masterwork white cloth +2 blue +1 green +2 ethereal pearlescent plates +200 masterwork thread +1 stone of binding.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0108",
-                  "type": "checkbox",
-                  "name": "Masterwork magic robe top",
-                  "description": "10 white cloth +3 blue +5 ethereal pearlescent plates +500 masterwork thread +1 stone of binding.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0109",
-                  "type": "checkbox",
-                  "name": "Masterwork magic robe bottom",
-                  "description": "5 white cloth +2 blue +3 ethereal pearlescent plates +300 masterwork thread +1 stone of binding.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0110",
-                  "type": "checkbox",
-                  "name": "Masterwork magic gloves",
-                  "description": "1 white cloth +1 blue +1 ethereal pearlescent plate +100 masterwork thread +1 stone of binding.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0111",
-                  "type": "checkbox",
-                  "name": "Masterwork magic boots",
-                  "description": "1 white cloth +1 blue +1 ethereal pearlescent plate +100 masterwork thread +1 stone of binding.",
-                  "complete": false
-                }
-              ]
+              ],
+              "weight": 0
             }
           ]
         },
