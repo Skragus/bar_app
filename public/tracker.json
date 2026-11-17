@@ -1115,7 +1115,7 @@
               "type": "counter",
               "name": "Crafting to Your Own Rune",
               "description": "Unlock by making and upgrading the required eternal magic weaponry to +5. Needed before creating the staff. https://runescape.wiki/w/Crafting_to_Your_Own_Rune",
-              "current": 0,
+              "current": 1,
               "target": 1
             },
             {
@@ -1774,143 +1774,353 @@
           "id": "mw-20261117-0206",
           "type": "group",
           "name": "Masterwork 2h sword",
-          "description": "Level 110 Smithing and prerequisite achievements as listed by RS Wiki. https://runescape.wiki/w/Masterwork_2h_sword",
-          "expanded": false,
+          "description": "Item-first recipe: Masterwork 2h sword = sharpened masterwork blade + masterwork sword hilt. Also requires 'It Still Should Have Been Called Aetherium' (primal armour +5). 10 primed glorious bars total (10 glorious + 1,000 primal), 10 gold bars, one extra primal bar for sword trim, 4 kalphite essence, 4 demonic essence, 4 chaotic essence, one moonstone, one undead dragon leather, one brown dye. Every component has its own input tally; no shared totals duplicated as siblings. https://runescape.wiki/w/Masterwork_2h_sword",
+          "expanded": true,
           "presentation": "list",
           "children": [
             {
-              "id": "mw-20261117-0192",
+              "id": "mwsword-tree-20261117-030",
+              "type": "counter",
+              "name": "It Still Should Have Been Called Aetherium",
+              "description": "Achievement to unlock masterwork 2h sword: craft a primal full helm, platebody, platelegs, gauntlets and boots to +5 (384 primal bars from scratch). Completion NOT confirmed; 0/1 placeholder.",
+              "current": 0,
+              "target": 1
+            },
+            {
+              "id": "mw-20261117-0201",
               "type": "group",
-              "name": "Primed glorious bar chain",
-              "description": "One primed glorious = one glorious bar + 100 primal bars. Need 10. https://runescape.wiki/w/Primed_glorious_bar",
-              "expanded": false,
+              "name": "Sharpened masterwork blade",
+              "description": "Blade branch contains its actual materials; no extra final assembly counter. https://runescape.wiki/w/Masterwork_2h_sword",
+              "expanded": true,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0189",
-                  "type": "counter",
-                  "name": "Glorious bars",
-                  "description": "",
-                  "current": 0,
-                  "target": 10
-                },
-                {
-                  "id": "mw-20261117-0190",
-                  "type": "counter",
-                  "name": "Primal bars for priming",
-                  "description": "",
-                  "current": 0,
-                  "target": 1000
-                },
-                {
-                  "id": "mw-20261117-0191",
-                  "type": "counter",
-                  "name": "Primed glorious bars",
-                  "description": "",
-                  "current": 0,
-                  "target": 10
+                  "id": "mwsword-tree-20261117-005",
+                  "type": "group",
+                  "name": "Unsharpened masterwork blade",
+                  "description": "The smithing chain ends in an unsharpened blade; use a whetstone or armour stand to sharpen it (level 90 Crafting).",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwsword-tree-20261117-004",
+                      "type": "group",
+                      "name": "Unfinished masterwork blade",
+                      "description": "Smith five primed glorious bars into unfinished blade, then finish the blade with the sword trim before sharpening.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mw-20261117-0192",
+                          "type": "group",
+                          "name": "Primed glorious bars (5)",
+                          "description": "Primed glorious bar = glorious bar + 100 primal bars. Counts in this branch only; other branches account for their own bars.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwsword-tree-20261117-001",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "Smelt each glorious bar with 100 primal bars at a furnace. https://runescape.wiki/w/Masterwork_2h_sword",
+                              "current": 0,
+                              "target": 5
+                            },
+                            {
+                              "id": "mwsword-tree-20261117-002",
+                              "type": "counter",
+                              "name": "Primal bars",
+                              "description": "100 primal bars per primed glorious bar; counts only raw input for this component, not a separate additional requirement.",
+                              "current": 0,
+                              "target": 500
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mw-20261117-0198",
+                      "type": "group",
+                      "name": "Masterwork sword trim",
+                      "description": "One primal bar + 4 kalphite essence + 4 demonic essence. This is NOT masterwork melee armour trim.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mw-20261117-0197",
+                          "type": "counter",
+                          "name": "Primal bar",
+                          "description": "Additional bar used only for the sword trim (separate from 1,000 primal bars for priming).",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mw-20261117-0193",
+                          "type": "counter",
+                          "name": "Kalphite essence",
+                          "description": "Obtain by breaking down two intact undyed drygore weapons (2 essence each).",
+                          "current": 0,
+                          "target": 4
+                        },
+                        {
+                          "id": "mw-20261117-0194",
+                          "type": "counter",
+                          "name": "Demonic essence",
+                          "description": "Obtain by breaking down two Blade of Avaryss/Nymora weapons (2 essence each).",
+                          "current": 0,
+                          "target": 4
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
             {
-              "id": "mw-20261117-0200",
+              "id": "mw-20261117-0202",
               "type": "group",
-              "name": "Essences and trim",
-              "description": "Sources: https://runescape.wiki/w/Demonic_essence and https://runescape.wiki/w/Chaotic_essence",
-              "expanded": false,
+              "name": "Masterwork sword hilt",
+              "description": "Smith the pommel, cross guard, and wrapped grip into the finished sword hilt.",
+              "expanded": true,
               "presentation": "list",
               "children": [
                 {
-                  "id": "mw-20261117-0193",
-                  "type": "counter",
-                  "name": "Kalphite essence (drygores)",
-                  "description": "Two fully repaired drygore weapons produce four essence (two per weapon).",
-                  "current": 0,
-                  "target": 4
+                  "id": "mwsword-tree-20261117-019",
+                  "type": "group",
+                  "name": "Masterwork sword pommel",
+                  "description": "Smith 1 primed glorious bar and 2 gold bars.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwsword-tree-20261117-008",
+                      "type": "group",
+                      "name": "Primed glorious bar",
+                      "description": "Primed glorious bar = glorious bar + 100 primal bars. Counts in this branch only; other branches account for their own bars.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwsword-tree-20261117-006",
+                          "type": "counter",
+                          "name": "Glorious bars",
+                          "description": "Smelt each glorious bar with 100 primal bars at a furnace. https://runescape.wiki/w/Masterwork_2h_sword",
+                          "current": 0,
+                          "target": 1
+                        },
+                        {
+                          "id": "mwsword-tree-20261117-007",
+                          "type": "counter",
+                          "name": "Primal bars",
+                          "description": "100 primal bars per primed glorious bar; counts only raw input for this component, not a separate additional requirement.",
+                          "current": 0,
+                          "target": 100
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwsword-tree-20261117-018",
+                      "type": "counter",
+                      "name": "Gold bars",
+                      "description": "For the pommel.",
+                      "current": 0,
+                      "target": 2
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0194",
-                  "type": "counter",
-                  "name": "Demonic essence (Twin Furies blades)",
-                  "description": "Two blades produce four essence (two per weapon).",
-                  "current": 0,
-                  "target": 4
+                  "id": "mwsword-tree-20261117-024",
+                  "type": "group",
+                  "name": "Masterwork sword cross guard",
+                  "description": "Forge one centre piece and two quillons into the complete sword cross guard.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwsword-tree-20261117-021",
+                      "type": "group",
+                      "name": "Masterwork cross guard centre piece",
+                      "description": "1 primed glorious bar + 2 gold bars + 1 faceted chaos-infused moonstone.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwsword-tree-20261117-011",
+                          "type": "group",
+                          "name": "Primed glorious bar",
+                          "description": "Primed glorious bar = glorious bar + 100 primal bars. Counts in this branch only; other branches account for their own bars.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwsword-tree-20261117-009",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "Smelt each glorious bar with 100 primal bars at a furnace. https://runescape.wiki/w/Masterwork_2h_sword",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwsword-tree-20261117-010",
+                              "type": "counter",
+                              "name": "Primal bars",
+                              "description": "100 primal bars per primed glorious bar; counts only raw input for this component, not a separate additional requirement.",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwsword-tree-20261117-020",
+                          "type": "counter",
+                          "name": "Gold bars",
+                          "description": "For the cross guard centre piece.",
+                          "current": 0,
+                          "target": 2
+                        },
+                        {
+                          "id": "mw-20261117-0199",
+                          "type": "group",
+                          "name": "Faceted chaos-infused moonstone",
+                          "description": "Moonstone + 4 chaotic essence; infuse and facet for the cross-guard centre piece.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mw-20261117-0196",
+                              "type": "counter",
+                              "name": "Moonstone",
+                              "description": "Cut moonstone used to produce chaos-infused moonstone.",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mw-20261117-0195",
+                              "type": "counter",
+                              "name": "Chaotic essence",
+                              "description": "From two chaotic melee weapons broken down at dragonkin anvil, then imbue and facet the moonstone.",
+                              "current": 0,
+                              "target": 4
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwsword-tree-20261117-023",
+                      "type": "group",
+                      "name": "Masterwork sword quillons (2)",
+                      "description": "Two quillons, each 1 primed glorious bar + 2 gold bars.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwsword-tree-20261117-014",
+                          "type": "group",
+                          "name": "Primed glorious bars (2)",
+                          "description": "Primed glorious bar = glorious bar + 100 primal bars. Counts in this branch only; other branches account for their own bars.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwsword-tree-20261117-012",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "Smelt each glorious bar with 100 primal bars at a furnace. https://runescape.wiki/w/Masterwork_2h_sword",
+                              "current": 0,
+                              "target": 2
+                            },
+                            {
+                              "id": "mwsword-tree-20261117-013",
+                              "type": "counter",
+                              "name": "Primal bars",
+                              "description": "100 primal bars per primed glorious bar; counts only raw input for this component, not a separate additional requirement.",
+                              "current": 0,
+                              "target": 200
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwsword-tree-20261117-022",
+                          "type": "counter",
+                          "name": "Gold bars",
+                          "description": "Two gold bars per quillon, 2 quillons total.",
+                          "current": 0,
+                          "target": 4
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
-                  "id": "mw-20261117-0195",
-                  "type": "counter",
-                  "name": "Chaotic essence",
-                  "description": "Two chaotic melee weapons produce four essence (two per weapon).",
-                  "current": 0,
-                  "target": 4
-                },
-                {
-                  "id": "mw-20261117-0196",
-                  "type": "counter",
-                  "name": "Moonstone",
-                  "description": "For chaos-infused moonstone stage.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0197",
-                  "type": "counter",
-                  "name": "Primal bar for sword trim",
-                  "description": "In addition to the 1,000 for primed bars.",
-                  "current": 0,
-                  "target": 1
-                },
-                {
-                  "id": "mw-20261117-0198",
-                  "type": "checkbox",
-                  "name": "Masterwork sword trim completed",
-                  "description": "1 primal bar +4 kalphite essence +4 demonic essence.",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0199",
-                  "type": "checkbox",
-                  "name": "Faceted chaos-infused moonstone completed",
-                  "description": "Moonstone plus 4 chaotic essence, then process/imbue.",
-                  "complete": false
-                }
-              ]
-            },
-            {
-              "id": "mw-20261117-0205",
-              "type": "group",
-              "name": "Assembly",
-              "description": "Follow the named assembly stages on https://runescape.wiki/w/Masterwork_2h_sword",
-              "expanded": false,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "mw-20261117-0201",
-                  "type": "checkbox",
-                  "name": "Masterwork 2h sword base / blade worked",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0202",
-                  "type": "checkbox",
-                  "name": "Masterwork sword grip wrapped",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0203",
-                  "type": "checkbox",
-                  "name": "Masterwork sword trim and moonstone fitted",
-                  "description": "",
-                  "complete": false
-                },
-                {
-                  "id": "mw-20261117-0204",
-                  "type": "checkbox",
-                  "name": "Masterwork 2h sword completed",
-                  "description": "",
-                  "complete": false
+                  "id": "mwsword-tree-20261117-029",
+                  "type": "group",
+                  "name": "Wrapped masterwork sword grip",
+                  "description": "Unwrapped grip + 1 dyed undead dragon leather.",
+                  "expanded": false,
+                  "presentation": "list",
+                  "children": [
+                    {
+                      "id": "mwsword-tree-20261117-026",
+                      "type": "group",
+                      "name": "Unwrapped masterwork sword grip",
+                      "description": "Metal handle blank.",
+                      "expanded": false,
+                      "presentation": "list",
+                      "children": [
+                        {
+                          "id": "mwsword-tree-20261117-017",
+                          "type": "group",
+                          "name": "Primed glorious bar",
+                          "description": "Primed glorious bar = glorious bar + 100 primal bars. Counts in this branch only; other branches account for their own bars.",
+                          "expanded": false,
+                          "presentation": "list",
+                          "children": [
+                            {
+                              "id": "mwsword-tree-20261117-015",
+                              "type": "counter",
+                              "name": "Glorious bars",
+                              "description": "Smelt each glorious bar with 100 primal bars at a furnace. https://runescape.wiki/w/Masterwork_2h_sword",
+                              "current": 0,
+                              "target": 1
+                            },
+                            {
+                              "id": "mwsword-tree-20261117-016",
+                              "type": "counter",
+                              "name": "Primal bars",
+                              "description": "100 primal bars per primed glorious bar; counts only raw input for this component, not a separate additional requirement.",
+                              "current": 0,
+                              "target": 100
+                            }
+                          ]
+                        },
+                        {
+                          "id": "mwsword-tree-20261117-025",
+                          "type": "counter",
+                          "name": "Gold bars",
+                          "description": "Smith 1 primed glorious bar and 2 gold bars into an unwrapped grip.",
+                          "current": 0,
+                          "target": 2
+                        }
+                      ]
+                    },
+                    {
+                      "id": "mwsword-tree-20261117-027",
+                      "type": "counter",
+                      "name": "Undead dragon leather",
+                      "description": "Tan from undead dragonhide; dye with brown dye to wrap the grip.",
+                      "current": 0,
+                      "target": 1
+                    },
+                    {
+                      "id": "mwsword-tree-20261117-028",
+                      "type": "counter",
+                      "name": "Brown dye",
+                      "description": "Used to dye undead dragon leather for the wrapped grip.",
+                      "current": 0,
+                      "target": 1
+                    }
+                  ]
                 }
               ]
             }
