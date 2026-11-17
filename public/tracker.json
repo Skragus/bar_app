@@ -311,7 +311,7 @@
           "id": "mw-20261117-0071",
           "type": "group",
           "name": "Melee armour",
-          "description": "Full untrimmed masterwork melee set; 99 Smithing. https://runescape.wiki/w/Masterwork_melee_armour",
+          "description": "Complete untrimmed T90 Masterwork melee set (helm, platebody, platelegs, gloves, boots) OWNED, 5/5. Ready as the base armour for the upcoming T100 trimmed upgrade. Legacy smithing ingredients below are kept as historical/reference recipes, not outstanding requirements. https://runescape.wiki/w/Masterwork_melee_armour",
           "expanded": false,
           "presentation": "list",
           "children": [
@@ -319,7 +319,7 @@
               "id": "mw-20261117-0045",
               "type": "group",
               "name": "Unlock: Elder rune +5",
-              "description": "This +5 set is additional to the alloy input bars if crafting every step from ore.",
+              "description": "Historical crafting prerequisite/reference only. The user already owns the full untrimmed Masterwork melee set; do not treat these unverified Elder rune +5 inventory/achievement entries as currently outstanding materials. Achievement completion not directly confirmed.",
               "expanded": false,
               "presentation": "list",
               "children": [
@@ -373,13 +373,14 @@
                   "description": "Full elder rune +5 set; required to finish masterwork melee armour.",
                   "complete": false
                 }
-              ]
+              ],
+              "weight": 0
             },
             {
               "id": "mw-20261117-0064",
               "type": "group",
               "name": "Full-set alloy and materials",
-              "description": "600 of each of 10 metal bar types -> 600 concentrated -> 120 enriched -> 12 immaculate -> 12 glorious -> 12 lined plates; 12 leather and 120 rivets. Stage counters are transformations, NOT additional raw resource costs. https://runescape.wiki/w/Masterwork_melee_armour",
+              "description": "Historical reference recipe for creating T90 Masterwork melee armour from scratch, not an outstanding shopping list. User owns all five finished pieces; previous resources have already been consumed and should NOT be counted separately. Existing 0 counters do not represent remaining needs. https://runescape.wiki/w/Masterwork_melee_armour",
               "expanded": false,
               "presentation": "list",
               "children": [
@@ -527,13 +528,14 @@
                   "current": 0,
                   "target": 12
                 }
-              ]
+              ],
+              "weight": 0
             },
             {
               "id": "mw-20261117-0070",
               "type": "group",
               "name": "Melee armour pieces",
-              "description": "All quantities draw from the full-set components above. https://runescape.wiki/w/Masterwork_melee_armour",
+              "description": "All five untrimmed T90 Masterwork melee armour pieces owned (full basic set, as confirmed by user). Their prerequisite alloy, plates and rivets were consumed in crafting; these finished pieces are the authoritative ownership record. https://runescape.wiki/w/Masterwork_melee_armour",
               "expanded": false,
               "presentation": "list",
               "children": [
@@ -542,37 +544,38 @@
                   "type": "checkbox",
                   "name": "Masterwork melee helm",
                   "description": "2 glorious/lined plates and 20 rivets; finish at anvil.",
-                  "complete": false
+                  "complete": true
                 },
                 {
                   "id": "mw-20261117-0066",
                   "type": "checkbox",
                   "name": "Masterwork melee platebody",
                   "description": "5 glorious/lined plates and 50 rivets; finish at anvil.",
-                  "complete": false
+                  "complete": true
                 },
                 {
                   "id": "mw-20261117-0067",
                   "type": "checkbox",
                   "name": "Masterwork melee platelegs",
                   "description": "3 glorious/lined plates and 30 rivets; finish at anvil.",
-                  "complete": false
+                  "complete": true
                 },
                 {
                   "id": "mw-20261117-0068",
                   "type": "checkbox",
                   "name": "Masterwork melee gloves",
                   "description": "1 glorious/lined plate and 10 rivets; finish at anvil.",
-                  "complete": false
+                  "complete": true
                 },
                 {
                   "id": "mw-20261117-0069",
                   "type": "checkbox",
                   "name": "Masterwork melee boots",
                   "description": "1 glorious/lined plate and 10 rivets; finish at anvil.",
-                  "complete": false
+                  "complete": true
                 }
-              ]
+              ],
+              "weight": 1
             }
           ]
         },
@@ -580,7 +583,7 @@
           "id": "mw-20261117-0084",
           "type": "group",
           "name": "Trimmed masterwork melee armour",
-          "description": "T100 Trimmed Masterwork melee armour — planned for 23 Nov 2026 Late-Game Rebalance (Jagex design preview, not final recipe). T90 Masterwork armour (tracked under 'Melee armour') stays unchanged and is a required ingredient. Upgrading T90 to T100 requires 110 Smithing, completed 'It Still Should Have Been Called Aetherium' achievement, melee armour trim, and Primed Glorious Bars (EXACT NUMBER STILL UNKNOWN). Existing T92 trimmed armour automatically receives T100 stats on launch. Keep old 12-trim legacy planning counters only as provisional prep; final trim/primed-bar quantities must be checked against Nov 23 release and revised before treating this as a definitive bill of materials. https://secure.runescape.com/m=news/late-game-rebalance-design-preview",
+          "description": "T100 Trimmed Masterwork melee armour — planned for 23 Nov 2026 Late-Game Rebalance (Jagex design preview, not final recipe). T90 Masterwork armour is already OWNED as a complete 5-piece basic set (tracked under 'Melee armour') and is the upgrade input; no need to recraft it. Upgrading T90 to T100 requires 110 Smithing, completed 'It Still Should Have Been Called Aetherium' achievement, melee armour trim, and Primed Glorious Bars (EXACT NUMBER STILL UNKNOWN). Existing T92 trimmed armour automatically receives T100 stats on launch. Keep old 12-trim legacy planning counters only as provisional prep; final trim/primed-bar quantities must be checked against Nov 23 release and revised before treating this as a definitive bill of materials. https://secure.runescape.com/m=news/late-game-rebalance-design-preview",
           "expanded": false,
           "presentation": "list",
           "children": [
@@ -588,10 +591,18 @@
               "id": "mw-trim-preview-20261117-000",
               "type": "group",
               "name": "T100 upgrade — confirmed prerequisites",
-              "description": "Jagex's 30 Oct 2026 PREVIEW (target launch 23 Nov): upgrade existing T90 masterwork melee armour to T100 using melee armour trim and primed glorious bars, requiring 110 Smithing and the completed primal +5 achievement. PRIMED GLORIOUS BAR QUANTITY AND PER-PIECE RECIPE ARE NOT PUBLISHED; no counters or quantities have been invented. T90 armour is tracked in sibling 'Melee armour' and should not be counted twice. https://secure.runescape.com/m=news/late-game-rebalance-design-preview",
+              "description": "Confirmed requirements for upcoming T100 trimmed Masterwork upgrade (final per-piece recipes pending): full untrimmed T90 set already owned (5/5), primal +5 achievement completed, 110 Smithing still outstanding by ~1.3m XP (last reported). Existing T90 set tracked as owned elsewhere; do not count inputs twice. Primed glorious bars are confirmed but exact quantities still unknown.",
               "expanded": false,
               "presentation": "list",
               "children": [
+                {
+                  "id": "mw-trim-preview-20261117-003",
+                  "type": "counter",
+                  "name": "Untrimmed T90 masterwork melee set owned",
+                  "description": "All 5 basic Masterwork melee armour pieces owned and recorded under the sibling Melee armour section; use as upgrade inputs. This is shared ownership, not an extra set or crafting-material requirement.",
+                  "current": 1,
+                  "target": 1
+                },
                 {
                   "id": "mw-trim-preview-20261117-001",
                   "type": "counter",
