@@ -2,220 +2,1717 @@
   "version": 1,
   "items": [
     {
-      "id": "97b3c8f2-e1c9-48c7-8ed1-cdcbe4479773",
+      "id": "mw-20261117-0214",
       "type": "group",
-      "name": "Television",
-      "description": "",
+      "name": "Masterwork",
+      "description": "RuneScape 3 masterwork equipment, organised item-by-item following RS Wiki craft recipes. Except for 529 apex hides and approximately 115 raw Havenhythe meat/sinew equivalents, all counters start at zero AS UNRECORDED PLACEHOLDERS, not verified bank quantities. Track stages carefully: processed intermediates and raw inputs represent the SAME resources. Additional sets are independent goals. Main index: https://runescape.wiki/w/Masterwork_equipment",
       "expanded": true,
       "presentation": "list",
       "children": [
         {
-          "id": "2db15351-9f31-42da-b634-cb5db788083f",
+          "id": "mw-20261117-0037",
           "type": "group",
-          "name": "Example Show",
-          "description": "",
+          "name": "Ranged armour & cape",
+          "description": "Level 110 Crafting, plus completed 'It Should Have Been Called Chinskin'. One shared supply tally prevents hides/sinew being counted repeatedly. https://runescape.wiki/w/Masterwork_ranged_equipment",
           "expanded": true,
           "presentation": "list",
           "children": [
             {
-              "id": "2a56a82f-03f9-4db0-8430-ec857468dad2",
+              "id": "mw-20261117-0008",
               "type": "group",
-              "name": "Season 1",
-              "description": "One episode at a time.",
-              "expanded": true,
-              "presentation": "tiles",
-              "children": [
-                {
-                  "id": "d5ef4a6d-cf01-4113-8a13-470f056874e3",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": true,
-                  "number": 1
-                },
-                {
-                  "id": "1b49d843-264c-4900-92c2-cb4574340a67",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": true,
-                  "number": 2
-                },
-                {
-                  "id": "8472a3c0-813c-42e9-8819-69ec76c9e81a",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": true,
-                  "number": 3
-                },
-                {
-                  "id": "339beb7e-79a3-43d9-a0e3-9ee2cf6bbaf2",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": false,
-                  "number": 4
-                },
-                {
-                  "id": "b22a513b-3ee6-4b14-b27e-1d1cdf5524da",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": false,
-                  "number": 5
-                },
-                {
-                  "id": "27661911-ff89-4eb5-85ec-c1295beb4da6",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": false,
-                  "number": 6
-                },
-                {
-                  "id": "5261d6d1-1378-4268-9180-af9cdcaf4cea",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": false,
-                  "number": 7
-                },
-                {
-                  "id": "d4f0d698-3fd7-47f7-b000-46cef2f36b63",
-                  "type": "checkbox",
-                  "name": "",
-                  "description": "",
-                  "complete": false,
-                  "number": 8
-                }
-              ]
-            },
-            {
-              "id": "6a8ed05a-e5a0-4885-a490-988d7770f6b7",
-              "type": "group",
-              "name": "Season 2",
-              "description": "",
-              "expanded": true,
+              "name": "Apex hide +5 unlock",
+              "description": "Unlock chain: 384 apex hides/leather plus 12 apex sinew. Existing 529 hides are accounted for in the single shared counter here. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+              "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "9f54bbc5-2619-489f-b994-860ca2353d0e",
+                  "id": "mw-20261117-0001",
                   "type": "counter",
-                  "name": "Episodes watched",
-                  "description": "",
-                  "current": 6,
-                  "target": 13
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "icon": "tv"
-    },
-    {
-      "id": "9c8f319c-f165-4376-ae87-517d804295af",
-      "type": "group",
-      "name": "RuneScape",
-      "description": "",
-      "expanded": true,
-      "presentation": "list",
-      "children": [
-        {
-          "id": "7d8dad89-9061-4bdc-a5f1-88e1b3d6dc1e",
-          "type": "group",
-          "name": "Masterwork Ranged",
-          "description": "",
-          "expanded": true,
-          "presentation": "list",
-          "children": [
-            {
-              "id": "d7a20224-ae99-4eea-b7fd-2d98e4b4c5a8",
-              "type": "group",
-              "name": "Havenhythe Materials",
-              "description": "",
-              "expanded": true,
-              "presentation": "list",
-              "children": [
-                {
-                  "id": "1a0fea15-a7c8-43d6-8e55-2c24565f3f88",
-                  "type": "counter",
-                  "name": "Apex hides",
-                  "description": "",
+                  "name": "Apex hides (achievement uses 384; also used for 120 ranged armour)",
+                  "description": "Shared total 384 for apex +5 and 120 for masterwork ranged plates. 529 last confirmed. Do NOT add the 384 and 120 again elsewhere.",
                   "current": 529,
                   "target": 504
                 },
                 {
-                  "id": "b1cb73b1-517d-4880-b5cd-2ad9a3a14d2a",
-                  "type": "counter",
-                  "name": "Apex sinew",
-                  "description": "",
-                  "current": 115,
-                  "target": 262
+                  "id": "mw-20261117-0002",
+                  "type": "checkbox",
+                  "name": "Apex hide cowl +5",
+                  "description": "64 apex leather and 2 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0003",
+                  "type": "checkbox",
+                  "name": "Apex hide body +5",
+                  "description": "160 apex leather and 5 apex sinew. Also 1 steel stud and 1 steel bar. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0004",
+                  "type": "checkbox",
+                  "name": "Apex hide chaps +5",
+                  "description": "96 apex leather and 3 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0005",
+                  "type": "checkbox",
+                  "name": "Apex hide vambraces +5",
+                  "description": "32 apex leather and 1 apex sinew. Also 1 steel stud. Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0006",
+                  "type": "checkbox",
+                  "name": "Apex hide boots +5",
+                  "description": "32 apex leather and 1 apex sinew.  Listed individually; leather and sinew are shared materials, not owned five times. Source: https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0007",
+                  "type": "checkbox",
+                  "name": "It Should Have Been Called Chinskin completed",
+                  "description": "Craft and upgrade all five apex hide items to +5. Unlocks masterwork ranged crafting; 100 Crafting. https://runescape.wiki/w/It_Should_Have_Been_Called_Chinskin",
+                  "complete": false
                 }
               ]
             },
             {
-              "id": "efe627bd-3ffb-44ea-b292-ce117d623029",
+              "id": "mw-20261117-0013",
               "type": "group",
-              "name": "Nex Materials",
-              "description": "",
-              "expanded": true,
+              "name": "Sinew supply (armour + cape + unlock)",
+              "description": "These are transformations of the SAME resources, not additional apex sinew demands. Keep the raw/processed numbers reconciled when updating. https://runescape.wiki/w/Spinning_wheel",
+              "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "d9cd0430-0c60-41d2-9d6a-07d0708f5b07",
+                  "id": "mw-20261117-0009",
+                  "type": "counter",
+                  "name": "Raw Havenhythe meat / apex sinew equivalent",
+                  "description": "~115 last reported, unverified current balance. Counts usable raw meat OR apex sinew in one combined approximation; do not add it twice. Needs 12 for +5 unlock, 240 for armour, 10 for cape. Process each meat into apex sinew.",
+                  "current": 115,
+                  "target": 262
+                },
+                {
+                  "id": "mw-20261117-0010",
+                  "type": "counter",
+                  "name": "Regular sinew for masterwork sinew",
+                  "description": "Need 2 regular sinew per batch of 10 masterwork sinew, 125 batches for 1,250.",
+                  "current": 0,
+                  "target": 250
+                },
+                {
+                  "id": "mw-20261117-0011",
+                  "type": "counter",
+                  "name": "Masterwork sinew crafted",
+                  "description": "For 1,200 armour + 50 cape. Every 10 masterwork sinew uses 2 apex sinew +2 regular sinew +10 thread (125 batches). The 250 apex required here plus 12 for unlock equals 262.",
+                  "current": 0,
+                  "target": 1250
+                },
+                {
+                  "id": "mw-20261117-0012",
+                  "type": "counter",
+                  "name": "Regular thread for sinew",
+                  "description": "1250 regular thread to craft 125 batches of masterwork sinew. Does not include masterwork thread consumed in making specialist leather.",
+                  "current": 0,
+                  "target": 1250
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0018",
+              "type": "group",
+              "name": "Leather crafting (shared full set + cape)",
+              "description": "Finished intermediary totals for the full ranged set AND cape. Raw recipe details appear on each type. https://runescape.wiki/w/Masterwork_ranged_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0014",
+                  "type": "counter",
+                  "name": "Masterwork monochromatic dragon leather",
+                  "description": "10 body +5 chaps +3 cowl +1 vambraces +1 boots. Each requires 8 black, 8 royal, 8 undead dragon leather, 1 dinosaur leather and 1 masterwork thread.",
+                  "current": 0,
+                  "target": 20
+                },
+                {
+                  "id": "mw-20261117-0015",
+                  "type": "counter",
+                  "name": "Masterwork elasticated leather",
+                  "description": "3 body +2 chaps +2 cowl +1 vambraces +1 boots. Each requires 8 snakeskin, 8 carapace, 8 dagannoth hide, 1 leather and 1 masterwork thread.",
+                  "current": 0,
+                  "target": 9
+                },
+                {
+                  "id": "mw-20261117-0016",
+                  "type": "counter",
+                  "name": "Masterwork chromatic dragon leather",
+                  "description": "1 cowl +1 cape. Each requires 8 green, 8 blue, 8 red dragon leather, 1 hard leather and 1 masterwork thread.",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0017",
+                  "type": "counter",
+                  "name": "Masterwork thread for those leathers",
+                  "description": "20 monochromatic +9 elasticated +2 chromatic; ingredient count already represented in leather recipes.",
+                  "current": 0,
+                  "target": 31
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0025",
+              "type": "group",
+              "name": "Ethereal draconic plates (12)",
+              "description": "Chain: 12 glorious +12 Praesulic ranged essence +12 Sirenic essence -> 12 masterwork ranged plates -> 12 draconic plates (120 shards +120 lacquer) -> 12 lined plates (120 apex leather) -> 12 ethereal plates. https://runescape.wiki/w/Lined_draconic_plate_(unimbued)",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0019",
+                  "type": "counter",
+                  "name": "Glorious bars for ranged plates",
+                  "description": "12 masterwork ranged plates; one glorious bar each.",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0020",
+                  "type": "counter",
+                  "name": "Praesulic essence (ranged)",
+                  "description": "Break down Pernix armour at dragonkin anvil for ranged essence.",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0021",
+                  "type": "counter",
+                  "name": "Sirenic essence",
+                  "description": "Break down Sirenic armour at dragonkin anvil; full undamaged set produces 12.",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0022",
+                  "type": "counter",
+                  "name": "Draconic shards",
+                  "description": "12 draconic plates require 120 draconic shards (can be obtained from a draconic visage).",
+                  "current": 0,
+                  "target": 120
+                },
+                {
+                  "id": "mw-20261117-0023",
+                  "type": "counter",
+                  "name": "Lacquer",
+                  "description": "Player-owned ports lacquer; used for 12 draconic plates.",
+                  "current": 0,
+                  "target": 120
+                },
+                {
+                  "id": "mw-20261117-0024",
+                  "type": "counter",
+                  "name": "Ethereal draconic plates crafted",
+                  "description": "12 masterwork ranged plates -> draconic plates -> lined with 120 apex leather -> imbued as ethereal draconic plates. The 120 apex leather is INCLUDED in 504-hide shared total, not another 120.",
+                  "current": 0,
+                  "target": 12
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0032",
+              "type": "group",
+              "name": "Armour pieces — individual recipes",
+              "description": "Individual final items; costs are listed in descriptions. Their supplies are pooled ABOVE, not duplicated into separate per-piece counters.",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0026",
                   "type": "checkbox",
-                  "name": "Materials acquired",
+                  "name": "Masterwork ranged cowl",
+                  "description": "3 monochromatic leather +2 elasticated leather +1 chromatic leather +2 ethereal draconic plates +200 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0027",
+                  "type": "checkbox",
+                  "name": "Masterwork ranged body",
+                  "description": "10 monochromatic leather +3 elasticated leather +5 ethereal draconic plates +500 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0028",
+                  "type": "checkbox",
+                  "name": "Masterwork ranged chaps",
+                  "description": "5 monochromatic leather +2 elasticated leather +3 ethereal draconic plates +300 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0029",
+                  "type": "checkbox",
+                  "name": "Masterwork ranged vambraces",
+                  "description": "1 monochromatic leather +1 elasticated leather +1 ethereal draconic plate +100 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0030",
+                  "type": "checkbox",
+                  "name": "Masterwork ranged boots",
+                  "description": "1 monochromatic leather +1 elasticated leather +1 ethereal draconic plate +100 masterwork sinew +1 algarum thread. https://runescape.wiki/w/Masterwork_ranged_equipment",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0031",
+                  "type": "counter",
+                  "name": "Algarum thread for final armour recipes",
+                  "description": "5 for five final pieces. Additional algarum thread may be needed if crafting Sirenic armour before converting it to essence.",
+                  "current": 0,
+                  "target": 5
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0035",
+              "type": "group",
+              "name": "Masterwork ranged cape",
+              "description": "Additional crafted item. Its 1 chromatic leather, 50 sinew, and their raw inputs are INCLUDED above.",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0033",
+                  "type": "counter",
+                  "name": "Masterwork white cloth",
+                  "description": "1 white cloth from 50 starbloom cloth and 10 Croesus flakes, if making from scratch.",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0034",
+                  "type": "checkbox",
+                  "name": "Masterwork ranged cape crafted",
+                  "description": "Requires 1 masterwork white cloth +1 masterwork chromatic dragon leather +50 masterwork sinew. Chromatic leather and sinew are already included in the ranged shared totals. https://runescape.wiki/w/Masterwork_chromatic_dragon_leather",
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0036",
+              "type": "checkbox",
+              "name": "Full masterwork ranged set custom-fitted (optional)",
+              "description": "Optional follow-up after finishing full set; does not affect creation requirements.",
+              "complete": false
+            }
+          ]
+        },
+        {
+          "id": "mw-20261117-0071",
+          "type": "group",
+          "name": "Melee armour",
+          "description": "Full untrimmed masterwork melee set; 99 Smithing. https://runescape.wiki/w/Masterwork_melee_armour",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0045",
+              "type": "group",
+              "name": "Unlock: Elder rune +5",
+              "description": "This +5 set is additional to the alloy input bars if crafting every step from ore.",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0038",
+                  "type": "counter",
+                  "name": "Elder rune bars for prerequisite set",
+                  "description": "",
+                  "current": 0,
+                  "target": 384
+                },
+                {
+                  "id": "mw-20261117-0039",
+                  "type": "checkbox",
+                  "name": "Elder rune full helm +5",
+                  "description": "64 elder rune bars; included in 384 prerequisite total.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0040",
+                  "type": "checkbox",
+                  "name": "Elder rune platebody +5",
+                  "description": "160 elder rune bars; included in 384 prerequisite total.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0041",
+                  "type": "checkbox",
+                  "name": "Elder rune platelegs +5",
+                  "description": "96 elder rune bars; included in 384 prerequisite total.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0042",
+                  "type": "checkbox",
+                  "name": "Elder rune gauntlets +5",
+                  "description": "32 elder rune bars; included in 384 prerequisite total.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0043",
+                  "type": "checkbox",
+                  "name": "Elder rune armoured boots +5",
+                  "description": "32 elder rune bars; included in 384 prerequisite total.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0044",
+                  "type": "checkbox",
+                  "name": "It Should Have Been Called Aetherium completed",
+                  "description": "Full elder rune +5 set; required to finish masterwork melee armour.",
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0064",
+              "type": "group",
+              "name": "Full-set alloy and materials",
+              "description": "600 of each of 10 metal bar types -> 600 concentrated -> 120 enriched -> 12 immaculate -> 12 glorious -> 12 lined plates; 12 leather and 120 rivets. Stage counters are transformations, NOT additional raw resource costs. https://runescape.wiki/w/Masterwork_melee_armour",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0046",
+                  "type": "counter",
+                  "name": "Bronze bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0047",
+                  "type": "counter",
+                  "name": "Iron bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0048",
+                  "type": "counter",
+                  "name": "Steel bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0049",
+                  "type": "counter",
+                  "name": "Mithril bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0050",
+                  "type": "counter",
+                  "name": "Adamant bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0051",
+                  "type": "counter",
+                  "name": "Rune bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0052",
+                  "type": "counter",
+                  "name": "Orikalkum bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0053",
+                  "type": "counter",
+                  "name": "Necronium bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0054",
+                  "type": "counter",
+                  "name": "Bane bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0055",
+                  "type": "counter",
+                  "name": "Elder rune bars for concentrated alloy",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0056",
+                  "type": "counter",
+                  "name": "Concentrated alloy bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 600
+                },
+                {
+                  "id": "mw-20261117-0057",
+                  "type": "counter",
+                  "name": "Enriched alloy bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 120
+                },
+                {
+                  "id": "mw-20261117-0058",
+                  "type": "counter",
+                  "name": "Immaculate alloy bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0059",
+                  "type": "counter",
+                  "name": "Glorious bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0060",
+                  "type": "counter",
+                  "name": "Leather for lined pieces",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0061",
+                  "type": "counter",
+                  "name": "Extra steel bars for rivets",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0062",
+                  "type": "counter",
+                  "name": "Masterwork rivets",
+                  "description": "",
+                  "current": 0,
+                  "target": 120
+                },
+                {
+                  "id": "mw-20261117-0063",
+                  "type": "counter",
+                  "name": "Lined masterwork melee armour pieces",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0070",
+              "type": "group",
+              "name": "Melee armour pieces",
+              "description": "All quantities draw from the full-set components above. https://runescape.wiki/w/Masterwork_melee_armour",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0065",
+                  "type": "checkbox",
+                  "name": "Masterwork melee helm",
+                  "description": "2 glorious/lined plates and 20 rivets; finish at anvil.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0066",
+                  "type": "checkbox",
+                  "name": "Masterwork melee platebody",
+                  "description": "5 glorious/lined plates and 50 rivets; finish at anvil.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0067",
+                  "type": "checkbox",
+                  "name": "Masterwork melee platelegs",
+                  "description": "3 glorious/lined plates and 30 rivets; finish at anvil.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0068",
+                  "type": "checkbox",
+                  "name": "Masterwork melee gloves",
+                  "description": "1 glorious/lined plate and 10 rivets; finish at anvil.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0069",
+                  "type": "checkbox",
+                  "name": "Masterwork melee boots",
+                  "description": "1 glorious/lined plate and 10 rivets; finish at anvil.",
+                  "complete": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mw-20261117-0084",
+          "type": "group",
+          "name": "Trimmed masterwork melee armour",
+          "description": "Requires the five untrimmed pieces listed in Melee armour. The trackers are separate goals, not duplicated inventories.",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0076",
+              "type": "group",
+              "name": "Trim components for the set",
+              "description": "Uses the UNTRIMMED masterwork melee items from the sibling grind. One full set of Torva and Malevolent supply the essence for a set of 12 trims. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0072",
+                  "type": "counter",
+                  "name": "Masterwork melee armour trim",
+                  "description": "12 trims. Each costs 1 elder rune bar +1 malevolent essence +1 Praesulic essence (melee).",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0073",
+                  "type": "counter",
+                  "name": "Malevolent essence",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0074",
+                  "type": "counter",
+                  "name": "Praesulic essence (melee) from Torva",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0075",
+                  "type": "counter",
+                  "name": "Elder rune bars for trim",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0082",
+              "type": "group",
+              "name": "Trim individual pieces",
+              "description": "Counts for trim pieces total 12. Source: https://runescape.wiki/w/Masterwork_melee_armour_trim",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0077",
+                  "type": "checkbox",
+                  "name": "Trimmed masterwork melee helm",
+                  "description": "Untrimmed masterwork melee helm +2 masterwork trims.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0078",
+                  "type": "checkbox",
+                  "name": "Trimmed masterwork melee platebody",
+                  "description": "Untrimmed masterwork melee platebody +5 trims.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0079",
+                  "type": "checkbox",
+                  "name": "Trimmed masterwork melee platelegs",
+                  "description": "Untrimmed masterwork melee platelegs +3 trims.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0080",
+                  "type": "checkbox",
+                  "name": "Trimmed masterwork melee gloves",
+                  "description": "Untrimmed masterwork melee gloves +1 trim.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0081",
+                  "type": "checkbox",
+                  "name": "Trimmed masterwork melee boots",
+                  "description": "Untrimmed masterwork melee boots +1 trim.",
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0083",
+              "type": "checkbox",
+              "name": "Custom-fit trimmed masterwork set (optional)",
+              "description": "Optional follow-up; requires full trimmed set.",
+              "complete": false
+            }
+          ]
+        },
+        {
+          "id": "mw-20261117-0113",
+          "type": "group",
+          "name": "Magic armour",
+          "description": "Requires level 110 Crafting and 'It Should Have Been Called Ancestral'. https://runescape.wiki/w/Masterwork_magic_equipment",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0093",
+              "type": "group",
+              "name": "Unlock: Starbloom +5",
+              "description": "384 cloth / 768 thread / 768 flower (a single production chain, not additive material demands). https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0085",
+                  "type": "counter",
+                  "name": "Starbloom cloth for +5 set",
+                  "description": "",
+                  "current": 0,
+                  "target": 384
+                },
+                {
+                  "id": "mw-20261117-0086",
+                  "type": "counter",
+                  "name": "Starbloom thread for +5 set",
+                  "description": "768 starbloom threads are made from 768 starbloom flowers; they become 384 starbloom cloth.",
+                  "current": 0,
+                  "target": 768
+                },
+                {
+                  "id": "mw-20261117-0087",
+                  "type": "checkbox",
+                  "name": "Starbloom hat +5",
+                  "description": "64 starbloom cloth, 128 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0088",
+                  "type": "checkbox",
+                  "name": "Starbloom robe top +5",
+                  "description": "160 starbloom cloth, 320 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0089",
+                  "type": "checkbox",
+                  "name": "Starbloom robe bottom +5",
+                  "description": "96 starbloom cloth, 192 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0090",
+                  "type": "checkbox",
+                  "name": "Starbloom gloves +5",
+                  "description": "32 starbloom cloth, 64 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0091",
+                  "type": "checkbox",
+                  "name": "Starbloom boots +5",
+                  "description": "32 starbloom cloth, 64 starbloom thread/flowers from scratch. Counts included in shared unlock pool.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0092",
+                  "type": "checkbox",
+                  "name": "It Should Have Been Called Ancestral completed",
+                  "description": "Full starbloom +5 set; prerequisite to masterwork magic armour.",
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0106",
+              "type": "group",
+              "name": "Magic set crafting components",
+              "description": "These are shared full-set requirements and intermediate crafting stages; don't count the same ingredient twice. https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0094",
+                  "type": "counter",
+                  "name": "Masterwork white cloth",
+                  "description": "Requires 1,000 starbloom cloth and 200 Croesus flakes to produce 20 white cloth.",
+                  "current": 0,
+                  "target": 20
+                },
+                {
+                  "id": "mw-20261117-0095",
+                  "type": "counter",
+                  "name": "Masterwork blue cloth",
+                  "description": "Requires 36 strips of cloth, 36 each imphide/spider silk/batwing/mystic cloth, 18 bark and 18 fine cloth.",
+                  "current": 0,
+                  "target": 9
+                },
+                {
+                  "id": "mw-20261117-0096",
+                  "type": "counter",
+                  "name": "Masterwork green cloth",
+                  "description": "Requires 10 starbloom cloth and 1,000 each fungal, grifolic and ganodermic flakes.",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0097",
+                  "type": "counter",
+                  "name": "Masterwork thread",
+                  "description": "1,200 thread plus 120 each of Fallfaced, Springsheared, Summerdown, Winterwold wool to craft 1,200 masterwork thread.",
+                  "current": 0,
+                  "target": 1200
+                },
+                {
+                  "id": "mw-20261117-0098",
+                  "type": "counter",
+                  "name": "Ethereal pearlescent plates",
+                  "description": "For 12: 12 tectonic essence, 12 praesulic essence magic, 60 pearls, 120 platinum bars, 12 undead dragon leather and 12 brown dyes.",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0099",
+                  "type": "counter",
+                  "name": "Tectonic essence",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0100",
+                  "type": "counter",
+                  "name": "Praesulic essence (magic) from Virtus",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0101",
+                  "type": "counter",
+                  "name": "Pearls (Player-owned ports)",
+                  "description": "",
+                  "current": 0,
+                  "target": 60
+                },
+                {
+                  "id": "mw-20261117-0102",
+                  "type": "counter",
+                  "name": "Platinum bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 120
+                },
+                {
+                  "id": "mw-20261117-0103",
+                  "type": "counter",
+                  "name": "Undead dragon leather (plate linings)",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0104",
+                  "type": "counter",
+                  "name": "Brown dye (plate linings)",
+                  "description": "",
+                  "current": 0,
+                  "target": 12
+                },
+                {
+                  "id": "mw-20261117-0105",
+                  "type": "counter",
+                  "name": "Stones of binding",
+                  "description": "",
+                  "current": 0,
+                  "target": 5
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0112",
+              "type": "group",
+              "name": "Magic armour pieces",
+              "description": "Per-item recipes: https://runescape.wiki/w/Masterwork_magic_equipment",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0107",
+                  "type": "checkbox",
+                  "name": "Masterwork magic hat",
+                  "description": "3 masterwork white cloth +2 blue +1 green +2 ethereal pearlescent plates +200 masterwork thread +1 stone of binding.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0108",
+                  "type": "checkbox",
+                  "name": "Masterwork magic robe top",
+                  "description": "10 white cloth +3 blue +5 ethereal pearlescent plates +500 masterwork thread +1 stone of binding.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0109",
+                  "type": "checkbox",
+                  "name": "Masterwork magic robe bottom",
+                  "description": "5 white cloth +2 blue +3 ethereal pearlescent plates +300 masterwork thread +1 stone of binding.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0110",
+                  "type": "checkbox",
+                  "name": "Masterwork magic gloves",
+                  "description": "1 white cloth +1 blue +1 ethereal pearlescent plate +100 masterwork thread +1 stone of binding.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0111",
+                  "type": "checkbox",
+                  "name": "Masterwork magic boots",
+                  "description": "1 white cloth +1 blue +1 ethereal pearlescent plate +100 masterwork thread +1 stone of binding.",
+                  "complete": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mw-20261117-0152",
+          "type": "group",
+          "name": "Masterwork bow",
+          "description": "110 Fletching, 110 Woodcutting, 99 Smithing, 90 Crafting, 90 Runecrafting, 90 Magic and Fletch Quest. https://runescape.wiki/w/Masterwork_bow",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0114",
+              "type": "checkbox",
+              "name": "Fletch Quest achievement completed",
+              "description": "Requires upgraded eternal magic shortbow and primal crossbows to Mk. 5; prerequisite. https://runescape.wiki/w/Masterwork_bow",
+              "complete": false
+            },
+            {
+              "id": "mw-20261117-0130",
+              "type": "group",
+              "name": "Untradeable wood and glue",
+              "description": "Each log group makes 200 matching shavings; 2 eternal magic sap +20 ground mud +20 ground miasma produce 2 buckets of glue. https://runescape.wiki/w/Masterwork_bow",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0115",
+                  "type": "counter",
+                  "name": "Perfect eternal magic branches",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0116",
+                  "type": "counter",
+                  "name": "Buckets of eternal magic sap",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0117",
+                  "type": "counter",
+                  "name": "Ground mud runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 20
+                },
+                {
+                  "id": "mw-20261117-0118",
+                  "type": "counter",
+                  "name": "Ground miasma runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 20
+                },
+                {
+                  "id": "mw-20261117-0119",
+                  "type": "counter",
+                  "name": "Logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0120",
+                  "type": "counter",
+                  "name": "Oak logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0121",
+                  "type": "counter",
+                  "name": "Willow logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0122",
+                  "type": "counter",
+                  "name": "Teak logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0123",
+                  "type": "counter",
+                  "name": "Maple logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0124",
+                  "type": "counter",
+                  "name": "Acadia logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0125",
+                  "type": "counter",
+                  "name": "Mahogany logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0126",
+                  "type": "counter",
+                  "name": "Yew logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0127",
+                  "type": "counter",
+                  "name": "Magic logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0128",
+                  "type": "counter",
+                  "name": "Elder logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                },
+                {
+                  "id": "mw-20261117-0129",
+                  "type": "counter",
+                  "name": "Eternal magic logs for shavings",
+                  "description": "",
+                  "current": 0,
+                  "target": 200
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0142",
+              "type": "group",
+              "name": "Smithing, essences and other materials",
+              "description": "These are material input totals from the wiki quick checklist. https://runescape.wiki/w/Masterwork_bow",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0131",
+                  "type": "counter",
+                  "name": "Glorious bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 7
+                },
+                {
+                  "id": "mw-20261117-0132",
+                  "type": "counter",
+                  "name": "Gold bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 14
+                },
+                {
+                  "id": "mw-20261117-0133",
+                  "type": "counter",
+                  "name": "Steel bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0134",
+                  "type": "counter",
+                  "name": "Noxious essence",
+                  "description": "Break down one fully repaired noxious weapon.",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0135",
+                  "type": "counter",
+                  "name": "Ascended essence",
+                  "description": "Break down one fully repaired ascension crossbow.",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0136",
+                  "type": "counter",
+                  "name": "Sapphires",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0137",
+                  "type": "counter",
+                  "name": "Undead dragon leather",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0138",
+                  "type": "counter",
+                  "name": "Brown dye",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0139",
+                  "type": "counter",
+                  "name": "Bucket of wax",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0140",
+                  "type": "counter",
+                  "name": "Bucket of water",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0141",
+                  "type": "counter",
+                  "name": "Magic string",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0151",
+              "type": "group",
+              "name": "Assembly stages",
+              "description": "Use wiki full process for detailed assembly stages. https://runescape.wiki/w/Masterwork_bow",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0143",
+                  "type": "counter",
+                  "name": "Hollowed masterwork bow limbs",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0144",
+                  "type": "counter",
+                  "name": "Composite wood cylinders",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0145",
+                  "type": "counter",
+                  "name": "Strengthened masterwork bow limbs",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0146",
+                  "type": "checkbox",
+                  "name": "Masterwork bow grip and supports prepared",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0147",
+                  "type": "checkbox",
+                  "name": "Waxed masterwork string prepared",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0148",
+                  "type": "checkbox",
+                  "name": "Unstrung masterwork bow assembled",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0149",
+                  "type": "checkbox",
+                  "name": "Untillered masterwork bow assembled",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0150",
+                  "type": "checkbox",
+                  "name": "Masterwork bow finished (tillering)",
                   "description": "",
                   "complete": false
                 }
               ]
             }
           ]
-        }
-      ],
-      "icon": "swords"
-    },
-    {
-      "id": "be41907d-5c12-4636-ba90-47caa411f6b9",
-      "type": "group",
-      "name": "Reading",
-      "description": "",
-      "expanded": true,
-      "presentation": "list",
-      "children": [
+        },
         {
-          "id": "73ac5362-ee86-4831-b0ca-772b8a597574",
+          "id": "mw-20261117-0188",
           "type": "group",
-          "name": "Sun Eater",
-          "description": "",
-          "expanded": true,
+          "name": "Masterwork staff",
+          "description": "110 Runecrafting and Crafting to Your Own Rune achievement. The inputs and intermediary steps are separate tracked stages of the same item. https://runescape.wiki/w/Masterwork_staff",
+          "expanded": false,
           "presentation": "list",
           "children": [
             {
-              "id": "e0ef74c0-c4e1-4fff-9619-9d6ab8051d7c",
+              "id": "mw-20261117-0153",
+              "type": "checkbox",
+              "name": "Crafting to Your Own Rune achievement completed",
+              "description": "Required before crafting Masterwork staff. https://runescape.wiki/w/Masterwork_staff",
+              "complete": false
+            },
+            {
+              "id": "mw-20261117-0171",
               "type": "group",
-              "name": "Demon in White",
-              "description": "",
-              "expanded": true,
+              "name": "Runic brick resources",
+              "description": "3 volatile runic bricks, each uses 1,000 pure essence + 1,000 of each of 15 rune types. Runes are raw inputs to the bricks, not additional costs. https://runescape.wiki/w/Masterwork_staff",
+              "expanded": false,
               "presentation": "list",
               "children": [
                 {
-                  "id": "143ae817-903d-4491-ad36-cf9ab8c6cf5b",
+                  "id": "mw-20261117-0154",
                   "type": "counter",
-                  "name": "Percent read",
+                  "name": "Pure essence",
                   "description": "",
-                  "current": 68,
-                  "target": 100
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0155",
+                  "type": "counter",
+                  "name": "Air runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0156",
+                  "type": "counter",
+                  "name": "Mind runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0157",
+                  "type": "counter",
+                  "name": "Water runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0158",
+                  "type": "counter",
+                  "name": "Earth runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0159",
+                  "type": "counter",
+                  "name": "Fire runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0160",
+                  "type": "counter",
+                  "name": "Body runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0161",
+                  "type": "counter",
+                  "name": "Cosmic runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0162",
+                  "type": "counter",
+                  "name": "Chaos runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0163",
+                  "type": "counter",
+                  "name": "Astral runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0164",
+                  "type": "counter",
+                  "name": "Nature runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0165",
+                  "type": "counter",
+                  "name": "Law runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0166",
+                  "type": "counter",
+                  "name": "Death runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0167",
+                  "type": "counter",
+                  "name": "Blood runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0168",
+                  "type": "counter",
+                  "name": "Soul runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0169",
+                  "type": "counter",
+                  "name": "Time runes",
+                  "description": "",
+                  "current": 0,
+                  "target": 3000
+                },
+                {
+                  "id": "mw-20261117-0170",
+                  "type": "counter",
+                  "name": "Volatile runic bricks",
+                  "description": "",
+                  "current": 0,
+                  "target": 3
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0187",
+              "type": "group",
+              "name": "Handle, housing and focus",
+              "description": "Detailed wiki steps: https://runescape.wiki/w/Masterwork_staff",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0172",
+                  "type": "counter",
+                  "name": "Eternal magic logs",
+                  "description": "",
+                  "current": 0,
+                  "target": 40
+                },
+                {
+                  "id": "mw-20261117-0173",
+                  "type": "counter",
+                  "name": "Gold bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0174",
+                  "type": "counter",
+                  "name": "Glorious bar",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0175",
+                  "type": "counter",
+                  "name": "Undead dragon leather",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0176",
+                  "type": "counter",
+                  "name": "Brown dye",
+                  "description": "",
+                  "current": 0,
+                  "target": 2
+                },
+                {
+                  "id": "mw-20261117-0177",
+                  "type": "counter",
+                  "name": "Diamond",
+                  "description": "",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0178",
+                  "type": "counter",
+                  "name": "Crystalline essence",
+                  "description": "",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0179",
+                  "type": "counter",
+                  "name": "Binding essence",
+                  "description": "2 fully repaired Seismic wand/singularity weapons converted to essence.",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0180",
+                  "type": "counter",
+                  "name": "Melodic essence",
+                  "description": "2 fully repaired Cywir wands/orbs converted to essence.",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0181",
+                  "type": "counter",
+                  "name": "Abyssal runic synapse",
+                  "description": "Untradeable Abyss Runecrafting drop.",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0182",
+                  "type": "checkbox",
+                  "name": "Grounded masterwork staff base",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0183",
+                  "type": "checkbox",
+                  "name": "Two wrapped masterwork staff grips",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0184",
+                  "type": "checkbox",
+                  "name": "Masterwork focus housing and focus completed",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0185",
+                  "type": "checkbox",
+                  "name": "Masterwork staff handle completed",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0186",
+                  "type": "checkbox",
+                  "name": "Masterwork staff finished",
+                  "description": "",
+                  "complete": false
                 }
               ]
             }
           ]
+        },
+        {
+          "id": "mw-20261117-0206",
+          "type": "group",
+          "name": "Masterwork 2h sword",
+          "description": "Level 110 Smithing and prerequisite achievements as listed by RS Wiki. https://runescape.wiki/w/Masterwork_2h_sword",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0192",
+              "type": "group",
+              "name": "Primed glorious bar chain",
+              "description": "One primed glorious = one glorious bar + 100 primal bars. Need 10. https://runescape.wiki/w/Primed_glorious_bar",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0189",
+                  "type": "counter",
+                  "name": "Glorious bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 10
+                },
+                {
+                  "id": "mw-20261117-0190",
+                  "type": "counter",
+                  "name": "Primal bars for priming",
+                  "description": "",
+                  "current": 0,
+                  "target": 1000
+                },
+                {
+                  "id": "mw-20261117-0191",
+                  "type": "counter",
+                  "name": "Primed glorious bars",
+                  "description": "",
+                  "current": 0,
+                  "target": 10
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0200",
+              "type": "group",
+              "name": "Essences and trim",
+              "description": "Sources: https://runescape.wiki/w/Demonic_essence and https://runescape.wiki/w/Chaotic_essence",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0193",
+                  "type": "counter",
+                  "name": "Kalphite essence (drygores)",
+                  "description": "Two fully repaired drygore weapons produce four essence (two per weapon).",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0194",
+                  "type": "counter",
+                  "name": "Demonic essence (Twin Furies blades)",
+                  "description": "Two blades produce four essence (two per weapon).",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0195",
+                  "type": "counter",
+                  "name": "Chaotic essence",
+                  "description": "Two chaotic melee weapons produce four essence (two per weapon).",
+                  "current": 0,
+                  "target": 4
+                },
+                {
+                  "id": "mw-20261117-0196",
+                  "type": "counter",
+                  "name": "Moonstone",
+                  "description": "For chaos-infused moonstone stage.",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0197",
+                  "type": "counter",
+                  "name": "Primal bar for sword trim",
+                  "description": "In addition to the 1,000 for primed bars.",
+                  "current": 0,
+                  "target": 1
+                },
+                {
+                  "id": "mw-20261117-0198",
+                  "type": "checkbox",
+                  "name": "Masterwork sword trim completed",
+                  "description": "1 primal bar +4 kalphite essence +4 demonic essence.",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0199",
+                  "type": "checkbox",
+                  "name": "Faceted chaos-infused moonstone completed",
+                  "description": "Moonstone plus 4 chaotic essence, then process/imbue.",
+                  "complete": false
+                }
+              ]
+            },
+            {
+              "id": "mw-20261117-0205",
+              "type": "group",
+              "name": "Assembly",
+              "description": "Follow the named assembly stages on https://runescape.wiki/w/Masterwork_2h_sword",
+              "expanded": false,
+              "presentation": "list",
+              "children": [
+                {
+                  "id": "mw-20261117-0201",
+                  "type": "checkbox",
+                  "name": "Masterwork 2h sword base / blade worked",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0202",
+                  "type": "checkbox",
+                  "name": "Masterwork sword grip wrapped",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0203",
+                  "type": "checkbox",
+                  "name": "Masterwork sword trim and moonstone fitted",
+                  "description": "",
+                  "complete": false
+                },
+                {
+                  "id": "mw-20261117-0204",
+                  "type": "checkbox",
+                  "name": "Masterwork 2h sword completed",
+                  "description": "",
+                  "complete": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mw-20261117-0213",
+          "type": "group",
+          "name": "Masterwork Spear of Annihilation",
+          "description": "Independent weapon goal, separate from 12-trim armour set: crafting BOTH spear and trimmed melee set requires 19 trims in total. https://runescape.wiki/w/Masterwork_melee_armour_trim",
+          "expanded": false,
+          "presentation": "list",
+          "children": [
+            {
+              "id": "mw-20261117-0207",
+              "type": "counter",
+              "name": "Spear of Annihilation (Archaeology)",
+              "description": "Source Archaeology; part of the precursor spear grind.",
+              "current": 0,
+              "target": 1
+            },
+            {
+              "id": "mw-20261117-0208",
+              "type": "counter",
+              "name": "Masterwork melee armour trim",
+              "description": "4 trim to prepare the spear; 3 more to finish.",
+              "current": 0,
+              "target": 7
+            },
+            {
+              "id": "mw-20261117-0209",
+              "type": "counter",
+              "name": "Glorious bars",
+              "description": "One for prepared spear and one for the final spear.",
+              "current": 0,
+              "target": 2
+            },
+            {
+              "id": "mw-20261117-0210",
+              "type": "counter",
+              "name": "Masterwork rivets",
+              "description": "Final stage.",
+              "current": 0,
+              "target": 100
+            },
+            {
+              "id": "mw-20261117-0211",
+              "type": "checkbox",
+              "name": "Prepared masterwork Spear of Annihilation",
+              "description": "Spear of Annihilation +4 masterwork melee armour trims +1 glorious bar.",
+              "complete": false
+            },
+            {
+              "id": "mw-20261117-0212",
+              "type": "checkbox",
+              "name": "Masterwork Spear of Annihilation completed",
+              "description": "Prepared spear +3 masterwork trims +1 glorious bar +100 masterwork rivets, at Imcando anvil.",
+              "complete": false
+            }
+          ]
         }
-      ],
-      "icon": "book"
+      ]
     }
   ]
 }
